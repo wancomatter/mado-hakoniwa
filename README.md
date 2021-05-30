@@ -1,4 +1,4 @@
-#魔導の箱庭のリソースパックです<br>
+#魔導の箱庭です<br>
 #以下製作者一覧です<br>
 ・wancomatter  Twitter:@wancomatter<br>
 ・yuu50  			Twitter:@yuu500000<br>
