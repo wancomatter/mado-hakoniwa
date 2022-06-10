@@ -48,17 +48,17 @@ execute if entity @a[tag=resistboots,tag=!resistboots_sneaking,limit=1] as @a[ta
 execute if entity @a[tag=resistboots,tag=!resistboots_sneaking,limit=1] as @a[tag=resistboots,tag=!resistboots_sneaking,scores={sneak=1..}] run tag @s add resistboots_sneaking
 
 #加護:サバイブ免疫のデバフ軽減
-execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:18b,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/18
-execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:19b,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/19
-execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:20b,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/20
-execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:24b,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/24
+execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:18,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/18
+execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:19,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/19
+execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:20,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/20
+execute if entity @a[tag=bless_of_survive,limit=1] as @a[tag=bless_of_survive] if data entity @s {ActiveEffects:[{Id:24,Ambient:0b}]} run function wancomatter:general/bless/bless-of-survive/24
 
 #加護:黒衣の特殊透明処理
-execute if entity @a[tag=bless_invisible,tag=!bless_invisible_now,limit=1] as @a[tag=bless_invisible,tag=!bless_invisible_now] if data entity @s {ActiveEffects:[{Id:14b}]} run function wancomatter:general/bless/invisible
-execute if entity @a[tag=bless_invisible_now,limit=1] as @a[tag=bless_invisible_now] unless data entity @s {ActiveEffects:[{Id:14b}]} run function wancomatter:general/bless/invisible-clear
+execute if entity @a[tag=bless_invisible,tag=!bless_invisible_now,limit=1] as @a[tag=bless_invisible,tag=!bless_invisible_now] if data entity @s {ActiveEffects:[{Id:14}]} run function wancomatter:general/bless/invisible
+execute if entity @a[tag=bless_invisible_now,limit=1] as @a[tag=bless_invisible_now] unless data entity @s {ActiveEffects:[{Id:14}]} run function wancomatter:general/bless/invisible-clear
 
 #加護:大食らいのデバフ軽減
-execute if entity @a[tag=bless_of_hunger,limit=1] as @a[tag=bless_of_hunger] if data entity @s {ActiveEffects:[{Id:27b,Ambient:0b}]} run function wancomatter:general/bless/bless-of-hunger
+execute if entity @a[tag=bless_of_hunger,limit=1] as @a[tag=bless_of_hunger] if data entity @s {ActiveEffects:[{Id:27,Ambient:0b}]} run function wancomatter:general/bless/bless-of-hunger
 
 #ハスク、ゾンビのドラウンド化防止
 execute if entity @e[tag=type_zombie] as @e[tag=type_zombie] at @s if block ~ ~ ~ water positioned ~ ~0.01 ~ rotated ~ 0 run tp @s ^ ^ ^0.14
@@ -289,7 +289,7 @@ execute if entity @a[gamemode=!spectator,scores={holdItem=107,sneak=1..,dummy=0}
 execute if entity @e[tag=kusaCharge,tag=!kusaCounted] run kill @e[tag=kusaCharge,tag=!kusaCounted]
 execute if entity @e[tag=kusaCharge,tag=kusaCounted] run tag @e[tag=kusaCharge,tag=kusaCounted] remove kusaCounted
 #STM-110の鈍足用
-execute if entity @a[gamemode=!spectator,scores={holdItem=172,sneak=1..,CooldownX=..0},limit=1] at @a[gamemode=!spectator,scores={holdItem=172,sneak=1..,CooldownX=..0}] run summon area_effect_cloud ~ ~ ~ {Radius:0.2f,Duration:5,Age:4,WaitTime:1,Particle:"dust 0 0 0 0",Effects:[{Id:2b,Amplifier:5b,Duration:2,Ambient:1b,ShowParticles:0b,ShowIcon:1b}]}
+execute if entity @a[gamemode=!spectator,scores={holdItem=172,sneak=1..,CooldownX=..0},limit=1] at @a[gamemode=!spectator,scores={holdItem=172,sneak=1..,CooldownX=..0}] run summon area_effect_cloud ~ ~ ~ {Radius:0.2f,Duration:5,Age:4,WaitTime:1,Particle:"dust 0 0 0 0",Effects:[{Id:2,Amplifier:5b,Duration:2,Ambient:1b,ShowParticles:0b,ShowIcon:1b}]}
 
 #instantDMGS_timeの管理
 execute if entity @e[scores={instantDMGS_time=1..},limit=1] as @e[scores={instantDMGS_time=1..}] run function wancomatter:general/instant_damage_shield
@@ -329,15 +329,15 @@ execute if entity @a[tag=scythe_attacked,limit=1] run tag @a[tag=scythe_attacked
 execute if entity @e[tag=reserveHurtBy,limit=1] run tag @e[tag=reserveHurtBy] remove reserveHurtBy
 execute if entity @a[limit=1,tag=255jumpboost] as @a[tag=255jumpboost] store result score @s dummy run data get entity @s Motion[1] 0.1
 execute if entity @a[limit=1,tag=255jumpboost] as @a[tag=255jumpboost,scores={dummy=2..}] run tp @s @s 
-execute if entity @a[limit=1,tag=255jumpboost] as @a[tag=255jumpboost] unless data entity @s {ActiveEffects:[{id:8b,Amplifier:255}]} run tag @s remove 255jumpboost
+execute if entity @a[limit=1,tag=255jumpboost] as @a[tag=255jumpboost] unless data entity @s {ActiveEffects:[{id:8,Amplifier:255}]} run tag @s remove 255jumpboost
 effect give @a[tag=!noResistanfce] minecraft:resistance 1000000 4 true
 execute if entity @a[tag=noResistanfce,limit=1] run tag @a[tag=noResistanfce] remove noResistanfce
 execute if entity @e[type=item,nbt={Item:{tag:{Ungetable:1b}}},limit=1] as @e[type=item,nbt={Item:{tag:{Ungetable:1b}}}] run kill @s
 
-execute if entity @e[nbt={ActiveEffects:[{Id:5b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:5b}]}] if data entity @s Attributes[{Modifiers:[{UUID:[I; 1686990948, 1784696665, -1967209790, 980277161]}]}] run function wancomatter:general/effect/strengtheffection
-execute if entity @e[nbt={ActiveEffects:[{Id:18b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:18b}]}] if data entity @s Attributes[{Modifiers:[{UUID:[I; 577059721, 292440540, -1687447183, 1218141157]}]}] run function wancomatter:general/effect/weaknesseffection
-execute if entity @e[tag=strengthEffect,limit=1] as @e[tag=strengthEffect] unless data entity @s ActiveEffects[{Id:5b}] run function project-c:general/effect/strengthclear
-execute if entity @e[tag=weaknessEffect,limit=1] as @e[tag=weaknessEffect] unless data entity @s ActiveEffects[{Id:18b}] run function project-c:general/effect/weaknessclear
+execute if entity @e[nbt={ActiveEffects:[{Id:5}]},limit=1] as @e[nbt={ActiveEffects:[{Id:5}]}] if data entity @s Attributes[{Modifiers:[{UUID:[I; 1686990948, 1784696665, -1967209790, 980277161]}]}] run function wancomatter:general/effect/strengtheffection
+execute if entity @e[nbt={ActiveEffects:[{Id:18}]},limit=1] as @e[nbt={ActiveEffects:[{Id:18}]}] if data entity @s Attributes[{Modifiers:[{UUID:[I; 577059721, 292440540, -1687447183, 1218141157]}]}] run function wancomatter:general/effect/weaknesseffection
+execute if entity @e[tag=strengthEffect,limit=1] as @e[tag=strengthEffect] unless data entity @s ActiveEffects[{Id:5}] run function project-c:general/effect/strengthclear
+execute if entity @e[tag=weaknessEffect,limit=1] as @e[tag=weaknessEffect] unless data entity @s ActiveEffects[{Id:18}] run function project-c:general/effect/weaknessclear
 
 execute if entity @a[limit=1,advancements={mob_manager:entity_finder/check_attacked_entity=true}] run advancement revoke @a[advancements={mob_manager:entity_finder/check_attacked_entity=true}] only mob_manager:entity_finder/check_attacked_entity
 execute if entity @a[limit=1,advancements={mob_manager:entity_finder/check_attacked_entity=true}] run advancement revoke @a[advancements={mob_manager:entity_finder/check_attacked_entity=true}] only mob_manager:entity_finder/check_attacked_entity

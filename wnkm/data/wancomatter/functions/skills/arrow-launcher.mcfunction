@@ -22,17 +22,17 @@ execute if data entity @s {Color:43520} run tag @s add creeperArrow
 execute if data entity @s {Color:16733525} run tag @s add meteorArrow
 execute if data entity @s {Color:16776960} run tag @s add lightningArrow
 execute if data entity @s {Color:16776960} run playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 3 0.5
-execute if data entity @s {Color:16776960} run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:8b,Duration:2,ShowParticles:0b,ShowIcon:0b}
+execute if data entity @s {Color:16776960} run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:8b,Duration:2,ShowParticles:0b,ShowIcon:0b}
 execute if data entity @s {Color:5614335} run tag @s add freezeArrow
 execute unless entity @s[tag=!creeperArrow,tag=!meteorArrow,tag=!freezeArrow] run scoreboard players operation @s playerNumber = @a[tag=arrow-launcher-p,limit=1] playerNumber
 execute unless entity @s[tag=!creeperArrow,tag=!meteorArrow,tag=!freezeArrow] store result score @s subcounter2 run data get entity @s UUID[1] 1
 
-execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:11184810}] run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:3b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:43521}] run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:4b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:11141290}] run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:5b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:43520}] run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:6b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:16733525}] run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:7b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:5614335}] run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:9b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] unless data entity @s {CustomPotionEffects:[{Id:9b}]} run data modify entity @s CustomPotionEffects prepend value {Id:9b,Amplifier:1b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
-execute if entity @s[tag=arrow_recall] store result entity @s CustomPotionEffects[{Id:9b,ShowParticles:0b,ShowIcon:0b,Ambient:1b}].Duration int 1 run scoreboard players get @a[tag=arrow-launcher-p,limit=1] playerNumber
+execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:11184810}] run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:3b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:43521}] run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:4b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:11141290}] run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:5b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:43520}] run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:6b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:16733525}] run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:7b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] if entity @s[nbt={Color:5614335}] run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:9b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] unless data entity @s {CustomPotionEffects:[{Id:9}]} run data modify entity @s CustomPotionEffects prepend value {Id:9,Amplifier:1b,Duration:2,ShowParticles:0b,ShowIcon:0b,Ambient:1b}
+execute if entity @s[tag=arrow_recall] store result entity @s CustomPotionEffects[{Id:9,ShowParticles:0b,ShowIcon:0b,Ambient:1b}].Duration int 1 run scoreboard players get @a[tag=arrow-launcher-p,limit=1] playerNumber
 execute if entity @s[tag=arrow_recall] run tag @s remove arrow_recall

@@ -1,4 +1,4 @@
-execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27b}]} run tag @s add diet
+execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27}]} run tag @s add diet
 execute if entity @s[tag=diet] run scoreboard players add @s Mana 50
 execute if entity @s[tag=diet] run effect give @s minecraft:unluck 20 0
 tag @s[tag=diet] remove diet

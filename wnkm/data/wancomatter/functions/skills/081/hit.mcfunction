@@ -2,7 +2,7 @@ tp @s @s
 execute if entity @s[type=!player] run data remove entity @s Motion
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["081"],Duration:1}
 summon minecraft:area_effect_cloud ~ ~-20 ~ {Tags:["081"],Duration:1}
-execute as @e[tag=hit,type=player,tag=!projectile_wall] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @s facing entity @e[tag=081,limit=1,sort=nearest] feet rotated ~ 0 run summon minecraft:slime ^ ^ ^0.2 {Size:0,NoAI:1b,DeathTime:16s,Silent:1b,Tags:["kill"],ActiveEffects:[{Id:14b,Duration:2147483647,ShowParticles:0b}]}
+execute as @e[tag=hit,type=player,tag=!projectile_wall] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @e[tag=081,limit=2] at @s facing entity @e[tag=081,limit=1,sort=nearest] feet rotated ~ 0 run summon minecraft:slime ^ ^ ^0.2 {Size:0,NoAI:1b,DeathTime:16s,Silent:1b,Tags:["kill"],ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}]}
 execute as @e[tag=hit,type=!player] at @s run function wancomatter:skills/081/motion
 effect give @e[tag=hit] minecraft:levitation 1 10 true
 scoreboard players set @e[tag=hit] levitateOperate 3

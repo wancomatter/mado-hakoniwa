@@ -2,7 +2,7 @@ scoreboard players remove @s Mana 4
 scoreboard players set @s CooldownX 20
 scoreboard players set @s CooldownX_max 20
 
-execute if data entity @s {ActiveEffects:[{Id:2b}]} store result score @s dummy run data get entity @s ActiveEffects[{Id:2b}].Amplifier
+execute if data entity @s {ActiveEffects:[{Id:2}]} store result score @s dummy run data get entity @s ActiveEffects[{Id:2}].Amplifier
 execute if score @s dummy matches 0..1 run effect clear @s minecraft:slowness
 execute positioned ~ ~-0.5 ~ anchored eyes run summon minecraft:marker ^ ^ ^ {Tags:["discharge","windcut"]}
 

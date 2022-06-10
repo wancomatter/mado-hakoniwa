@@ -1,10 +1,10 @@
 #> wancomatter:skills/arrow-recall
-execute store result score #dummy dummy run data get entity @s ActiveEffects[{Id:9b}].Duration
+execute store result score #dummy dummy run data get entity @s ActiveEffects[{Id:9}].Duration
 scoreboard players add #dummy dummy 1
 execute as @a[tag=!hurt,tag=!hurtBy,advancements={wancomatter:general/arrow-dealt2=true}] if score @s playerNumber = #dummy dummy run function wancomatter:skills/arrow-recall_hurtby
 execute as @a[tag=hurtBy,scores={Mana=2..}] run scoreboard players remove @s Mana 2
 scoreboard players set #dummy dummy 0
-execute store result score #dummy dummy run data get entity @s ActiveEffects[{Id:9b}].Amplifier
+execute store result score #dummy dummy run data get entity @s ActiveEffects[{Id:9}].Amplifier
 execute if score #dummy dummy matches 1 run loot give @a[tag=hurtBy] loot wancomatter:skills/arrow/1_stone
 execute if score #dummy dummy matches 3 run loot give @a[tag=hurtBy] loot wancomatter:skills/arrow/1_steel
 execute if score #dummy dummy matches 4 run loot give @a[tag=hurtBy] loot wancomatter:skills/arrow/1_poison

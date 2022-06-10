@@ -11,7 +11,7 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:["sils_feather","this"],NoGravity:1b,In
 execute as @e[tag=this] run data modify entity @s Pose.RightArm set value [0.0f,0.0f,0.0f]
 execute as @e[tag=this] run data modify entity @s Pose.LeftArm set value [0.0f,0.0f,0.0f]
 tag @e[tag=this] remove this
-summon minecraft:ravager ~ ~ ~ {Tags:["mob","boss_hitbox","sils_hitbox","first"],Team:"noPush",Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}],NoAI:1b,Silent:1b,ActiveEffects:[{Id:14b,Amplifier:127b,Duration:2147483647,ShowParticles:0b}],DeathLootTable:"empty",DeathTime:19s,PersistenceRequired:1b}
+summon minecraft:ravager ~ ~ ~ {Tags:["mob","boss_hitbox","sils_hitbox","first"],Team:"noPush",Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}],NoAI:1b,Silent:1b,ActiveEffects:[{Id:14,Amplifier:127b,Duration:2147483647,ShowParticles:0b}],DeathLootTable:"empty",DeathTime:19s,PersistenceRequired:1b}
 scoreboard players set @e[tag=first] HP 3000
 scoreboard players set @e[tag=first,tag=sils_hitbox] HP 300000
 execute as @e[tag=first,tag=sils_hitbox] run scoreboard players operation @s maxHP = @s HP

@@ -27,8 +27,8 @@ execute if entity @a[tag=parry_antikb,limit=1] as @a[tag=parry_antikb] run tag @
 execute if entity @a[scores={recoilTime=-1..},limit=1] as @a[scores={recoilTime=-1..}] at @s run function wancomatter:skills/recoil_tick
 
 #防具系の特殊効果
-execute if entity @a[tag=lightarm,limit=1] as @a[tag=lightarm] if data entity @s {ActiveEffects:[{Id:2b,Ambient:0b}]} run function wancomatter:general/cut-slowness
-execute if entity @a[tag=bear_legs,limit=1] as @a[tag=bear_legs] if data entity @s {ActiveEffects:[{Id:2b,Ambient:0b}]} run function wancomatter:general/cut-slowness
+execute if entity @a[tag=lightarm,limit=1] as @a[tag=lightarm] if data entity @s {ActiveEffects:[{Id:2,Ambient:0b}]} run function wancomatter:general/cut-slowness
+execute if entity @a[tag=bear_legs,limit=1] as @a[tag=bear_legs] if data entity @s {ActiveEffects:[{Id:2,Ambient:0b}]} run function wancomatter:general/cut-slowness
 
 
 #要塞崩しのパーティクル
@@ -122,7 +122,7 @@ execute if entity @e[tag=blizzard,limit=1] as @e[tag=blizzard] at @s run functio
 #ギャンブルシチュー-48
 execute if entity @e[tag=gamble_stew_stand,limit=1] as @e[tag=gamble_stew_stand] at @s run function wancomatter:skills/048/tick
 #手榴弾-49
-execute if entity @e[type=minecraft:area_effect_cloud,limit=1,nbt={Effects:[{ShowParticles:0b,Amplifier:49b,Id:31b}]}] as @e[type=minecraft:area_effect_cloud,nbt={Effects:[{ShowParticles:0b,Amplifier:49b,Id:31b}]}] at @s run function wancomatter:skills/049/bomb
+execute if entity @e[type=minecraft:area_effect_cloud,limit=1,nbt={Effects:[{ShowParticles:0b,Amplifier:49b,Id:31}]}] as @e[type=minecraft:area_effect_cloud,nbt={Effects:[{ShowParticles:0b,Amplifier:49b,Id:31}]}] at @s run function wancomatter:skills/049/bomb
 execute if entity @e[tag=grenadeAEC,limit=1] as @e[tag=grenadeAEC] at @s run function wancomatter:skills/049/tick
 #hate_flash-50
 execute if entity @e[tag=hate_flash,limit=1] as @e[tag=hate_flash] at @s run function wancomatter:skills/050/tick
@@ -140,7 +140,7 @@ execute if entity @e[tag=portal_pearl_stand,limit=1] as @e[tag=portal_pearl_stan
 execute if entity @e[tag=portal_stand,limit=1] as @e[tag=portal_stand] at @s run function wancomatter:skills/056/tick_portal
 execute if entity @e[tag=portal_using,limit=1] as @e[tag=portal_using] at @s run function wancomatter:skills/056/tick_using
 #防護壁-058
-execute if entity @e[type=minecraft:area_effect_cloud,limit=1,nbt={Effects:[{ShowParticles:0b,Amplifier:58b,Id:31b}]}] as @e[type=minecraft:area_effect_cloud,nbt={Effects:[{ShowParticles:0b,Amplifier:58b,Id:31b}]}] at @s run function wancomatter:skills/058/create_wall
+execute if entity @e[type=minecraft:area_effect_cloud,limit=1,nbt={Effects:[{ShowParticles:0b,Amplifier:58b,Id:31}]}] as @e[type=minecraft:area_effect_cloud,nbt={Effects:[{ShowParticles:0b,Amplifier:58b,Id:31}]}] at @s run function wancomatter:skills/058/create_wall
 execute if entity @e[tag=projectile_wall,limit=1] run function wancomatter:skills/058/tick
 #スケルポン-059
 execute if entity @e[tag=skelepon,limit=1] as @e[tag=skelepon] at @s run function wancomatter:skills/059/tick

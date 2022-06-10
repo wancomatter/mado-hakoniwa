@@ -10,8 +10,8 @@ execute if entity @s[scores={Cooldown7=1..}] run scoreboard players remove @s Co
 execute if entity @s[scores={Cooldown8=1..}] run scoreboard players remove @s Cooldown8 1
 execute if entity @s[scores={Cooldown9=1..}] run scoreboard players remove @s Cooldown9 1
 
-execute if score #difficult counter matches 3..4 if data entity @s {ActiveEffects:[{Id:2b}]} run effect clear @s slowness
-execute if data entity @s {ActiveEffects:[{Id:25b,Amplifier:0b,Duration:199}]} run effect clear @s levitation
+execute if score #difficult counter matches 3..4 if data entity @s {ActiveEffects:[{Id:2}]} run effect clear @s slowness
+execute if data entity @s {ActiveEffects:[{Id:25,Amplifier:0b,Duration:199}]} run effect clear @s levitation
 
 execute if entity @s[tag=usedskill] run scoreboard players set @s Cooldown3_max 0
 execute if entity @s[tag=usedskill] run tag @s remove usedskill

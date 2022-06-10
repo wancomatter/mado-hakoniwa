@@ -1,6 +1,6 @@
 execute if entity @s[tag=floatboots_elytra] run data modify entity @s Inventory[{Slot:102b,id:"minecraft:elytra"}].tag.Damage set value 0
 execute if entity @s[tag=floatboots_elytra] run tag @s remove floatboots_elytra
-execute if entity @s[scores={sneak=1..},gamemode=!spectator] unless score @s floatboots_count matches 3.. unless data entity @s {OnGround:1b} unless data entity @s {ActiveEffects:[{Id:25b,Amplifier:6b}]} run tag @s add this
+execute if entity @s[scores={sneak=1..},gamemode=!spectator] unless score @s floatboots_count matches 3.. unless data entity @s {OnGround:1b} unless data entity @s {ActiveEffects:[{Id:25,Amplifier:6b}]} run tag @s add this
 execute if entity @s[tag=this] unless score @s Mana matches 7.. run playsound minecraft:block.fire.extinguish master @s ~ ~ ~ 1 2
 execute if entity @s[tag=this] unless score @s Mana matches 7.. run title @s times 0 16 10
 execute if entity @s[tag=this] unless score @s Mana matches 7.. run title @s subtitle [{"text":"MPが不足しています","color":"red"}]

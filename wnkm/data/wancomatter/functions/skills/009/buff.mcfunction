@@ -1,3 +1,3 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Effects:[{Id:5b,Amplifier:3b,Duration:600},{Id:26b,Amplifier:2b,Duration:600},{Id:1b,Amplifier:1b,Duration:600}],Duration:5,Age:4,Radius:0.4f,WaitTime:1}
+summon minecraft:area_effect_cloud ~ ~ ~ {Effects:[{Id:5,Amplifier:3b,Duration:600},{Id:26,Amplifier:2b,Duration:600},{Id:1,Amplifier:1b,Duration:600}],Duration:5,Age:4,Radius:0.4f,WaitTime:1}
 execute if entity @s[type=player] run tellraw @s [{"selector":"@a[tag=user,limit=1]","color":"light_purple"},{"text":"から","color":"gray"},{"text":"ベテルギウス","color":"#FF9335","bold":true},{"text":"による支援を受けた","color":"gray"}]
 tag @s remove hit

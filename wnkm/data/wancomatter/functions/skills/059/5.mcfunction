@@ -25,7 +25,7 @@ execute as @e[tag=102vector] run scoreboard players operation @s dummy /= #2 cou
 execute as @e[tag=102vector] run function wancomatter:operation/0.01tp
 
 #ポーション召喚とMotion代入
-execute anchored eyes run summon potion ^ ^-0.5 ^1 {Motion:[0d,0d,0d],Fire:32767s,Tags:["this"],Item:{id:"minecraft:lingering_potion",Count:1b,tag:{CustomPotionColor:65280,CustomPotionEffects:[{Id:31b,Amplifier:49b,ShowParticles:0b,Duration:1},{Id:31b,Amplifier:59b,ShowParticles:0b,Duration:1}]}}}
+execute anchored eyes run summon potion ^ ^-0.5 ^1 {Motion:[0d,0d,0d],Fire:32767s,Tags:["this"],Item:{id:"minecraft:lingering_potion",Count:1b,tag:{CustomPotionColor:65280,CustomPotionEffects:[{Id:31,Amplifier:49b,ShowParticles:0b,Duration:1},{Id:31,Amplifier:59b,ShowParticles:0b,Duration:1}]}}}
 data modify entity @e[tag=this,limit=1] Owner set from entity @s UUID
 execute as @e[tag=this] run data modify entity @s Motion set from entity @e[tag=102vector,limit=1] Pos
 execute store result entity @e[tag=this,limit=1] Item.tag.CustomPotionEffects[0].Duration int 1 run scoreboard players get @s playerNumber

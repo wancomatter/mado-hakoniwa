@@ -11,7 +11,7 @@ execute anchored eyes positioned ^ ^ ^-0.3 run tp @e[tag=this] ~ ~ ~
 tag @e[tag=this] remove this
 schedule function wancomatter:skills/057/stopsound 2t
 tp @s @s
-execute unless data entity @s {ActiveEffects:[{Id:25b}]} run tag @s add flag
+execute unless data entity @s {ActiveEffects:[{Id:25}]} run tag @s add flag
 execute if entity @s[tag=flag] run effect give @s minecraft:levitation 1 0 true
 execute if entity @s[tag=flag] run scoreboard players set @s levitateOperate 2
 execute if entity @s[tag=flag] run tag @s remove flag

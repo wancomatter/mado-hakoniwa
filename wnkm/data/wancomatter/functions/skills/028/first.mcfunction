@@ -13,7 +13,7 @@ execute if entity @e[tag=shulker_count,limit=1] as @e[tag=shulker_count,limit=1,
 scoreboard players reset #dummy
 
 tag @s add p.summon_shulker
-summon minecraft:shulker ~ ~ ~ {Tags:["mob","mobInit","this","summon_shulker","summon_entity","wall_entity","shulker_sound"],NoAI:1b,HandDropChances:[-100f,-100f],HandItems:[{id:"minecraft:stone",Count:1b,tag:{}},{}],Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000d}],AbsorptionAmount:110,ActiveEffects:[{Id:26b,Amplifier:7b,Duration:30,ShowParticles:0b}]}
+summon minecraft:shulker ~ ~ ~ {Tags:["mob","mobInit","this","summon_shulker","summon_entity","wall_entity","shulker_sound"],NoAI:1b,HandDropChances:[-100f,-100f],HandItems:[{id:"minecraft:stone",Count:1b,tag:{}},{}],Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000d}],AbsorptionAmount:110,ActiveEffects:[{Id:26,Amplifier:7b,Duration:30,ShowParticles:0b}]}
 data modify entity @e[tag=this,limit=1] HandItems[0].tag.Owner set from entity @s UUID
 scoreboard players operation @e[tag=this,limit=1] ownerNumber = @s playerNumber
 scoreboard players operation @e[tag=this,limit=1] teamNumber = @s teamNumber

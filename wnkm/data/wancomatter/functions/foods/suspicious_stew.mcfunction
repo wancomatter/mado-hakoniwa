@@ -1,4 +1,4 @@
-execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27b}]} run tag @s add diet
+execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27}]} run tag @s add diet
 loot spawn ~ -10 ~ loot wancomatter:random/1-20
 execute store result score #dummy counter run data get entity @e[type=item,nbt={Item:{tag:{AttributeModifiers:[{Name:"rand.1-20"}]}}},limit=1] Item.tag.AttributeModifiers[{Name:"rand.1-20"}].Amount 10
 kill @e[type=item,nbt={Item:{tag:{AttributeModifiers:[{Name:"rand.1-20"}]}}}]

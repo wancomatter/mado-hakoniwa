@@ -1,4 +1,4 @@
-execute if data entity @s {ActiveEffects:[{Id:2b}]} store result score @s dummy run data get entity @s ActiveEffects[{Id:2b}].Amplifier
+execute if data entity @s {ActiveEffects:[{Id:2}]} store result score @s dummy run data get entity @s ActiveEffects[{Id:2}].Amplifier
 execute if score @s dummy matches 0..2 run effect clear @s minecraft:slowness
 
 tag @s add windcut_dummy

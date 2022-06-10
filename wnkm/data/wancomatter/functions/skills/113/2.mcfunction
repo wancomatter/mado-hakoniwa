@@ -27,8 +27,8 @@ execute if entity @s[tag=109stream7] run playsound minecraft:entity.generic.expl
 execute if entity @s[tag=109stream7] run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1.2 0.5
 execute if entity @s[tag=109stream7] run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1.2 0.5
 
-execute store result score @s subcounter2 run data get entity @s Effects[{Id:9b}].Amplifier 2
-data remove entity @s Effects[{Id:9b}]
+execute store result score @s subcounter2 run data get entity @s Effects[{Id:9}].Amplifier 2
+data remove entity @s Effects[{Id:9}]
 execute if entity @s[tag=109stream,tag=!109stream3,tag=!109stream6,tag=!109stream7] as @e[distance=..2.0,scores={maxHP=1..}] unless score @s teamNumber = @a[tag=user,limit=1,sort=nearest] teamNumber run tag @s add hit
 execute if entity @s[tag=109stream,tag=109stream3] as @e[distance=..2.5,scores={maxHP=1..}] unless score @s teamNumber = @a[tag=user,limit=1,sort=nearest] teamNumber run tag @s add hit
 execute if entity @s[tag=109stream,tag=109stream6] as @e[distance=..2.5,scores={maxHP=1..}] unless score @s teamNumber = @a[tag=user,limit=1,sort=nearest] teamNumber run tag @s add hit

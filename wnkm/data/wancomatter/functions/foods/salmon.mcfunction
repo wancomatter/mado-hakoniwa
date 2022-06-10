@@ -1,4 +1,4 @@
-execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27b}]} run tag @s add diet
+execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27}]} run tag @s add diet
 execute if entity @s[tag=diet] run scoreboard players add @s Mana 10
 execute if entity @s[tag=diet] run effect give @s minecraft:unluck 30 0
 execute if entity @s[tag=diet] run summon area_effect_cloud ~ ~ ~ {Tags:["ini","stable","salmon_AEC"],Duration:400}

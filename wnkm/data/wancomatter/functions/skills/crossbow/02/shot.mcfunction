@@ -1,4 +1,4 @@
-execute as @e[tag=first] run data remove entity @s CustomPotionEffects[{Id:9b,Amplifier:0b,Duration:-132,ShowParticles:0b,ShowIcon:0b}]
+execute as @e[tag=first] run data remove entity @s CustomPotionEffects[{Id:9,Amplifier:0b,Duration:-132,ShowParticles:0b,ShowIcon:0b}]
 execute as @e[tag=first] store result score @s subcounter run data get entity @s damage 130
 execute as @e[tag=first] store result entity @s damage double 0.005 run scoreboard players get @s subcounter
 execute at @e[tag=first] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 2

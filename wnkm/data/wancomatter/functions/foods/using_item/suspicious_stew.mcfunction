@@ -1,4 +1,4 @@
-execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27b}]} if data entity @s Inventory[{tag:{quick_food_available:1b}}] run function wancomatter:foods/bless/quick_food_check_slot
+execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27}]} if data entity @s Inventory[{tag:{quick_food_available:1b}}] run function wancomatter:foods/bless/quick_food_check_slot
 loot spawn ~ -10 ~ loot wancomatter:random/1-20
 execute store result score #dummy counter run data get entity @e[type=item,nbt={Item:{tag:{AttributeModifiers:[{Name:"rand.1-20"}]}}},limit=1] Item.tag.AttributeModifiers[{Name:"rand.1-20"}].Amount 10
 kill @e[type=item,nbt={Item:{tag:{AttributeModifiers:[{Name:"rand.1-20"}]}}}]

@@ -505,7 +505,7 @@ execute rotated 54 13.0 run particle minecraft:dragon_breath ^ ^ ^8 ^ ^ ^-100000
 #召喚と設定
 summon minecraft:armor_stand ~ 0 ~ {Tags:["this","buff_darkness"],Marker:1b,Invisible:1b,NoGravity:1b}
 scoreboard players operation @e[tag=this,limit=1] playerNumber = @s playerNumber
-summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:dust 0 0 0 0",Duration:5,Age:4,WaitTime:1,Radius:0.8f,Effects:[{Id:2b,Amplifier:6b,Duration:24,Ambient:1b}]}
+summon area_effect_cloud ~ ~ ~ {Particle:"minecraft:dust 0 0 0 0",Duration:5,Age:4,WaitTime:1,Radius:0.8f,Effects:[{Id:2,Amplifier:6b,Duration:24,Ambient:1b}]}
 
 #後処理
 tag @e[tag=this] remove this

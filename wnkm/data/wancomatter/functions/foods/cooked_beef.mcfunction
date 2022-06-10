@@ -1,4 +1,4 @@
-execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27b}]} run tag @s add diet
+execute unless data entity @s[gamemode=!spectator] {ActiveEffects:[{Id:27}]} run tag @s add diet
 execute if entity @s[tag=diet] run scoreboard players set #dummy HPheal 100
 execute if entity @s[tag=diet] run scoreboard players operation #dummy HPheal *= @s healPower
 execute if entity @s[tag=diet] run scoreboard players operation #dummy HPheal /= #100 counter

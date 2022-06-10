@@ -6,7 +6,7 @@ playsound minecraft:entity.elder_guardian.ambient master @a ~ ~ ~ 3 2
 execute at @a[tag=user] run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1.2 0.7
 execute at @a[tag=user] run playsound minecraft:entity.elder_guardian.ambient master @a ~ ~ ~ 1.2 2
 
-summon slime ~ ~ ~ {NoGravity:1b,Glowing:1b,Invulnerable:1b,Silent:1b,Size:0,Motion:[0d,0.75d,0d],Tags:["meteor_arrow_rain","projectile","first"],HandItems:[{id:"minecraft:stone",Count:1b,tag:{Owner:[]}},{}],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:200,ShowParticles:0b}]}
+summon slime ~ ~ ~ {NoGravity:1b,Glowing:1b,Invulnerable:1b,Silent:1b,Size:0,Motion:[0d,0.75d,0d],Tags:["meteor_arrow_rain","projectile","first"],HandItems:[{id:"minecraft:stone",Count:1b,tag:{Owner:[]}},{}],ActiveEffects:[{Id:14,Amplifier:0b,Duration:200,ShowParticles:0b}]}
 execute if score @a[tag=user,limit=1] teamNumber matches 1 run team join Red @e[tag=first,limit=1]
 execute if score @a[tag=user,limit=1] teamNumber matches 2 run team join Aqua @e[tag=first,limit=1]
 execute if score @a[tag=user,limit=1] teamNumber matches 3 run team join Yellow @e[tag=first,limit=1]

@@ -9,7 +9,7 @@ scoreboard players operation @e[tag=first] teamNumber = @s teamNumber
 
 #ターゲット指定
 execute positioned ^ ^ ^3 as @e[scores={maxHP=1..},distance=..20,tag=!projectile_wall] unless score @s teamNumber = @e[tag=first,limit=1] teamNumber run tag @s add 079target
-execute as @a[tag=079target,tag=!boss] if data entity @s ActiveEffects[{Id:14b}] unless data entity @s ActiveEffects[{Id:25b}] run tag @s remove 079target
+execute as @a[tag=079target,tag=!boss] if data entity @s ActiveEffects[{Id:14}] unless data entity @s ActiveEffects[{Id:25}] run tag @s remove 079target
 execute positioned ^ ^ ^3 at @e[tag=079target,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["target"],Duration:1}
 tag @e[tag=079target] remove 079target
 #ダミーエンティティ召喚

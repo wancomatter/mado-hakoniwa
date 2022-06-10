@@ -3,7 +3,7 @@ scoreboard players set @s CooldownX 140
 scoreboard players set @s CooldownX_max 140
 
 playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 0.7 0.66
-summon minecraft:area_effect_cloud ~ ~ ~ {Effects:[{Id:4b,Amplifier:9b,Duration:28,ShowParticles:0b,ShowIcon:1b}],Radius:0.4f,Duration:5,Age:4,WaitTime:1}
+summon minecraft:area_effect_cloud ~ ~ ~ {Effects:[{Id:4,Amplifier:9b,Duration:28,ShowParticles:0b,ShowIcon:1b}],Radius:0.4f,Duration:5,Age:4,WaitTime:1}
 
 execute anchored eyes positioned ^ ^ ^ run summon armor_stand ~ ~-0.6 ~ {Tags:["first","throw_axe"],Invisible:1b,Small:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{CustomModelData:108}}],Pose:{Head:[10f,0f,0f]},DisabledSlots:2039583}
 scoreboard players operation @e[tag=first,limit=1] playerNumber = @s playerNumber

@@ -9,7 +9,7 @@ execute unless score #difficult counter matches 4 rotated 0 0 run function wanco
 execute if score #difficult counter matches 4 rotated 0 0 run function wancomatter:boss/necro/skill14/0_loop2
 tag @e[tag=first] remove first
 
-summon minecraft:shulker ~ ~ ~ {Tags:["mob","mobInit","first","necro_s14_gate"],NoAI:1b,Color:10b,Team:"Purple",Glowing:1b,Peek:100b,Silent:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000d}],AbsorptionAmount:1000f,ActiveEffects:[{Id:26b,Amplifier:9b,Duration:1000000,ShowParticles:0b}]}
+summon minecraft:shulker ~ ~ ~ {Tags:["mob","mobInit","first","necro_s14_gate"],NoAI:1b,Color:10b,Team:"Purple",Glowing:1b,Peek:100b,Silent:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000d}],AbsorptionAmount:1000f,ActiveEffects:[{Id:26,Amplifier:9b,Duration:1000000,ShowParticles:0b}]}
 scoreboard players set @e[tag=first] teamNumber 5
 scoreboard players operation @e[tag=first] subcounter = #dummy dummy
 scoreboard players reset #dummy

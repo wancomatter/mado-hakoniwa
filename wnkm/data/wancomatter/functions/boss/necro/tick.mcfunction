@@ -14,7 +14,7 @@ execute if entity @s[scores={Cooldown5=1..}] run scoreboard players remove @s Co
 execute if entity @s[scores={Cooldown8=1..}] run scoreboard players remove @s Cooldown8 1
 execute if entity @s[scores={Cooldown9=1..}] run scoreboard players remove @s Cooldown9 1
 
-execute if data entity @s ActiveEffects[{Id:24b}] run effect clear @s minecraft:glowing
+execute if data entity @s ActiveEffects[{Id:24}] run effect clear @s minecraft:glowing
 tp @e[tag=necro_stand] ~ ~ ~ ~ ~
 execute store result bossbar minecraft:necro value run scoreboard players get @s HP
 

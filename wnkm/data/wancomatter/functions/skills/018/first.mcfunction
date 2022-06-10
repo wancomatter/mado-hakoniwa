@@ -11,7 +11,7 @@ playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 1.30
 playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 1.54
 
 tp @s @s
-summon minecraft:area_effect_cloud ~ ~ ~ {Duration:5,Age:4,WaitTime:1,Radius:0.2f,Particle:"dust 0 0 0 0",Effects:[{Id:24b,Amplifier:0b,Duration:60,Ambient:1b},{Id:25b,Amplifier:0b,Duration:60,Ambient:1b},{Id:25b,Amplifier:11b,Duration:5,Ambient:1b}]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Duration:5,Age:4,WaitTime:1,Radius:0.2f,Particle:"dust 0 0 0 0",Effects:[{Id:24,Amplifier:0b,Duration:60,Ambient:1b},{Id:25,Amplifier:0b,Duration:60,Ambient:1b},{Id:25,Amplifier:11b,Duration:5,Ambient:1b}]}
 
 summon marker ~ ~ ~ {Tags:["star_feather","first"]}
 execute if score #dummy counter matches 9 run scoreboard players set #dummy counter 10

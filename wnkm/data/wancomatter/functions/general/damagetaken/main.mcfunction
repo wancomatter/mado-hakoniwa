@@ -14,12 +14,12 @@ execute if entity @s[tag=boss] as @a[tag=hurtBy,limit=1] unless score @s BossHur
 execute if entity @s[tag=boss] if entity @a[tag=hurtBy,limit=1,scores={BossHurtTime=10}] run tag @s add multiDamage
 
 scoreboard players set #-- dummy 0
-execute if data entity @s ActiveEffects[{Id:25b,Amplifier:0b}] run function wancomatter:general/damagetaken/check_levitation
+execute if data entity @s ActiveEffects[{Id:25,Amplifier:0b}] run function wancomatter:general/damagetaken/check_levitation
 
-#execute if data entity @s {ActiveEffects:[{Id:32b,Amplifier:127b}]} run tellraw wnkm {"score":{"name":"@s","objective":"damageTaken"}}
-execute if data entity @s {ActiveEffects:[{Id:32b,Amplifier:127b}]} run scoreboard players set @s damageTaken 0
-execute if data entity @s {ActiveEffects:[{Id:32b,Amplifier:127b}]} run scoreboard players reset @s hurtByNumber
-execute if data entity @s {ActiveEffects:[{Id:32b,Amplifier:127b}]} run effect clear @s minecraft:hero_of_the_village
+#execute if data entity @s {ActiveEffects:[{Id:32,Amplifier:127b}]} run tellraw wnkm {"score":{"name":"@s","objective":"damageTaken"}}
+execute if data entity @s {ActiveEffects:[{Id:32,Amplifier:127b}]} run scoreboard players set @s damageTaken 0
+execute if data entity @s {ActiveEffects:[{Id:32,Amplifier:127b}]} run scoreboard players reset @s hurtByNumber
+execute if data entity @s {ActiveEffects:[{Id:32,Amplifier:127b}]} run effect clear @s minecraft:hero_of_the_village
 
 #execute unless entity @s[scores={hurtByNumber=-2147483648..}] run function wancomatter:general/damagetaken/set_hurtby
 execute if entity @s[scores={hurtByNumber=-2147483648..}] run tag @s add hurt
@@ -65,7 +65,7 @@ execute if entity @a[tag=hurtBy,advancements={wancomatter:general/neptune=true},
 execute if entity @a[tag=hurtBy,advancements={wancomatter:general/neptune=true},limit=1] run scoreboard players set @s hurtWeaponNumber 101
 
 #リコールショット処理(使用:エフェクトID:9(nausea),Amplifier:補充矢識別番号)
-execute if data entity @s {ActiveEffects:[{Id:9b}]} run function wancomatter:skills/arrow-recall
+execute if data entity @s {ActiveEffects:[{Id:9}]} run function wancomatter:skills/arrow-recall
 
 #天壌無窮戦で近接ダメージ4倍
 execute if entity @s[tag=dragon1_hitbox] if entity @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false},limit=1] run scoreboard players operation @s damageTaken *= #4 counter
@@ -142,8 +142,8 @@ execute if entity @s[scores={hurtByNumber=-2147483648..}] if entity @e[tag=hurtB
 #execute if entity @s[tag=magicDamage2] unless entity @s[tag=flag] if entity @s[tag=undead] if score #-- dummy matches 0..1 run effect give @s minecraft:instant_health 1 0 true
 
 execute store result score #-- dummy run data get entity @s HurtTime 1
-execute if score #-- dummy matches 0..1 unless entity @s[tag=undead] if score #-- dummy matches 0..1 at @s run summon area_effect_cloud ~ ~0.1 ~ {Duration:5,Age:4,WaitTime:1,Radius:0.5f,Particle:"minecraft:dust 0 0 0 0",Effects:[{Id:32b,Amplifier:127b,Duration:2},{Id:7b,Amplifier:0b,Duration:1}],Tags:["ini","dmg_kb_AEC"]}
-execute if score #-- dummy matches 0..1 if entity @s[tag=undead] if score #-- dummy matches 0..1 at @s run summon area_effect_cloud ~ ~0.1 ~ {Duration:5,Age:4,WaitTime:1,Radius:0.5f,Particle:"minecraft:dust 0 0 0 0",Effects:[{Id:32b,Amplifier:127b,Duration:2},{Id:6b,Amplifier:0b,Duration:1}],Tags:["ini","dmg_kb_AEC"]}
+execute if score #-- dummy matches 0..1 unless entity @s[tag=undead] if score #-- dummy matches 0..1 at @s run summon area_effect_cloud ~ ~0.1 ~ {Duration:5,Age:4,WaitTime:1,Radius:0.5f,Particle:"minecraft:dust 0 0 0 0",Effects:[{Id:32,Amplifier:127b,Duration:2},{Id:7,Amplifier:0b,Duration:1}],Tags:["ini","dmg_kb_AEC"]}
+execute if score #-- dummy matches 0..1 if entity @s[tag=undead] if score #-- dummy matches 0..1 at @s run summon area_effect_cloud ~ ~0.1 ~ {Duration:5,Age:4,WaitTime:1,Radius:0.5f,Particle:"minecraft:dust 0 0 0 0",Effects:[{Id:32,Amplifier:127b,Duration:2},{Id:6,Amplifier:0b,Duration:1}],Tags:["ini","dmg_kb_AEC"]}
 execute if score #-- dummy matches 0..1 run data modify entity @e[tag=ini,limit=1] Owner set from entity @a[tag=hurtBy,limit=1] UUID
 execute if score #-- dummy matches 0..1 run tag @e[tag=ini] remove ini
 execute if entity @s[tag=noKnockbackDamage] run function wancomatter:operation/instant_kb_resist
@@ -177,7 +177,7 @@ execute if score #bless counter matches 2.. run scoreboard players operation @s 
 execute if score #bless counter matches 1.. run scoreboard players operation @s damageTaken /= #20 counter
 scoreboard players reset #bless counter
 #effect:衝撃吸収による被ダメージ軽減処理
-execute if entity @s[type=player,nbt={ActiveEffects:[{Id:22b}]}] run function wancomatter:general/damagetaken/resist/absorption
+execute if entity @s[type=player,nbt={ActiveEffects:[{Id:22}]}] run function wancomatter:general/damagetaken/resist/absorption
 #加護メリットによる被ダメージ軽減処理
 execute if entity @s[scores={bless1=14}] run scoreboard players add #bless counter 1
 execute if entity @s[scores={bless2=14}] run scoreboard players add #bless counter 1
@@ -241,7 +241,7 @@ execute if entity @e[tag=hurtBy,predicate=wancomatter:effect/add_damage] run fun
 #ヒノキの追加ダメージ処理
 execute if entity @a[tag=!hurt,tag=hurtBy,advancements={wancomatter:general/hinoki_blade=true},limit=1] run function wancomatter:skills/109/melee
 #effect:幸運によるダメージ軽減処理
-execute if entity @s[nbt={ActiveEffects:[{Id:26b}]}] run function wancomatter:general/damagetaken/resist/luck
+execute if entity @s[nbt={ActiveEffects:[{Id:26}]}] run function wancomatter:general/damagetaken/resist/luck
 #守の彗星バフの削除
 execute if entity @s[tag=guard_star_buff] run effect clear @s minecraft:luck
 execute if entity @s[tag=guard_star_buff] run tag @s remove guard_star_buff
@@ -324,9 +324,9 @@ scoreboard players reset #bless counter
 execute if score #yamakuzushi counter matches 1.. run scoreboard players reset #yamakuzushi
 
 #吸収の処理(使用:エフェクトID32,Amplifier:吸収する量,プラス:MP,マイナス:HP)
-execute if data entity @s {ActiveEffects:[{Id:32b}]} run tag @s add drain
+execute if data entity @s {ActiveEffects:[{Id:32}]} run tag @s add drain
 execute if entity @s[tag=drain] run scoreboard players set #-- dummy 0
-execute if entity @s[tag=drain] store result score #-- dummy run data get entity @s ActiveEffects[{Id:32b}].Amplifier
+execute if entity @s[tag=drain] store result score #-- dummy run data get entity @s ActiveEffects[{Id:32}].Amplifier
 execute if entity @s[tag=drain] if score #-- dummy matches 0.. run tag @s add Manadrain
 execute if entity @s[tag=Manadrain] run scoreboard players operation @s Mana -= #-- dummy
 execute if entity @s[tag=Manadrain] unless score @s Mana matches 0.. run scoreboard players set @s Mana 0
@@ -337,8 +337,8 @@ execute if entity @s[tag=drain] unless score #-- dummy matches 0.. run tag @s ad
 execute if entity @s[tag=Healthdrain] run scoreboard players operation #-- dummy *= #-1 counter
 execute if entity @s[tag=Healthdrain] run scoreboard players operation #-- dummy *= @s damageTaken
 execute if entity @s[tag=Healthdrain] run scoreboard players operation #-- dummy /= #100 counter
-execute if entity @s[tag=Healthdrain] if data entity @s {ActiveEffects:[{Id:32b,ShowIcon:0b}]} as @a[tag=hurtBy] run scoreboard players operation #-- dummy *= @s healPower
-execute if entity @s[tag=Healthdrain] if data entity @s {ActiveEffects:[{Id:32b,ShowIcon:0b}]} as @a[tag=hurtBy] run scoreboard players operation #-- dummy /= #100 counter
+execute if entity @s[tag=Healthdrain] if data entity @s {ActiveEffects:[{Id:32,ShowIcon:0b}]} as @a[tag=hurtBy] run scoreboard players operation #-- dummy *= @s healPower
+execute if entity @s[tag=Healthdrain] if data entity @s {ActiveEffects:[{Id:32,ShowIcon:0b}]} as @a[tag=hurtBy] run scoreboard players operation #-- dummy /= #100 counter
 execute if entity @s[tag=Healthdrain] as @a[tag=hurtBy] run scoreboard players operation @s HPheal += #-- dummy
 execute if entity @s[tag=Healthdrain] run tag @s remove Healthdrain
 execute if entity @s[tag=drain] run effect clear @s minecraft:hero_of_the_village
