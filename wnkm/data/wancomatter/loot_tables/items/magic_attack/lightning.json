@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "雷鳴","color":"yellow","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:8 / Cooldown:6","italic":false,"color":"aqua"},
+                  {"text":"天に雷鳴を轟かせ、魔法陣に雷を落とす。","italic":false,"color":"white"},
+                  {"text":"","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:46,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

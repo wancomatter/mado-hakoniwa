@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "纏いし漆黒","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:17 / Cooldown:34","italic":false,"color":"aqua"},
+                  {"text":"自身の周囲を漆黒の魔力の霧で覆い尽くす。","italic":false,"color":"white"},
+                  {"text":"周囲の味方の被ダメージを軽減し、","italic":false,"color":"white"},
+                  {"text":"周囲の敵の移動速度を低下する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:76,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "minecraft:creeper",
+            "nbt": "{Tags:[\"b3ignisStrike_creeper\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/dusk/ehp/s3"
+  }
+}

@@ -1,0 +1,3 @@
+ÀsÒ‚Ì“ª‚ğ—‚Æ‚·‚æI
+—á /execute as @p run loot replace entity @e[type=minecraft:armor_stand,limit=1] armor.head loot wancomatter:player_head
+   ‚±‚ê‚Å@p‚Ì“ª‚ª—‚¿‚Ü‚·

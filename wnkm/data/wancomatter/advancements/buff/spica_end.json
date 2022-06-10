@@ -1,0 +1,27 @@
+{
+  "parent": "wancomatter:buff/spica",
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:94}"
+    },
+    "title": {
+      "text": "スピカ終了"
+    },
+    "description": {
+      "text": "スピカのバフ効果が終了します。"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "netherite_hoe": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:skills/094/buff-end"
+}
+}

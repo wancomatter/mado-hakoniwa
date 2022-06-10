@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "ショートボウ","color": "aqua","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"連射性能に優れた短弓。","italic":false,"color":"gold"},
+                  {"text":"引き絞らずに発射すると矢の速度が上昇。","italic":false,"color":"gold"},
+                  {"text":" 威力 2.3","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:124,Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

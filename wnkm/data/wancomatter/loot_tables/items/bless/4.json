@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_hoe",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "加護:冷却炉","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"クールダウンの時間を15%短縮する。","italic":false,"color":"white"},
+                  {"text":"加護はホットバーに入れる事で自動発動。","italic":false,"color":"light_purple"},
+                  {"text":"同じ加護は2個まで効果が重複する。","italic":false,"color":"dark_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:4,blessItem:1b,Soulbound:1b,AttributeModifiers:[{}],Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

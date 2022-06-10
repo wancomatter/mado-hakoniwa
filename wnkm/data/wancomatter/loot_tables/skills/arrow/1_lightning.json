@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "天雷の矢","color":"yellow","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"天高く打ち上げ、雷で追撃する。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{HideFlags:32,EggArrow:1b,CustomPotionColor:16776960,Enchantments:[{}],lightningArrow:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

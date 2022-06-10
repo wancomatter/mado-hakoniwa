@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "クラフトセイバー","color": "aqua","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"数多のクラフターが魅了された金剛の剣。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-Awakening- MP:13 / Cooldown:25","italic":false,"color":"aqua"},
+                  {"text":"2.5秒間スニークする事で発動。","italic":false,"color":"white"},
+                  {"text":"12秒間、自身の与えるダメージを25%増加。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_speed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": -2.4,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attack_damage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 5,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:100,Awakening:1b,Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

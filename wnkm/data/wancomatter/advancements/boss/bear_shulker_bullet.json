@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "type":{
+            "direct_entity": {
+              "type": "minecraft:shulker_bullet",
+              "nbt": "{Tags:[\"bear_shulker_bullet\"]}"  
+          }
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/bear/dmg_shulker_bullet"
+  }
+}

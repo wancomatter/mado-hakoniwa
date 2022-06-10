@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "吹雪","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:12 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"魔法陣から吹雪を引き起こし、敵を凍らせる。","italic":false,"color":"white"},
+                  {"text":"","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:47,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

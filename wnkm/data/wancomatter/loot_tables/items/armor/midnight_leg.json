@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "漆黒のズボン","color":"dark_gray","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"一撃の重みを重視する為の防具。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP回復速度 -30%","italic":false,"color":"dark_aqua"},
+                  {"text":"物理耐性 +6%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                    "name": "generic.attack_damage",
+                    "attribute": "generic.attack_damage",
+                    "operation": "multiply_base",
+                    "amount": 0.10,
+                    "slot": "legs"
+                  }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.movement_speed",
+                      "attribute": "generic.movement_speed",
+                      "operation": "multiply_base",
+                      "amount": 0.05,
+                      "slot": "legs"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:0},armorResist:6,MPRegen:-30,Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

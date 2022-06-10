@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "rand.1-20",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "amount": {
+                    "min": 1,
+                    "max": 20
+                  },
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{randomItem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

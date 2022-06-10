@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:1,randomStageRand:1b}"
+            }
+          ]
+        },
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:2,randomStageRand:1b}"
+            }
+          ]
+        },
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:3,randomStageRand:1b}"
+            }
+          ]
+        },
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:4,randomStageRand:1b}"
+            }
+          ]
+        },
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:5,randomStageRand:1b}"
+            }
+          ]
+        },
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:6,randomStageRand:1b}"
+            }
+          ]
+        },
+        {"type": "minecraft:item","name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{randomStageID:7,randomStageRand:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

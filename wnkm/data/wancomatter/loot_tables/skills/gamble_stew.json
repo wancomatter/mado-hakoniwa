@@ -1,0 +1,178 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mushroom_stew",
+          "weight":2,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+16 / MP+20 / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の変哲もない普通のキノコシチュー。","italic":false,"color":"white"},
+                  {"text":"水分少なめ。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+              },
+              {
+                "function":"set_nbt",
+                "tag":"{gambleStew:1b,Ungetable:1b}"
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot_soup",
+          "weight":2,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+8 / MP+40 / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の変哲もない普通のビートルートスープ。","italic":false,"color":"white"},
+                  {"text":"シチューではなくスープ。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+              },
+              {
+                "function":"set_nbt",
+                "tag":"{gambleStew:1b,Ungetable:1b}"
+              }
+            ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_stew",
+          "weight":1,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+20 / MP+50 / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"兎肉パワーに溢れる高級シチュー。","italic":false,"color":"white"},
+                  {"text":"野菜が入って栄養バランスがよい。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function":"set_nbt",
+              "tag":"{gambleStew:1b,Ungetable:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight":1,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+?? / MP+?? / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の効果があるかわからないシチュー。","italic":false,"color":"white"},
+                  {"text":"怪しいキノコがたっぷり入っている。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function":"set_nbt",
+              "tag":"{Effects:[{EffectDuration:250,EffectId:1b},{EffectDuration:250,EffectId:5b}],gambleStew:1b,Ungetable:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight":1,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+?? / MP+?? / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の効果があるかわからないシチュー。","italic":false,"color":"white"},
+                  {"text":"怪しいキノコがたっぷり入っている。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function":"set_nbt",
+              "tag":"{Effects:[{EffectDuration:300,EffectId:2b},{EffectDuration:50,EffectId:15b}],gambleStew:1b,Ungetable:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight":1,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+?? / MP+?? / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の効果があるかわからないシチュー。","italic":false,"color":"white"},
+                  {"text":"怪しいキノコがたっぷり入っている。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function":"set_nbt",
+              "tag":"{Effects:[{EffectDuration:1200,EffectId:12b},{EffectDuration:300,EffectId:26b}],gambleStew:1b,Ungetable:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight":1,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+?? / MP+?? / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の効果があるかわからないシチュー。","italic":false,"color":"white"},
+                  {"text":"怪しいキノコがたっぷり入っている。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function":"set_nbt",
+              "tag":"{Effects:[{EffectDuration:1200,EffectId:13b},{EffectDuration:1,EffectId:7b}],gambleStew:1b,Ungetable:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight":1,
+          "functions": [
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"効果: HP+?? / MP+?? / 食事制限:10s","italic":false,"color":"aqua"},
+                  {"text":"何の効果があるかわからないシチュー。","italic":false,"color":"white"},
+                  {"text":"怪しいキノコがたっぷり入っている。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function":"set_nbt",
+              "tag":"{Effects:[{EffectDuration:200,EffectId:19b},{EffectDuration:500,EffectId:20b}],gambleStew:1b,Ungetable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

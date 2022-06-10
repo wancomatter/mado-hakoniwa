@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "純白の服","color":"white","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"箱庭の祝福を受けし服。","italic":false,"color":"gold"},
+                  {"text":"加護の上限個数を4個にする。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"最大HP +3","italic":false,"color":"green"},
+                  {"text":"物理耐性 +10%","italic":false,"color":"blue"},
+                  {"text":"魔法耐性 +10%","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:16777215},maxHP:3,armorResist:10,magicResist:10,blessarm:1b,AttributeModifiers:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

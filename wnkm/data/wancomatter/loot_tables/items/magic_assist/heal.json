@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "癒光","color":"white","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:21 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"視点先に癒やしの光を放ち、","italic":false,"color":"white"},
+                  {"text":"範囲内の味方のHPを10回復する。","italic":false,"color":"white"},
+                  {"text":"自身以外には1.3倍の回復量を与える。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:16,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

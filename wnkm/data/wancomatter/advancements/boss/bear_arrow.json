@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "minecraft:arrow",
+            "nbt": "{Tags:[\"bear_p.s1arrow\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/bear/papa/skill1/hit-arrow"
+  }
+}

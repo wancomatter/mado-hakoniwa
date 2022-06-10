@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "水鉄砲","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力を水弾に変換して発射する魔導兵器。","italic":false,"color":"white"},
+                  {"text":"右クリック長押しで発射可能。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-reload- MP:13 / 装填時間:4.0","italic":false,"color":"aqua"},
+                  {"translate":"弾を使い切るか%sキーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"魔力の弾丸を19発分装填する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:68,Soulbound:1b,Ammo:19,AmmoMax:19,nowAmmoMax:19,Damage:1,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

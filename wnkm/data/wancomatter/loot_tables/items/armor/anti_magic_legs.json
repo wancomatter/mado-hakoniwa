@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "耐魔の腰蓑","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔法に大きな耐性を持つ腰蓑。","italic":false,"color":"gold"},
+                  {"text":"自身の魔力も阻害してしまう。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"最大MP -20","italic":false,"color":"dark_aqua"},
+                  {"text":"MP自然回復量 -0.04","italic":false,"color":"dark_aqua"},
+                  {"text":"物理耐性 +5%","italic":false,"color":"blue"},
+                  {"text":"魔法耐性 +24%","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:5374097},maxMP:-20,armorResist:5,magicResist:24,Enchantments:[{}],AttributeModifiers:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "隼","color": "white","bold":true,"italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"熟練弓兵によって真価を発揮する魔弓。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-リコールショット- MP:2 / Cooldown:0","italic":false,"color":"aqua"},
+                  {"text":"矢を敵に命中させた時、その矢を手元に呼び戻す。","italic":false,"color":"white"},
+                  {"text":"光の矢、天雷の矢、氷霧の矢は呼び戻せない。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":" 威力 2.0","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:123,Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

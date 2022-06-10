@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "自動ボウガン","color": "gold","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"装填速度を犠牲に連射性能を手に入れた。","italic":false,"color":"gold"},
+                  {"text":"発射時に独特のリコイルが発生する。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-自動装填- MP:15 / Cooldown:0","italic":false,"color":"aqua"},
+                  {"text":"持っている矢を全て装填する。","italic":false,"color":"white"},
+                  {"text":"装填した矢が尽きるまで自動的にリロードする。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":" 威力 0.75","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:135,specialChargeCrossbow:1b,Soulbound:1b,bowgun:1b,bowgunCharged:0b,AttributeModifiers:[{}],Unbreakable:1b,HideFlags:5,Enchantments:[{id:\"quick_charge\",lvl:6s}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

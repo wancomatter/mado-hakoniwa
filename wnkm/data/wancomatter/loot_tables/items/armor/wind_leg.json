@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "疾風の腰蓑","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"風のように疾走出来る効果を持つ。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"物理耐性 +6%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.movement_speed",
+                      "attribute": "generic.movement_speed",
+                      "operation": "multiply_base",
+                      "amount": 0.10,
+                      "slot": "legs"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:8439583},armorResist:6,Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

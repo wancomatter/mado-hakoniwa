@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "バリスタ","color": "dark_red","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"クロスボウを巨大化させた攻城兵器。","italic":false,"color":"gold"},
+                  {"text":"複数の敵を貫通してダメージを与える。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-破城の一撃- MP:10 / Cooldown:0","italic":false,"color":"aqua"},
+                  {"text":"矢を2本消費して装填し、ズーム状態に入る。","italic":false,"color":"white"},
+                  {"text":"発射直後に命中すると威力が低下する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":" 威力 2.6","italic":false,"color":"green"},
+                  {"text":" 矢の速度 +100%","italic":false,"color":"dark_aqua"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:132,Enchantments:[{id:\"piercing\",lvl:10s},{id:\"quick_charge\",lvl:6s}],specialChargeCrossbow:1b,Soulbound:1b,ballistaBow:1b,Unbreakable:1b,HideFlags:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

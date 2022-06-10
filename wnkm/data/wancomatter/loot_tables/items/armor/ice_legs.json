@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "氷銀のローブ(下)","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力の出力を補助するローブ。","italic":false,"color":"gold"},
+                  {"text":"炎に弱い弱点を持つ。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"炎上時:被ダメ +40%","italic":false,"color":"red"},
+                  {"text":"最大MP +50","italic":false,"color":"aqua"},
+                  {"text":"MP自然回復量 +0.10","italic":false,"color":"aqua"},
+                  {"text":"魔法攻撃力 +10%","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:11592447},ice_legs:1b,maxMP:50,magicBoost:10,AttributeModifiers:[{}],Enchantments:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

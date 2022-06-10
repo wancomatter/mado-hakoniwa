@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:mushroom_stew"],
+          "nbt": "{gambleStew:1b}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:foods/mushroom_stew"
+  }
+}

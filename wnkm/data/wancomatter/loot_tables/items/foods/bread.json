@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "戦パン","color":"gold","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-リアクティブヒール- / 食事制限:15s","italic":false,"color":"aqua"},
+                  {"text":"食事制限の効果時間中、一度だけ","italic":false,"color":"white"},
+                  {"text":"敵からダメージを受けた時、","italic":false,"color":"white"},
+                  {"text":"そのダメージが1.5倍になるが、HPを13回復する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_spawn_egg",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "矢筒-光の矢","color":"yellow","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:7 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"光の矢を8本取り出す。","italic":false,"color":"white"},
+                  {"text":"効果:発光を11秒与える。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{ArrowEgg:1b,Soulbound:1b,CanPlaceOn:[\"#wancomatter:all_blocks\"],HideFlags:16,EntityTag:{DeathTime:19,Health:0f,Attributes:[{Name:generic.max_health,Base:0}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+scoreboard players add #dummy counter 201
+execute positioned ^ ^ ^0.1 if block ~0.45 ~ ~0.45 #wancomatter:air if block ~-0.45 ~ ~0.45 #wancomatter:air if block ~-0.45 ~ ~-0.45 #wancomatter:air if block ~0.45 ~ ~-0.45 #wancomatter:air if block ~0.45 ~0.95 ~0.45 #wancomatter:air if block ~-0.45 ~0.95 ~0.45 #wancomatter:air if block ~-0.45 ~0.95 ~-0.45 #wancomatter:air if block ~0.45 ~0.95 ~-0.45 #wancomatter:air if block ~0.45 ~1.90 ~0.45 #wancomatter:air if block ~-0.45 ~1.90 ~0.45 #wancomatter:air if block ~-0.45 ~1.90 ~-0.45 #wancomatter:air if block ~0.45 ~1.90 ~-0.45 #wancomatter:air run scoreboard players remove #dummy counter 100
+execute positioned ^ ^ ^0.1 unless entity @e[tag=necro_p2_tp_target,limit=1,distance=..0.4] run scoreboard players remove #dummy counter 100
+execute unless score #dummy counter matches ..30 facing entity @a[tag=target,limit=1] feet run tp @s ~ ~ ~ ~ 0
+execute if score #dummy counter matches ..30 positioned ^ ^ ^0.1 run function wancomatter:boss/necro/phase2/tp3_loop

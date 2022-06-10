@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_portal_frame",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ0-2: 宝具","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ0-2を開く","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:26b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

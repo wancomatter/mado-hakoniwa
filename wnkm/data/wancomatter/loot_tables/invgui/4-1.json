@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:campfire",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ4-1: 攻撃魔法Ⅰ","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ4-1を開く","italic":false,"color":"light_purple"},
+                  [{"text":"Tips: ","italic":false,"color":"aqua"},{"text":"魔法は右クリック1回で効果を発動します。","italic":false,"color":"gold"}]
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:12b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

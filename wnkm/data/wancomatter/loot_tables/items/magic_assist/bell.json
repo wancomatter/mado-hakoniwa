@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "聖鐘","color":"#ffffaa","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:15 / Cooldown:10","italic":false,"color":"aqua"},
+                  {"text":"数秒かけて破魔の力を持つ鐘を鳴らす。","italic":false,"color":"white"},
+                  {"text":"30m内の味方のデバフを取り除き、敵を発光させる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:15,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

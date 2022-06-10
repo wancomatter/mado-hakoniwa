@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "氷渡のブーツ","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"冷気の溢れ出るブーツ。装備者はきっと寒いだろう。","italic":false,"color":"gold"},
+                  {"text":"足元の水を凍結させる効果を持つ。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"魔法攻撃力 +10%","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:11592447},ice_boots:1b,magicBoost:10,AttributeModifiers:[{}],Enchantments:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

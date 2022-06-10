@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [{"text": "散弾率可変式魔導銃","color":"#cccccc","italic":false},{"text": "「硝煙」","color":"#999999","italic":false}]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"散弾率を可変する術式が組み込まれた散弾銃。","italic":false,"color":"white"},
+                  {"text":"スロットの端に寄る程拡散し、中央に寄る程収束する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-reload- MP:20 / 装填時間:6.0","italic":false,"color":"aqua"},
+                  {"translate":"弾を使い切るか%sキーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"魔力の弾丸を4発分装填する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:25,Soulbound:1b,Ammo:4,AmmoMax:4,nowAmmoMax:4,Damage:1,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "type": {
+            "is_projectile": true,
+            "direct_entity": {
+              "type": "minecraft:trident",
+              "nbt": "{Tags:[\"silsTrident\"]}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/sils/trident/lightning"
+  }
+}

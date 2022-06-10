@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "金剛鎧","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"最高峰の物理防御性能を誇る鎧。","italic":false,"color":"gold"},
+                  {"text":"重量がある為、動きが鈍る。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"物理耐性 +30%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                    "name": "generic.movement_speed",
+                    "attribute": "generic.movement_speed",
+                    "operation": "multiply_total",
+                    "amount": -0.18,
+                    "slot": "chest"
+                  }
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Soulbound:1b,armorResist:30,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

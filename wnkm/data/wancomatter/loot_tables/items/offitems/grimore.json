@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "グリモワール","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"オフハンドに持つ事で魔法攻撃力を上昇させる本。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP回復速度 +15%","italic":false,"color":"aqua"},
+                  {"text":"魔法攻撃力 +15%","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{MPRegen:15,Enchantments:[{}],handAttributes:1b,magicBoost:15,Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "氷柱","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:6 / Cooldown:6","italic":false,"color":"aqua"},
+                  {"text":"氷の棘を飛ばして攻撃。","italic":false,"color":"white"},
+                  {"text":"壁や天井に当てると氷柱の罠となる。","italic":false,"color":"white"},
+                  {"text":"氷柱の罠は敵や飛び道具に反応して射出される。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:3,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

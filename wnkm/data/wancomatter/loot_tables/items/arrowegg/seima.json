@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:witch_spawn_egg",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "矢筒-制魔の矢","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:15 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"制魔の矢を8本取り出す。","italic":false,"color":"white"},
+                  {"text":"効果:MPを4吸収する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{ArrowEgg:1b,Soulbound:1b,CanPlaceOn:[\"#wancomatter:all_blocks\"],HideFlags:16,EntityTag:{DeathTime:19,Health:0f,Attributes:[{Name:generic.max_health,Base:0}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

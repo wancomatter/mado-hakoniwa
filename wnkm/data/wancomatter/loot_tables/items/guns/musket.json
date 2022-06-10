@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "マスケット銃","color":"gray","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:4 / Cooldown:2.5","italic":false,"color":"aqua"},
+                  {"text":"扱いやすいが精度の良くない単発銃。","italic":false,"color":"white"},
+                  {"text":"近接武器としても使用可能。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_speed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": -2.6,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attack_damage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 3.0,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:67,Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

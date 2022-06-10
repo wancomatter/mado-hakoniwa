@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "共鳴","color":"light_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:7 / Cooldown:14","italic":false,"color":"aqua"},
+                  {"text":"自身のエフェクト効果を周囲の敵と共有する。","italic":false,"color":"white"},
+                  {"text":"スニークして発動すると周囲の味方と共有する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"※非対象:衝撃吸収、火炎耐性、水中呼吸、イルカの好意、食事制限","italic":false,"color":"red"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:73,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

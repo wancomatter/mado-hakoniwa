@@ -1,0 +1,2 @@
+execute unless data entity @s {Fire:-1s} run data merge entity @s {Fire:-1s}
+execute if entity @e[type=arrow,limit=1,nbt={CustomPotionColor:11141294}] as @e[type=arrow,limit=1,nbt={CustomPotionColor:11141294}] run data merge entity @s {CustomPotionColor:11141290,life:1200s}

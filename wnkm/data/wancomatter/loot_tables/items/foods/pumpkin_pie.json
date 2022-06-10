@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "魔染π","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP+10 / 食事制限:30s","italic":false,"color":"aqua"},
+                  {"text":"膨大な魔力を注がれ作られたパイのような何か。","italic":false,"color":"white"},
+                  {"text":"20秒間、MPの自然回復速度を+100%する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

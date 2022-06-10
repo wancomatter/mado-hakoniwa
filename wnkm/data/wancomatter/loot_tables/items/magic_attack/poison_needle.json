@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "毒針","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:7 / Cooldown:7","italic":false,"color":"aqua"},
+                  {"text":"毒針を飛ばし、敵に毒状態を与える。","italic":false,"color":"white"},
+                  {"text":"既に毒の敵には与えるダメージが上昇する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:85,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

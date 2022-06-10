@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:pumpkin_pie"],
+          "nbt": "{Soulbound:1b}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:foods/using_item/pumpkin_pie"
+  }
+}

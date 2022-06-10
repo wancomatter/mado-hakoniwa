@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "風迅","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:8 / Cooldown:13","italic":false,"color":"aqua"},
+                  {"text":"自身の背後に風の衝撃波を起こし、","italic":false,"color":"white"},
+                  {"text":"正面に高速で移動する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:57,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

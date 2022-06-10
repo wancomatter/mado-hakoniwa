@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "ハダル","color":"#989898","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:5 / Cooldown:7","italic":false,"color":"aqua"},
+                  {"text":"3秒間透明化し移動速度が上昇。","italic":false,"color":"white"},
+                  {"text":"","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:22,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b,star_magic:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

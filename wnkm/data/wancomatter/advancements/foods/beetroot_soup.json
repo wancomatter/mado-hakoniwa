@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:beetroot_soup"],
+          "nbt": "{gambleStew:1b}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:foods/beetroot_soup"
+  }
+}

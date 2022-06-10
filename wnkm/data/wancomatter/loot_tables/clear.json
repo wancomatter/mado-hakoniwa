@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 36,
+      "entries": [
+        {"type": "minecraft:item","name": "minecraft:air"}
+      ]
+    }
+  ]
+}

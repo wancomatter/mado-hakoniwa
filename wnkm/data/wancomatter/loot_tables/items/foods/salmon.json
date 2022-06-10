@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "生鮭","color":"red","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP+10 / 食事制限:30s","italic":false,"color":"aqua"},
+                  {"text":"自然界のエネルギーに溢れた鮭。","italic":false,"color":"white"},
+                  {"text":"20秒間、HP自然回復速度+20%、自然回復量+1.5。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

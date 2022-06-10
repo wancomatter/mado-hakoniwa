@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "水廻の服","color":"blue","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力回路の調律を補助する防具。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"物理耐性 +4%","italic":false,"color":"blue"},
+                  {"text":"魔法耐性 +4%","italic":false,"color":"light_purple"},
+                  {"text":"クールダウン短縮:12%","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:3847130},armorResist:5,magicResist:5,CTCut:120,Enchantments:[{}],AttributeModifiers:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

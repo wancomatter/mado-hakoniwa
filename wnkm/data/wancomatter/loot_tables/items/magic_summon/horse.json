@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "疾風馬","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:24 / Cooldown:7 / 死亡時Cooldown:20","italic":false,"color":"aqua"},
+                  {"text":"その場に馬を召喚する。","italic":false,"color":"white"},
+                  {"text":""},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-風の導き- MP:10 / Cooldown:7","italic":false,"color":"aqua"},
+                  {"text":"召喚した馬がいる状態で使用して発動。","italic":false,"color":"white"},
+                  {"text":"5秒間だけ馬の移動速度を上昇させる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:1 / Cooldown:20","italic":false,"color":"aqua"},
+                  {"translate":"ドロップ(%s)キーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"召喚した馬をキルする。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:33,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_summon:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

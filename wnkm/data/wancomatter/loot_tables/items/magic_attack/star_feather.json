@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "星翔の羽","color":"#FF6B63","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:10 / Cooldown:10","italic":false,"color":"aqua"},
+                  {"text":"星間を翔ける羽の力で飛翔し、","italic":false,"color":"white"},
+                  {"text":"軌跡には星々が降り注ぐ。","italic":false,"color":"white"},
+                  {"text":"ホットバーにある星の名を持つ魔法の数だけ、","italic":false,"color":"white"},
+                  {"text":"消費MPが10、Cooldownが5加算されて強くなる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:18,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b,star_magic:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [{"text": "天","color":"red","italic":false},{"text": "の","color":"yellow","italic":false},{"text": "印","color":"green","italic":false},{"text": "章","color":"blue","italic":false}]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:35 / Cooldown:30","italic":false,"color":"aqua"},
+                  {"text":"周囲の味方に天の印章のバフを付与する。","italic":false,"color":"white"},
+                  {"text":"受けているバフの数だけダメージが15%上昇する。","italic":false,"color":"white"},
+                  {"text":"ただし、天の印章のバフはカウントされない。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:91,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

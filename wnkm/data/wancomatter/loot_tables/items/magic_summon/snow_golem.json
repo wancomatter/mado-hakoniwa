@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "雪だるま伯爵","color":"white","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:15 / Cooldown:10 / 死亡時Cooldown:10","italic":false,"color":"aqua"},
+                  {"text":"その場に雪だるま伯爵を召喚する。","italic":false,"color":"white"},
+                  {"text":"一定時間後、雪だるま伯爵の仮面が剥がれ、","italic":false,"color":"white"},
+                  {"text":"奇怪な声を放ち、闇のオーラを纏って機能開始。","italic":false,"color":"white"},
+                  {"text":"周囲の敵に雪玉を雨のように投げて攻撃する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:1 / Cooldown:4","italic":false,"color":"aqua"},
+                  {"translate":"ドロップ(%s)キーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"召喚した雪だるま伯爵をキルする。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:79,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_summon:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

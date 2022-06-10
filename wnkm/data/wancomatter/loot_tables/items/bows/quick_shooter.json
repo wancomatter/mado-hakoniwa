@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "クイックシューター","color": "aqua","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"高速で矢を装填出来る超小型の射撃武器。","italic":false,"color":"gold"},
+                  {"text":" 威力 2.5","italic":false,"color":"green"},
+                  {"text":" 矢の速度 -35%","italic":false,"color":"dark_aqua"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:131,Enchantments:[{id:\"piercing\",lvl:1s},{id:\"quick_charge\",lvl:4s}],Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

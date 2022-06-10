@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {"type": "player"}
+      }
+    }
+  }
+}

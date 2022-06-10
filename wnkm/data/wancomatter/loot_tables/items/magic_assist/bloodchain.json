@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "血鎖","color":"dark_red","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-BloodChain- MP:8 / Cooldown:9","italic":false,"color":"aqua"},
+                  {"text":"血の鎖を纏い、防御の構えを取る。","italic":false,"color":"white"},
+                  {"text":"発動から0.7秒以内に攻撃を受けた時、","italic":false,"color":"white"},
+                  {"text":"攻撃を無効化し攻撃した敵に瞬間移動する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:77,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

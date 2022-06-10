@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "成金のニンジン","color":"gold","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"HP+5 / MP+5 / 食事制限:22s","italic":false,"color":"aqua"},
+                  {"text":"金箔を貼っただけのただのニンジン。","italic":false,"color":"white"},
+                  {"text":"9秒間、最大HPの5%分だけダメージを軽減する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

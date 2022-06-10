@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "爆弾","color":"gold","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:6 / Cooldown:8","italic":false,"color":"aqua"},
+                  {"text":"設置式の爆弾を召喚する。","italic":false,"color":"white"},
+                  {"text":"再度右クリックで起爆する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-透明地雷- MP:6","italic":false,"color":"aqua"},
+                  {"text":"近くに爆弾がある時、2.5秒スニークで発動。","italic":false,"color":"white"},
+                  {"text":"近くの自身の爆弾を透明地雷に変化させる。","italic":false,"color":"white"},
+                  {"text":"透明地雷は起爆出来ず、敵に反応して爆発する。","italic":false,"color":"white"},
+                  {"text":"このスキルはCooldown中も発動可能。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:30,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_summon:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "スライディングブーツ","color":"#835432","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-スムーズに移動できます。- MP:2 / Cooldown:1.5","italic":false,"color":"aqua"},
+                  {"text":"地上でスニークする事で発動。","italic":false,"color":"white"},
+                  {"text":"スライディングする。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:8606770},AttributeModifiers:[{}],sliding_boots:1b,Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

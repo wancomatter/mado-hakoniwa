@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "真空波","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:4 / Cooldown:1","italic":false,"color":"aqua"},
+                  {"text":"真空で形作られた刃を飛ばして攻撃。","italic":false,"color":"white"},
+                  {"text":"右クリック1回目でチャージし、","italic":false,"color":"white"},
+                  {"text":"2回目でチャージ時間に応じた威力で発射。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:20,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

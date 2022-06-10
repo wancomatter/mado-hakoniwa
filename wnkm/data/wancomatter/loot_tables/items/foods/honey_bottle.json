@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "はちみつドリンク","color":"yellow","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP+15 / 食事制限:40s","italic":false,"color":"aqua"},
+                  {"text":"はちみつパワーが凝縮した飲料。","italic":false,"color":"white"},
+                  {"text":"25秒間、攻撃力上昇2(与ダメージ1.2倍)を得る。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

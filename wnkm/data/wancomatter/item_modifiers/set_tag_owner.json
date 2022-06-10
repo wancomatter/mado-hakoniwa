@@ -1,0 +1,11 @@
+{
+  "function": "copy_nbt",
+  "ops": [
+    {
+      "source": "UUID",
+      "target": "Owner",
+      "op": "replace"
+    }
+  ],
+  "source": "this"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ7-1: 食料","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ7-1を開く","italic":false,"color":"light_purple"},
+                  [{"text":"※注意：","italic":false,"color":"red"},{"text":"食事をすると食事制限エフェクトを受けます。","italic":false,"color":"gold"}],
+                  {"text":"食事制限中は食事を行っても効果が反映されません。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:15b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

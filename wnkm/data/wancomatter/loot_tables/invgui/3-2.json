@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ3-2: 防具Ⅱ","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ3-2を開く","italic":false,"color":"light_purple"},
+                  [{"text":"Tips: ","italic":false,"color":"aqua"},{"translate":"攻撃力%s%sは近接攻撃にのみ反映されます。","italic":false,"color":"gold","with":[{"text":"+","color":"blue"},{"text":"-","color":"red"}]}]
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:20b,invGUIitem:1b,AttributeModifiers:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

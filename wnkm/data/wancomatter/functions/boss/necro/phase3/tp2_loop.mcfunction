@@ -1,0 +1,4 @@
+scoreboard players add @s counter 100
+execute positioned ^ ^ ^-0.1 if block ~0.45 ~ ~0.45 #wancomatter:air if block ~-0.45 ~ ~0.45 #wancomatter:air if block ~-0.45 ~ ~-0.45 #wancomatter:air if block ~0.45 ~ ~-0.45 #wancomatter:air if block ~0.45 ~0.95 ~0.45 #wancomatter:air if block ~-0.45 ~0.95 ~0.45 #wancomatter:air if block ~-0.45 ~0.95 ~-0.45 #wancomatter:air if block ~0.45 ~0.95 ~-0.45 #wancomatter:air if block ~0.45 ~1.90 ~0.45 #wancomatter:air if block ~-0.45 ~1.90 ~0.45 #wancomatter:air if block ~-0.45 ~1.90 ~-0.45 #wancomatter:air if block ~0.45 ~1.90 ~-0.45 #wancomatter:air run scoreboard players remove @s counter 99
+execute unless score @s counter matches ..20 run tp @e[tag=necro] ~ ~ ~ ~ 0
+execute if score @s counter matches ..20 positioned ^ ^ ^-0.1 run function wancomatter:boss/necro/phase3/tp2_loop

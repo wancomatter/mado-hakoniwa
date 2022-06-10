@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "黒憐","color": "dark_purple","bold": true,"italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"闇の眷属に代々伝わる秘刀。","italic":false,"color":"dark_purple"},
+                  {"text":"スニーク中に右クリックでスキルを発動する。","italic":false,"color":"dark_purple"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-居合- MP:5 / Cooldown:8","italic":false,"color":"aqua"},
+                  {"text":"居合の構えを取り、正面に切り込んで攻撃。","italic":false,"color":"white"},
+                  {"text":"スニークを長押しする程に射程が伸びる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_damage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 3.0,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:104,Soulbound:1b,Unbreakable:1b,HideFlags:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

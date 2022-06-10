@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:anvil",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "加護:コンボパワー","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"攻撃を当てる毎に次のダメージが8%増加する。最大3重。","italic":false,"color":"white"},
+                  {"text":"コンボパワーを2個所持している場合は最大6重まで増加。","italic":false,"color":"white"},
+                  {"text":"攻撃を2.0秒以内に当て続ける限り効果は持続する。","italic":false,"color":"white"},
+                  {"text":"加護はホットバーに入れる事で自動発動。","italic":false,"color":"light_purple"},
+                  {"text":"同じ加護は2個まで効果が重複する。","italic":false,"color":"dark_purple"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "unstackable",
+                      "attribute": "generic.follow_range",
+                      "operation": "addition",
+                      "amount": 0.1,
+                      "slot": "chest"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:23,blessItem:1b,Soulbound:1b,Unbreakable:1b,HideFlags:6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

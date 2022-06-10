@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:91}"
+    },
+    "title": {
+      "text": "受けている特殊バフ一覧"
+    },
+    "description": {
+      "text": "特殊な装備を使用する事によって受けた固有バフ。"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/e3/background.png"
+  },
+  "criteria": {
+    "netherite_hoe": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

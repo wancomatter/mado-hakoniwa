@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ0-1: 加護","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ0-1を開く","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:17b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "STM-110","color":"white","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"ストロングムーブの体現者。","italic":false,"color":"white"},
+                  {"text":"右クリック長押しで発射可能。","italic":false,"color":"white"},
+                  {"text":"手に持ちスニークすると移動速度が低下する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-reload- MP:15 / 装填時間:5.0","italic":false,"color":"aqua"},
+                  {"translate":"弾を使い切るか%sキーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"魔力の弾丸を12発分装填する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:72,Soulbound:1b,Ammo:12,AmmoMax:12,nowAmmoMax:12,Damage:1,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

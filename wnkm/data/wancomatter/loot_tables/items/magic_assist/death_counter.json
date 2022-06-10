@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "死返死","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:4 / Cooldown:6","italic":false,"color":"aqua"},
+                  {"text":"1.0秒を受付時間とする死への叛逆の構えをとり、","italic":false,"color":"white"},
+                  {"text":"死亡する程のダメージを受けた時に以下の効果を発動する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:変動 / Cooldown:20","italic":false,"color":"aqua"},
+                  {"text":"受けたダメージ量(小数点以下切り捨て)だけMPを消費し、","italic":false,"color":"white"},
+                  {"text":"攻撃してきたプレイヤーにダメージを防御貫通で返して反撃。","italic":false,"color":"white"},
+                  {"text":"また、受けたダメージ量だけ自身のHPを回復する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:60,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "流星群","color":"gold","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:45 / Cooldown:60","italic":false,"color":"aqua"},
+                  {"text":"前方に隕石の破片を投擲し、","italic":false,"color":"white"},
+                  {"text":"その周囲に大量の流星群を飛来させる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:78,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b,star_magic:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

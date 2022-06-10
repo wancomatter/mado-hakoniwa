@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "シリウス","color":"#B7FFEF","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:30 / Cooldown:30","italic":false,"color":"aqua"},
+                  {"text":"光り輝く犬を前方に飛ばし、金剛大河を作り出す。","italic":false,"color":"white"},
+                  {"text":"金剛大河は敵を傷付け、味方の移動速度を上昇させる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:11,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b,star_magic:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

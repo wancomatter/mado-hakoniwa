@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "榴弾の矢","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"着弾地点を爆破する矢。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionColor:43520,HideFlags:32,EggArrow:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

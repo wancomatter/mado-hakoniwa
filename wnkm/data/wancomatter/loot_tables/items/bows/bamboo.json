@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "竹弓","color": "yellow","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"大きな竹で作られた長射程の長弓。","italic":false,"color":"gold"},
+                  {"text":" 威力 1.7","italic":false,"color":"green"},
+                  {"text":" 矢の速度 +30%","italic":false,"color":"dark_aqua"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:121,Soulbound:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

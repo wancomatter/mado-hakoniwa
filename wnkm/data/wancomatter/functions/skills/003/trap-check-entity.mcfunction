@@ -1,0 +1,3 @@
+scoreboard players add #dummy subcounter 1
+execute positioned ~-1.8 ~-0.92 ~-1.8 as @e[dx=2.6,dy=2.6,dz=2.6,tag=!traped-icicle,type=!area_effect_cloud,tag=!damage_indicator,tag=!stable,tag=!noMob] unless score @s teamNumber = #dummy teamNumber run scoreboard players set #dummy subcounter 112
+execute unless score #dummy subcounter matches 51.. positioned ^ ^ ^1 if block ~ ~ ~ #wancomatter:air run function wancomatter:skills/003/trap-check-entity

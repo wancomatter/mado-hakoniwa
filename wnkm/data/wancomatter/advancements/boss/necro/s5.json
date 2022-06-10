@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "minecraft:creeper",
+            "nbt": "{Tags:[\"necro_s5_explosion\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/necro/ehp/s5"
+  }
+}

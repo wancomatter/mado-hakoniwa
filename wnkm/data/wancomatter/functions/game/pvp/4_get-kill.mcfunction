@@ -1,0 +1,17 @@
+execute if entity @s[team=Red] run scoreboard players add Red info 1
+execute if entity @s[team=Aqua] run scoreboard players add Aqua info 1
+execute if entity @s[team=Yellow] run scoreboard players add Yellow info 1
+execute if entity @s[team=Green] run scoreboard players add Green info 1
+execute if entity @s[team=Purple] run scoreboard players add Purple info 1
+execute if entity @s[team=White] run scoreboard players add White info 1
+execute if entity @s[team=Black] run scoreboard players add Black info 1
+execute if entity @s[team=Blue] run scoreboard players add Blue info 1
+execute if entity @s[team=Pink] run scoreboard players add Pink info 1
+execute if entity @s[team=Gold] run scoreboard players add Gold info 1
+execute if entity @s[team=Gray] run scoreboard players add Gray info 1
+execute if entity @s[team=DarkRed] run scoreboard players add DarkRed info 1
+execute if entity @s[team=DarkAqua] run scoreboard players add DarkAqua info 1
+execute if entity @s[team=DarkGreen] run scoreboard players add DarkGreen info 1
+execute if entity @s[team=DarkBlue] run scoreboard players add DarkBlue info 1
+execute if entity @s[team=DarkGray] run scoreboard players add DarkGray info 1
+execute if entity @s[team=battleroyal] run scoreboard players add @s info 1

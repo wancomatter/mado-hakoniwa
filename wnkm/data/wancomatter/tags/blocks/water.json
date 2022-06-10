@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:bubble_column",
+    "#minecraft:underwater_bonemeals"
+  ]
+}

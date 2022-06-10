@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "白の盾","color":"white","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"物理攻撃の防御に長けた盾。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"ダメージ遮断率:80%","italic":false,"color":"green"},
+                  {"text":"物理耐性 +5%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{shieldBlockAmount:-80d,handAttributes:1b,armorResist:5,BlockEntityTag:{Base:0,Patterns:[{Pattern:gru,Color:8},{Pattern:bo,Color:7}]},Soulbound:1b,Unbreakable:1b,HideFlags:36}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

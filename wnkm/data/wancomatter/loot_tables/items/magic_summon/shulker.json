@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "シュルカータレット","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:15 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"その場にシュルカーを召喚する。","italic":false,"color":"white"},
+                  {"text":"シュルカーは付近の敵を自動的に攻撃する。","italic":false,"color":"white"},
+                  {"text":"最大3体まで召喚可能。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:28,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_summon:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

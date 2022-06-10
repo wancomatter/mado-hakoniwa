@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "minecraft:arrow",
+            "nbt": "{Tags:[\"b2lance\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/dusk/ehp/s1"}
+}

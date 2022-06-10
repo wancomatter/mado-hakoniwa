@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "黒の盾","color":"dark_gray","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔法攻撃の防御に長けた盾。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-自動障壁- MP:10 / Cooldown:10","italic":false,"color":"aqua"},
+                  {"text":"オフハンドに持つ事で発動。","italic":false,"color":"white"},
+                  {"text":"魔法攻撃を一度だけ防ぐ障壁を展開する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"ダメージ遮断率:40%","italic":false,"color":"green"},
+                  {"text":"魔法耐性 +5%","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{shieldBlockAmount:-40d,handAttributes:1b,magicResist:5,BlackShield:1b,BlockEntityTag:{Base:0,Patterns:[{Pattern:gra,Color:15},{Pattern:gru,Color:15},{Pattern:sc,Color:15}]},Soulbound:1b,Unbreakable:1b,HideFlags:36}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

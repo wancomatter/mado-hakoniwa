@@ -1,0 +1,2 @@
+tellraw @a [{"text":"--- ","color":"gray"},{"text":"＊ 与ダメージランキング ＊","color":"yellow"},{"text":" --- ","color":"gray"},{"text":"(10位まで表示)","color":"dark_gray"}]
+playsound minecraft:entity.player.levelup master @a 0 -100 0 0 0.5 1

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "騎士の盾","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"攻撃性能のある盾。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-シールドバッシュ- MP:8 / Cooldown:4.5","italic":false,"color":"aqua"},
+                  {"text":"オフハンドに持ちスニークで発動。","italic":false,"color":"white"},
+                  {"text":"正面の敵を盾で叩きつけ、敵を吹き飛ばし、","italic":false,"color":"white"},
+                  {"text":"少しだけ移動速度低下と弱体化を付与する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"ダメージ遮断率:50%","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{shieldBlockAmount:-50d,KnightShield:1b,CustomModelData:95,BlockEntityTag:{Base:0,Patterns:[{Pattern:gra,Color:8},{Pattern:gru,Color:8},{Pattern:sc,Color:11}]},Soulbound:1b,Unbreakable:1b,HideFlags:36}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

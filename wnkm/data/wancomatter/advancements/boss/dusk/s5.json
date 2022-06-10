@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "minecraft:fireball",
+            "nbt": "{Tags:[\"b3blaze_crash_fireball\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:boss/dusk/ehp/s5"
+  }
+}

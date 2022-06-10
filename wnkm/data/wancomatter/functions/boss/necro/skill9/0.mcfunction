@@ -1,0 +1,18 @@
+scoreboard players set @s Cooldown9 170
+tag @s add usedskill
+execute as @e[tag=necro_stand,tag=!necro_stand_b] run function wancomatter:boss/necro/pose_first
+execute as @e[tag=necro_stand,tag=!necro_stand_b] run scoreboard players set @s counter 10
+
+execute as @e[tag=necro_stand_r] run scoreboard players add @s Cooldown4 135
+execute as @e[tag=necro_stand_r] run scoreboard players add @s Cooldown5 40
+execute as @e[tag=necro_stand_r] run scoreboard players add @s Cooldown6 0
+
+execute as @e[tag=necro_stand_l] run scoreboard players add @s Cooldown4 135
+execute as @e[tag=necro_stand_l] run scoreboard players remove @s Cooldown5 40
+execute as @e[tag=necro_stand_l] run scoreboard players add @s Cooldown6 0
+
+playsound minecraft:entity.evoker.prepare_attack master @a ~ ~ ~ 4 2
+playsound minecraft:item.armor.equip_generic master @a ~ ~ ~ 4 1
+
+scoreboard players set @s Cooldown9 120
+scoreboard players set @s Cooldown9_max 40

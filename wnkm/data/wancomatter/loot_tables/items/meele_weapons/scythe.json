@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "黄泉鎌","color": "dark_purple","italic": false,"bold":true}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"この世ならざる者のもたらす根源への恐怖の具現化。","italic":false,"color":"dark_purple"},
+                  {"text":"右クリック長押しで特殊攻撃を発動する。","italic":false,"color":"dark_purple"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-薙ぎ払い- MP:3 / Cooldown:2.5","italic":false,"color":"aqua"},
+                  {"text":"前方を薙ぎ払って攻撃する。","italic":false,"color":"white"},
+                  {"text":"薙ぎ払いで敵プレイヤーをキルした時、","italic":false,"color":"white"},
+                  {"text":"全装備のクールダウンを全回復する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_speed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": -3.0,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attack_damage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 7,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:114,Soulbound:1b,Unbreakable:1b,HideFlags:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

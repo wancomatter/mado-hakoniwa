@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:salmon"],
+          "nbt": "{Soulbound:1b}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:foods/salmon"
+  }
+}

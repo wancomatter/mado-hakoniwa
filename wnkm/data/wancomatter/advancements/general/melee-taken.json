@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": false
+          }
+        }
+      }
+    }
+  }
+}

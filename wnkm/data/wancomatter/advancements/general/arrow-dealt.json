@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": true
+          }
+        }
+      }
+    }
+  }
+}

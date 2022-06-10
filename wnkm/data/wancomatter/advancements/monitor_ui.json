@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "slime",
+          "nbt": "{Tags:[\"monitorUIslime\"]}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:crossbow"
+          ],
+          "nbt": "{Enchantments:[{id:\"quick_charge\",lvl:6s}]}"
+        }
+      }
+    }
+  }
+}

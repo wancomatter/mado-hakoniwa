@@ -1,0 +1,1 @@
+execute unless entity @a[limit=1,team=!,team=!z_spectate] run function wancomatter:game/timeover/judge

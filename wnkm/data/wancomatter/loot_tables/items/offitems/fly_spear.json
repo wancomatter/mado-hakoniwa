@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "飛来槍","color": "white","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"メインハンドに無骨槍を持っている時、","italic":false,"color":"white"},
+                  {"text":"オフハンドに持つ事で以下のスキルを得る。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-吹き飛べ！ - MP:11 / Cooldown:5.5","italic":false,"color":"aqua"},
+                  {"text":"スニーク1秒から右クリックで発動。","italic":false,"color":"white"},
+                  {"text":"前方に飛ぶ刺突を放つ。命中した敵は吹き飛ぶ。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_speed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "multiply_base",
+                      "amount": 0.1,
+                      "slot": "offhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:107,Soulbound:1b,Unbreakable:1b,HideFlags:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

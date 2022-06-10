@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanting_table",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ5-1: 補助魔法","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ5-1を開く","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:13b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

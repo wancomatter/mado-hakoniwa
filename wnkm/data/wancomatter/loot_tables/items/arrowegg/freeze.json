@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:drowned_spawn_egg",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "矢筒-氷霧の矢","color":"aqua","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:11 / Cooldown:12","italic":false,"color":"aqua"},
+                  {"text":"氷霧の矢を1本取り出す。","italic":false,"color":"white"},
+                  {"text":"効果:着弾点を氷霧で冷やして持続攻撃。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{ArrowEgg:1b,Soulbound:1b,CanPlaceOn:[\"#wancomatter:all_blocks\"],HideFlags:16,EntityTag:{DeathTime:19,Health:0f,Attributes:[{Name:generic.max_health,Base:0}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

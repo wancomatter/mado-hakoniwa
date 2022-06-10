@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:rabbit_stew"],
+          "nbt": "{gambleStew:1b}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"wancomatter:foods/using_item/rabbit_stew"
+  }
+}

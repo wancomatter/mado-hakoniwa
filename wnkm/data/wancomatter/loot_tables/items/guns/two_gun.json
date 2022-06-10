@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "二連装魔銃","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力の塊を二分割して発射する特殊な銃。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-reload- MP:5 / 装填時間:1.2","italic":false,"color":"aqua"},
+                  {"translate":"弾を使い切るか%sキーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"魔力の弾丸を2発分装填する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:86,Soulbound:1b,Ammo:2,AmmoMax:2,nowAmmoMax:2,Damage:1,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

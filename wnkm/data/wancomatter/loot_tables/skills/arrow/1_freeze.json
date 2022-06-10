@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "氷霧の矢","color":"aqua","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"着弾点を氷霧で冷やして持続攻撃。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionColor:5614335,HideFlags:32,EggArrow:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

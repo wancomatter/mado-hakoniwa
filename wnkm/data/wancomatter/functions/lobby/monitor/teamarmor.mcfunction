@@ -1,0 +1,4 @@
+kill @e[tag=monitorUI]
+execute positioned 0 67.725 0 rotated 150 0 run summon minecraft:item ^ ^ ^2 {CustomName:'{"text":"キャンセル","color":"aqua"}',Tags:["monitorUI","monitorUIcancel"],Item:{id:"minecraft:redstone_torch",Count:1b},NoGravity:1b,Age:-32768s,PickupDelay:-1s,CustomNameVisible:0b,Invulnerable:1b}
+execute positioned 0 67.725 0 rotated 180 0 run summon minecraft:item ^ ^ ^2 {CustomName:'{"text":"有効","color":"aqua"}',Tags:["monitorUI","monitorUI14-0","monitorUIfocusing"],Item:{id:"minecraft:red_dye",Count:1b},NoGravity:1b,Age:-32768s,PickupDelay:-1s,CustomNameVisible:1b,Glowing:1b,Invulnerable:1b}
+execute positioned 0 67.725 0 rotated 210 0 run summon minecraft:item ^ ^ ^2 {CustomName:'{"text":"無効","color":"aqua"}',Tags:["monitorUI","monitorUI14-1"],Item:{id:"minecraft:white_dye",Count:1b},NoGravity:1b,Age:-32768s,PickupDelay:-1s,CustomNameVisible:0b,Invulnerable:1b}

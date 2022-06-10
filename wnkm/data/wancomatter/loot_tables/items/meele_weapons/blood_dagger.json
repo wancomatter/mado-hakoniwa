@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "血濡られたダガー","color": "dark_red","underlined": true,"italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力を帯びた血に濡れた短剣。","italic":false,"color":"red"},
+                  {"text":"敵を背後から近接攻撃するとダメージが2.0倍になる。","italic":false,"color":"red"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-投擲- MP:6 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"前方にダガーを投擲する。","italic":false,"color":"white"},
+                  {"text":"投げたダガーを回収する事でCooldownを75%短縮。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_speed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": -2.0,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attack_damage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 3.5,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:106,Soulbound:1b,Unbreakable:1b,HideFlags:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:soul_campfire",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ4-2: 攻撃魔法Ⅱ","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ4-2を開く","italic":false,"color":"light_purple"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:21b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

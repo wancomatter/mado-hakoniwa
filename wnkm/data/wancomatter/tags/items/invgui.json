@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_sword",
+    "minecraft:bow",
+    "minecraft:shield",
+    "minecraft:diamond_helmet",
+    "minecraft:golden_helmet",
+    "minecraft:campfire",
+    "minecraft:soul_campfire",
+    "minecraft:lantern",
+    "minecraft:enchanting_table",
+    "minecraft:lectern",
+    "minecraft:spawner",
+    "minecraft:carrot_on_a_stick",
+    "minecraft:apple",
+    "minecraft:nether_star",
+    "minecraft:beacon",
+    "minecraft:end_portal_frame"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "超回復","color":"#EEEEEE","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:0 / Cooldown:1","italic":false,"color":"aqua"},
+                  {"text":"HPとMPとCTを全回復する究極魔法。","italic":false,"color":"white"},
+                  {"text":"デバッグ用","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:2147483647,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b,star_magic:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

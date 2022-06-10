@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "金剛脚鎧","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"最高峰の物理防御性能を誇る脚鎧。","italic":false,"color":"gold"},
+                  {"text":"重量がある為、動きが鈍る。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"物理耐性 +24%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                    "name": "generic.movement_speed",
+                    "attribute": "generic.movement_speed",
+                    "operation": "multiply_total",
+                    "amount": -0.12,
+                    "slot": "legs"
+                  }
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{armorResist:24,Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

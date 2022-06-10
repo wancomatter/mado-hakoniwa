@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "火蜥蜴の腰蓑","color":"red","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"火蜥蜴の毛皮を使った防具。","italic":false,"color":"gold"},
+                  {"text":"炎上と爆発のダメージに耐性を持つ。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"物理耐性 +15%","italic":false,"color":"blue"},
+                  {"text":"火炎耐性 +30%","italic":false,"color":"blue"},
+                  {"text":"爆発耐性 +30%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{color:11546150},armorResist:15,fireResist:30,blastResist:30,AttributeModifiers:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

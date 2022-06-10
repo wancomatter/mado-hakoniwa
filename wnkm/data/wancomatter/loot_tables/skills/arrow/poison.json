@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "猛毒の矢","color":"dark_green","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"強力な毒が塗られた矢。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:19b,Amplifier:1b,Duration:84}],CustomPotionColor:43521,HideFlags:32,EggArrow:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

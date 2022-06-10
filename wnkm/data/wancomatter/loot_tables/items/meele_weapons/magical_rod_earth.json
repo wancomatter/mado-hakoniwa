@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"マジカルロッド -土","italic":false,"color":"gold"}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力を込めて特殊な効果で殴れる杖。","italic":false,"color":"light_purple"},
+                  {"text":"攻撃する度にMPを1消費する。","italic":false,"color":"light_purple"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-マジカルチェンジ- MP:1 / Cooldown:0","italic":false,"color":"aqua"},
+                  {"text":"杖の属性を書き換える。","italic":false,"color":"white"},
+                  [{"text":"土","italic":false,"color":"gold"},{"text":"->","color":"white"},{"text":"火","italic":false,"color":"red"},{"text":"->","color":"white"},{"text":"氷","italic":false,"color":"aqua"},{"text":"->","color":"white"},{"text":"風","italic":false,"color":"green"},{"text":"->","color":"white"},{"text":"土","italic":false,"color":"gold"}],
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attack_speed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": 3.0,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attack_damage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 0.5,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:99,Soulbound:1b,Enchantments:[{id:\"sharpness\",lvl:4s}],Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

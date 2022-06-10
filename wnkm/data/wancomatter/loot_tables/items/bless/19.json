@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fermented_spider_eye",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "加護:サバイブ免疫","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"毒、枯渇、弱体化、発光の効果時間を半減する。","italic":false,"color":"white"},
+                  {"text":"2個装備すると効果を無効化する。","italic":false,"color":"white"},
+                  {"text":"また、満腹度が常時ゲージ9.0で固定される。","italic":false,"color":"white"},
+                  {"text":"加護はホットバーに入れる事で自動発動。","italic":false,"color":"light_purple"},
+                  {"text":"同じ加護は2個まで効果が重複する。","italic":false,"color":"dark_purple"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "unstackable",
+                      "attribute": "generic.follow_range",
+                      "operation": "addition",
+                      "amount": 0.1,
+                      "slot": "chest"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:19,blessItem:1b,Soulbound:1b,Unbreakable:1b,HideFlags:6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

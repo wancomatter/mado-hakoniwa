@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "ウルフマイスター","color":"white","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:15 / Cooldown:5 / 死亡時Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"自身に懐いた狼を召喚する。","italic":false,"color":"white"},
+                  {"text":"座らせると周囲の味方を継続的に回復する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:1 / Cooldown:5","italic":false,"color":"aqua"},
+                  {"translate":"ドロップ(%s)キーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
+                  {"text":"召喚した狼をキルする。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:83,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_summon:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

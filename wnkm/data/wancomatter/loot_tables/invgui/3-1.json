@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text":"ページ3-1: 防具Ⅰ","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"Enderchest: ページ3-1を開く","italic":false,"color":"light_purple"},
+                  [{"text":"Tips: ","italic":false,"color":"aqua"},{"text":"物理耐性、魔法耐性は加算で反映されます。","italic":false,"color":"gold"}]
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{invGUI:11b,invGUIitem:1b,AttributeModifiers:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

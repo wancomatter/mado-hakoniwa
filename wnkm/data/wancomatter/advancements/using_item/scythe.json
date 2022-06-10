@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:ender_eye"
+          ],
+          "nbt": "{CustomModelData:114}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "電光","color":"yellow","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:3 / Cooldown:5.0 / 追加入力可能:1回(5.0秒)","italic":false,"color":"aqua"},
+                  {"text":"小規模の電光を放ち、敵を攻撃。","italic":false,"color":"white"},
+                  {"text":"放った電光は威力を失い5秒間留まる。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-紫電一閃- MP:9 / Cooldown:3.5","italic":false,"color":"aqua"},
+                  {"text":"放った電光の位置に瞬間移動し、","italic":false,"color":"white"},
+                  {"text":"周囲の敵を防御貫通の雷撃で斬る。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:61,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "鎖帷子-脚","color":"gray","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"物理攻撃をある程度軽減する防具。","italic":false,"color":"gold"},
+                  {"text":"飛び道具に対する耐性が高い。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"物理耐性 +15%","italic":false,"color":"blue"},
+                  {"text":"物理飛び道具耐性 +20%","italic":false,"color":"blue"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{AttributeModifiers:[{}],armorResist:15,projectileResist:20,Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

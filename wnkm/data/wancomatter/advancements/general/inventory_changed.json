@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  }
+}

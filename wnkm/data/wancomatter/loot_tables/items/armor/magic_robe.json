@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "魔装のローブ(上)","color":"light_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力の巡りを活性化させるローブ。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"最大MP +150","italic":false,"color":"aqua"},
+                  {"text":"MP自然回復量 +0.30","italic":false,"color":"aqua"},
+                  {"text":"MP回復速度 +10%","italic":false,"color":"aqua"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                    "name": "generic.attack_damage",
+                    "attribute": "generic.attack_damage",
+                    "operation": "multiply_total",
+                    "amount": -0.40,
+                    "slot": "chest"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{maxMP:150,MPRegen:10,Enchantments:[{}],Soulbound:1b,HideFlags:4,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

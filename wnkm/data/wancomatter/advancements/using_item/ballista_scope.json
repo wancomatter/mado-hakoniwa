@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ],
+          "nbt": "{CustomModelData:132}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+particle minecraft:enchanted_hit ~ ~ ~ 0 0 0 0 1 force @a
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,tag=largeEntity,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,tag=largeEntity,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.7 ~ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,tag=largeEntity,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored feet positioned ^ ^ ^ positioned ~ ~0.7 ~ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,tag=largeEntity,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored feet positioned ^ ^ ^ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.7 ~ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored feet positioned ^ ^ ^ positioned ~ ~0.7 ~ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute as @e[distance=..3,tag=!kusaNagiSweep-hit,scores={maxHP=1..}] unless score @s teamNumber = #dummy teamNumber at @s anchored feet positioned ^ ^ ^ if entity @e[tag=now-kusaNagiSweep,distance=..0.8] run tag @s add kusaNagiSweep-hit
+execute if entity @e[tag=kusaNagiSweep-hit,tag=!kusaNagiSweep-damaged,limit=1] run function wancomatter:skills/107/charged/hit-entity
+execute unless block ~ ~ ~ #wancomatter:air run kill @s

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mojang_banner_pattern",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "拡張マガジン","color":"gray","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"オフハンドに持つ事で効果を発揮する拡張装置。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"銃の弾数 +25%","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{magazine:1b,Soulbound:1b,Unbreakable:1b,HideFlags:36,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
