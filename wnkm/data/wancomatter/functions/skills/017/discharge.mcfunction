@@ -3,8 +3,9 @@ scoreboard players set @s CooldownX 200
 scoreboard players set @s CooldownX_max 200
 
 summon marker ~ ~ ~ {Tags:["blaze-raze1","discharge"]}
-execute if entity @s[x_rotation=..90] rotated ~ 0 anchored eyes run tp @e[tag=discharge,limit=1] ^ ^ ^3 ~ 0
-execute unless entity @s[x_rotation=..90] anchored eyes run tp @e[tag=discharge,limit=1] ^ ^ ^3 ~ 0
+#execute if entity @s[x_rotation=..90] rotated ~ 0 anchored eyes run tp @e[tag=discharge,limit=1] ^ ^ ^3 ~ 0
+#execute unless entity @s[x_rotation=..90] anchored eyes run tp @e[tag=discharge,limit=1] ^ ^ ^3 ~ 0
+tp @e[tag=discharge,limit=1] ~ ~0.5 ~ ~ ~
 scoreboard players operation @e[tag=discharge,limit=1] playerNumber = @s playerNumber
 scoreboard players operation @e[tag=discharge,limit=1] teamNumber = @s teamNumber
 

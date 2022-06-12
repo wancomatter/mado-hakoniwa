@@ -72,8 +72,8 @@ execute if entity @s[scores={dummy=21}] if entity @s[scores={Mana=10..,CooldownX
 execute if entity @s[scores={dummy=22}] unless entity @s[scores={Mana=7..,CooldownX=..0}] run function wancomatter:skills/fail
 execute if entity @s[scores={dummy=22}] if entity @s[scores={Mana=7..,CooldownX=..0}] run function wancomatter:skills/022/discharge
 
-execute if entity @s[scores={dummy=23}] unless entity @s[scores={Mana=5..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=23}] if entity @s[scores={Mana=5..,CooldownX=..0}] run function wancomatter:skills/023/discharge
+execute if entity @s[scores={dummy=23}] unless entity @s[scores={Mana=15..,CooldownX=..0}] run function wancomatter:skills/fail
+execute if entity @s[scores={dummy=23}] if entity @s[scores={Mana=15..,CooldownX=..0}] run function wancomatter:skills/023/0.use
 
 execute if entity @s[scores={dummy=25}] unless entity @s[scores={CooldownX=..0}] run function wancomatter:skills/fail
 execute if entity @s[scores={dummy=25}] if entity @s[scores={CooldownX=..0}] if entity @s[nbt={SelectedItem:{tag:{Ammo:0}}}] run function wancomatter:skills/025/fail

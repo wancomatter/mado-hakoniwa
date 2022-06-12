@@ -13,9 +13,9 @@ data modify block 0 0 0 Items[0].tag.Damage set value 1
 loot replace entity @s weapon.mainhand 1 mine 0 0 0 air{inv_copy:1b}
 setblock 0 0 0 air
 
-scoreboard players remove @s Mana 20
-scoreboard players set @s CooldownX 120
-scoreboard players set @s CooldownX_max 120
+scoreboard players remove @s Mana 14
+scoreboard players set @s CooldownX 100
+scoreboard players set @s CooldownX_max 100
 tag @s add skill_success
 
 playsound minecraft:item.armor.equip_generic master @a ~ ~ ~ 1 0.5
