@@ -22,3 +22,4 @@ loot replace block 0 0 0 container.18 loot wancomatter:items/magic_assist/buff_l
 loot replace block 0 0 0 container.19 loot wancomatter:items/magic_assist/buff_darkness
 loot replace block 0 0 0 container.20 loot wancomatter:items/magic_assist/bloodchain
 loot replace block 0 0 0 container.21 loot wancomatter:items/magic_assist/bell
+loot replace block 0 0 0 container.22 loot wancomatter:items/ngs/026.protect_seed

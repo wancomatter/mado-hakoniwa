@@ -18,7 +18,7 @@ execute if score @s hurtWeaponNumber matches 19 run loot replace block 0 0 0 con
 execute if score @s hurtWeaponNumber matches 20 run loot replace block 0 0 0 container.0 loot wancomatter:items/magic_attack/aircutter
 #execute if score @s hurtWeaponNumber matches 21 
 #execute if score @s hurtWeaponNumber matches 22 
-#execute if score @s hurtWeaponNumber matches 23 
+execute if score @s hurtWeaponNumber matches 23 run loot replace block 0 0 0 container.0 loot wancomatter:items/magic_attack/fire_zanmai
 execute if score @s hurtWeaponNumber matches 25 run loot replace block 0 0 0 container.0 loot wancomatter:items/guns/shoen
 execute if score @s hurtWeaponNumber matches 28 run loot replace block 0 0 0 container.0 loot wancomatter:skills/summon/shulker
 execute if score @s hurtWeaponNumber matches 29 run loot replace block 0 0 0 container.0 loot wancomatter:items/magic_summon/haniwa

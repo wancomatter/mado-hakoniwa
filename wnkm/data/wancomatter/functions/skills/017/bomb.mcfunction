@@ -19,7 +19,7 @@ summon marker ^-6 ^ ^ {Tags:["blaze-raze2","discharge"]}
 summon marker ^-7.5 ^ ^ {Tags:["blaze-raze2","discharge"]}
 summon marker ^-9 ^ ^ {Tags:["blaze-raze2","discharge","Braze-sound"]}
 
-execute rotated as @s as @e[tag=discharge] positioned as @s run tp @s ~ ~0.7 ~ ~ 0
+execute rotated as @s as @e[tag=discharge] positioned as @s run tp @s ~ ~0.2 ~ ~ ~
 tag @s add Braze-bomb
 execute as @e[tag=discharge] run scoreboard players operation @s playerNumber = @e[tag=Braze-bomb,limit=1] playerNumber
 execute as @e[tag=discharge] run scoreboard players operation @s teamNumber = @e[tag=Braze-bomb,limit=1] teamNumber

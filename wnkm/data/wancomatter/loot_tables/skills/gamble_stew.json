@@ -84,7 +84,7 @@
             },
             {
               "function":"set_nbt",
-              "tag":"{Effects:[{EffectDuration:250,EffectId:1b},{EffectDuration:250,EffectId:5b}],gambleStew:1b,Ungetable:1b}"
+              "tag":"{Effects:[{EffectDuration:250,EffectId:1},{EffectDuration:250,EffectId:5}],gambleStew:1b,Ungetable:1b}"
             }
           ]
         },
@@ -105,7 +105,7 @@
             },
             {
               "function":"set_nbt",
-              "tag":"{Effects:[{EffectDuration:300,EffectId:2b},{EffectDuration:50,EffectId:15b}],gambleStew:1b,Ungetable:1b}"
+              "tag":"{Effects:[{EffectDuration:300,EffectId:2},{EffectDuration:50,EffectId:15}],gambleStew:1b,Ungetable:1b}"
             }
           ]
         },
@@ -126,7 +126,7 @@
             },
             {
               "function":"set_nbt",
-              "tag":"{Effects:[{EffectDuration:1200,EffectId:12b},{EffectDuration:300,EffectId:26b}],gambleStew:1b,Ungetable:1b}"
+              "tag":"{Effects:[{EffectDuration:1200,EffectId:12},{EffectDuration:300,EffectId:26}],gambleStew:1b,Ungetable:1b}"
             }
           ]
         },
@@ -147,7 +147,7 @@
             },
             {
               "function":"set_nbt",
-              "tag":"{Effects:[{EffectDuration:1200,EffectId:13b},{EffectDuration:1,EffectId:7b}],gambleStew:1b,Ungetable:1b}"
+              "tag":"{Effects:[{EffectDuration:1200,EffectId:13},{EffectDuration:1,EffectId:7}],gambleStew:1b,Ungetable:1b}"
             }
           ]
         },
@@ -168,7 +168,7 @@
             },
             {
               "function":"set_nbt",
-              "tag":"{Effects:[{EffectDuration:200,EffectId:19b},{EffectDuration:500,EffectId:20b}],gambleStew:1b,Ungetable:1b}"
+              "tag":"{Effects:[{EffectDuration:200,EffectId:19},{EffectDuration:500,EffectId:20}],gambleStew:1b,Ungetable:1b}"
             }
           ]
         }

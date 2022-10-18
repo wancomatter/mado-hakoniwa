@@ -379,8 +379,8 @@ execute if entity @s[scores={bless2=25}] run scoreboard players add #bless count
 execute if entity @s[scores={bless3=25}] run scoreboard players add #bless counter 1
 execute if entity @s[scores={bless4=25}] run scoreboard players add #bless counter 1
 attribute @s minecraft:generic.movement_speed modifier remove f7c4f9be-6c14-4013-a9d6-25
-execute if score #bless counter matches 1 run attribute @s minecraft:generic.movement_speed modifier add f7c4f9be-6c14-4013-a9d6-25 "haiyoru_sippuu" 0.15 multiply
-execute if score #bless counter matches 2.. run attribute @s minecraft:generic.movement_speed modifier add f7c4f9be-6c14-4013-a9d6-25 "haiyoru_sippuu" 0.30 multiply
+execute if score #bless counter matches 1 run attribute @s minecraft:generic.movement_speed modifier add f7c4f9be-6c14-4013-a9d6-25 "haiyoru_sippuu" 0.15 multiply_base
+execute if score #bless counter matches 2.. run attribute @s minecraft:generic.movement_speed modifier add f7c4f9be-6c14-4013-a9d6-25 "haiyoru_sippuu" 0.30 multiply_base
 execute if score #bless counter matches 1.. run scoreboard players remove @s statDamageBoost 5
 execute if score #bless counter matches 2.. run scoreboard players remove @s statDamageBoost 5
 scoreboard players reset #bless counter
@@ -439,6 +439,8 @@ execute if entity @s[scores={bless4=27}] run scoreboard players add #bless count
 execute if score #bless counter matches 2.. run tag @s add extend_magazine2
 scoreboard players reset #bless counter
 
+#救急キット
+execute if data entity @s {Inventory:[{Slot:-106b,id:"minecraft:golden_hoe",tag:{medic_kit:1b}}]} run function wancomatter:general/action/equip_medic_kit
 
 scoreboard players operation @s ManaPer20 = @s maxMana
 scoreboard players operation @s ManaPer20 /= #20 counter

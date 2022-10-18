@@ -75,12 +75,14 @@ execute if entity @e[tag=windcut,limit=1] as @e[tag=windcut] at @s run function 
 #毒粘着巣-21
 execute if entity @e[tag=poison-web,limit=1] as @e[tag=poison-web] at @s run function wancomatter:skills/021/tick
 #ボーンストライク-22
-execute if entity @a[tag=p-bone-strike,limit=1] as @a[tag=p-bone-strike] at @s run function wancomatter:skills/022/p-tick
-execute if entity @e[tag=bone-strike,limit=1] as @e[tag=bone-strike] at @s run function wancomatter:skills/022/tick
+#execute if entity @a[tag=p-bone-strike,limit=1] as @a[tag=p-bone-strike] at @s run function wancomatter:skills/022/p-tick
+#execute if entity @e[tag=bone-strike,limit=1] as @e[tag=bone-strike] at @s run function wancomatter:skills/022/tick
 #シャイン-23
-execute if entity @e[tag=shine,limit=1] as @e[tag=shine] at @s run function wancomatter:skills/023/tick
+execute if entity @e[tag=fire_whip,limit=1] as @e[tag=fire_whip] at @s run function wancomatter:skills/023/1.tick
 #硝煙-25
 execute if entity @e[tag=shoen_gun,limit=1] as @e[tag=shoen_gun] at @s run function wancomatter:skills/025/tick
+#妖精召喚
+execute if entity @e[tag=027spirit,limit=1] as @e[tag=027spirit] at @s run function wancomatter:skills/027/fairy_spirit/1.tick
 #シュルカータレット-28
 execute if entity @e[tag=summon_shulker,limit=1] as @e[tag=summon_shulker] at @s run function wancomatter:skills/028/tick
 execute if entity @e[tag=shulker_turret_bullet,limit=1] as @e[tag=shulker_turret_bullet] at @s run function wancomatter:skills/028/bullet_tick

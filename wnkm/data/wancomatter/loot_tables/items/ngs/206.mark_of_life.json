@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "命定ノ印","color":"yellow","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"MP:20 / Cooldown:30","italic":false,"color":"aqua"},
+                  {"text":"視線先20m以内の敵1体に命定ノ印を埋め込む。","italic":false,"color":"white"},
+                  {"text":"10秒間、発光、ダメージ軽減率-15%のデバフを与え、","italic":false,"color":"white"},
+                  {"text":"対象がプレイヤーの場合、頭上にHPゲージが表示される。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:206,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"大きな竹で作られた長射程の長弓。","italic":false,"color":"gold"},
-                  {"text":" 威力 1.7","italic":false,"color":"green"},
+                  {"text":" 威力 1.4","italic":false,"color":"green"},
                   {"text":" 矢の速度 +30%","italic":false,"color":"dark_aqua"}
                 ]
             },

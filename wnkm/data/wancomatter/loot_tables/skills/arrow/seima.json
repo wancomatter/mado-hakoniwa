@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"魔力を乱す呪術を受けた矢。","italic":false,"color":"gold"},
-                  {"text":"MP吸収 4","italic":false,"color":"red"}
+                  {"text":"MP吸収 5","italic":false,"color":"red"}
                 ]
             },
             {
@@ -25,7 +25,7 @@
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects:[{Id:32,Amplifier:4b,Duration:2}],CustomPotionColor:11141290,HideFlags:32,EggArrow:1b}"
+                "tag": "{CustomPotionEffects:[{Id:32,Amplifier:5b,Duration:2}],CustomPotionColor:11141290,HideFlags:32,EggArrow:1b}"
             }
           ]
         }

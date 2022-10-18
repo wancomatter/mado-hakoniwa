@@ -16,7 +16,8 @@ scoreboard players set #dummy dummy 9
 execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function wancomatter:skills/025/shot-
 scoreboard players operation @e[tag=shoen_init] playerNumber = @s playerNumber
 scoreboard players operation @e[tag=shoen_init] teamNumber = @s teamNumber
-scoreboard players add #dummy SelectItemSlot2 7
+scoreboard players operation #dummy SelectItemSlot2 *= #2 counter
+scoreboard players add #dummy SelectItemSlot2 8
 scoreboard players operation @e[tag=shoen_init] subcounter2 = #dummy SelectItemSlot2
 tag @e[tag=shoen_init] remove shoen_init
 

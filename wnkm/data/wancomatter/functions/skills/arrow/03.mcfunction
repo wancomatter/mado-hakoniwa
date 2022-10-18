@@ -1,4 +1,4 @@
-scoreboard players remove @s Mana 10
+scoreboard players remove @s Mana 15
 scoreboard players set @s CooldownX 300
 scoreboard players set @s CooldownX_max 300
 

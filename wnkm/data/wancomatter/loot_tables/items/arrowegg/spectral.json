@@ -16,8 +16,8 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"MP:7 / Cooldown:15","italic":false,"color":"aqua"},
-                  {"text":"光の矢を8本取り出す。","italic":false,"color":"white"},
+                  {"text":"MP:5 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"光の矢を9本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:発光を11秒与える。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]

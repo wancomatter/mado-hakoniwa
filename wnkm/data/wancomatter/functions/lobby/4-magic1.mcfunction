@@ -22,4 +22,5 @@ loot replace block 0 0 0 container.18 loot wancomatter:items/magic_attack/hate_f
 loot replace block 0 0 0 container.19 loot wancomatter:items/magic_attack/reject_meele
 loot replace block 0 0 0 container.20 loot wancomatter:items/magic_attack/ether
 loot replace block 0 0 0 container.21 loot wancomatter:items/magic_attack/blaze_raze
-loot replace block 0 0 0 container.22 loot wancomatter:items/magic_attack/purple_bolt
+loot replace block 0 0 0 container.22 loot wancomatter:items/ngs/027.calamity_seed
+loot replace block 0 0 0 container.23 loot wancomatter:items/magic_attack/purple_bolt

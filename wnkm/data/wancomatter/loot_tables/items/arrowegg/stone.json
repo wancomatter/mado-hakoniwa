@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"MP:5 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"MP:0 / Cooldown:15","italic":false,"color":"aqua"},
                   {"text":"石の矢を12本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:無","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}

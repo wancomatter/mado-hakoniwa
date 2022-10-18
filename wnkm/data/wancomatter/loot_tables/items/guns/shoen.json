@@ -18,7 +18,7 @@
                   {"text":"散弾率を可変する術式が組み込まれた散弾銃。","italic":false,"color":"white"},
                   {"text":"スロットの端に寄る程拡散し、中央に寄る程収束する。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"-reload- MP:20 / 装填時間:6.0","italic":false,"color":"aqua"},
+                  {"text":"-reload- MP:14 / 装填時間:5.0","italic":false,"color":"aqua"},
                   {"translate":"弾を使い切るか%sキーを押して発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
                   {"text":"魔力の弾丸を4発分装填する。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}

@@ -1,0 +1,21 @@
+execute store result entity @s Rotation[1] float 18 run scoreboard players get @s counter
+execute rotated as @s rotated ~90 ~ rotated ~ ~0.0 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~ rotated ~ ~10.8 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~ rotated ~ ~3.6 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~ rotated ~ ~14.4 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~ rotated ~ ~7.2 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~90 rotated ~ ~0.0 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~90 rotated ~ ~10.8 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~90 rotated ~ ~3.6 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~90 rotated ~ ~14.4 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~90 rotated ~ ~7.2 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~180 rotated ~ ~0.0 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~180 rotated ~ ~10.8 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~180 rotated ~ ~3.6 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~180 rotated ~ ~14.4 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~180 rotated ~ ~7.2 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~270 rotated ~ ~0.0 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~270 rotated ~ ~10.8 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~270 rotated ~ ~3.6 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~270 rotated ~ ~14.4 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a
+execute rotated as @s rotated ~90 ~270 rotated ~ ~7.2 run particle minecraft:enchanted_hit ^ ^ ^ ^ ^ ^-300000 0.000006 0 force @a

@@ -16,8 +16,8 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"MP:11 / Cooldown:12","italic":false,"color":"aqua"},
-                  {"text":"氷霧の矢を1本取り出す。","italic":false,"color":"white"},
+                  {"text":"MP:20 / Cooldown:20","italic":false,"color":"aqua"},
+                  {"text":"氷霧の矢を3本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:着弾点を氷霧で冷やして持続攻撃。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]

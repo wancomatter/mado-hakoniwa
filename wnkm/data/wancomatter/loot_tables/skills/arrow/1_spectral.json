@@ -10,7 +10,7 @@
           "functions": [
             {
                 "function": "minecraft:set_name",
-                "name": {"text": "石の矢","color":"yellow","italic":false}
+                "name": {"text": "光の矢","color":"yellow","italic":false}
             },
             {
                 "function": "minecraft:set_lore",

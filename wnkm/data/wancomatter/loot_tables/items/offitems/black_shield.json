@@ -17,9 +17,11 @@
                 "lore": [
                   {"text":"魔法攻撃の防御に長けた盾。","italic":false,"color":"gold"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"-自動障壁- MP:10 / Cooldown:10","italic":false,"color":"aqua"},
-                  {"text":"オフハンドに持つ事で発動。","italic":false,"color":"white"},
-                  {"text":"魔法攻撃を一度だけ防ぐ障壁を展開する。","italic":false,"color":"white"},
+                  {"text":"-魔力遮断-","italic":false,"color":"aqua"},
+                  {"text":"盾の展開中、魔法ダメージをMPで肩代わりする。","italic":false,"color":"white"},
+                  {"text":"受けるダメージの200%分のMPを消費して無効化。","italic":false,"color":"white"},
+                  {"text":"ダメージがMPを超過した場合、シールドブレイクし、","italic":false,"color":"white"},
+                  {"text":"5秒間、強力なデバフを受け、このスキルが使用不可。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
                   {"text":"ダメージ遮断率:40%","italic":false,"color":"green"},
                   {"text":"魔法耐性 +5%","italic":false,"color":"light_purple"}

@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"MP:10 / Cooldown:15","italic":false,"color":"aqua"},
+                  {"text":"MP:15 / Cooldown:15","italic":false,"color":"aqua"},
                   {"text":"鋼鉄の矢を6本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:威力+50%","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}

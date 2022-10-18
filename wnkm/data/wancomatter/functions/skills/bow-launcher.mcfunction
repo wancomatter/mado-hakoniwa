@@ -7,14 +7,15 @@ execute as @e[tag=first] if score @s dummy matches 1.. run data merge entity @s 
 execute if entity @s[scores={dummy=121}] as @e[tag=first] store result entity @s Motion[0] double 0.001 run data get entity @s Motion[0] 1300
 execute if entity @s[scores={dummy=121}] as @e[tag=first] store result entity @s Motion[1] double 0.001 run data get entity @s Motion[1] 1300
 execute if entity @s[scores={dummy=121}] as @e[tag=first] store result entity @s Motion[2] double 0.001 run data get entity @s Motion[2] 1300
-execute if entity @s[scores={dummy=121}] as @e[tag=first] store result entity @s damage double 0.01 run data get entity @s damage 85
+execute if entity @s[scores={dummy=121}] as @e[tag=first] store result entity @s damage double 0.01 run data get entity @s damage 70
 
-execute if entity @s[scores={dummy=122}] as @e[tag=first] store result entity @s damage double 0.01 run data get entity @s damage 125
+#execute if entity @s[scores={dummy=122}] as @e[tag=first] store result entity @s damage double 0.01 run data get entity @s damage 100
 
-execute if entity @s[scores={dummy=123}] as @e[tag=first,type=arrow] run tag @s add arrow_recall
-execute if entity @s[scores={dummy=123}] run scoreboard players operation @e[tag=first,type=arrow] playerNumber = @s playerNumber
+execute if entity @s[scores={dummy=123}] as @e[type=arrow,tag=first] store result entity @s damage double 0.01 run data get entity @s damage 80
+execute if entity @s[scores={dummy=123}] as @e[type=arrow,tag=first] run tag @s add arrow_recall
+execute if entity @s[scores={dummy=123}] run scoreboard players operation @e[type=arrow,tag=first] playerNumber = @s playerNumber
 
-execute if entity @s[scores={dummy=124}] as @e[tag=first] store result entity @s damage double 0.01 run data get entity @s damage 115
+execute if entity @s[scores={dummy=124}] as @e[tag=first] store result entity @s damage double 0.01 run data get entity @s damage 90
 execute if entity @s[scores={dummy=124}] unless data entity @e[tag=first,limit=1] {crit:1b} run tag @s add flag
 execute if entity @s[scores={dummy=124},tag=flag] as @e[tag=first] at @s run function wancomatter:skills/bow/short_bow
 execute if entity @s[scores={dummy=124},tag=!flag] as @e[tag=first] run data merge entity @s {crit:0b}

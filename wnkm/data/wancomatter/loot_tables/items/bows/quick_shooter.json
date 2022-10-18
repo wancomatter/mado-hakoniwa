@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"高速で矢を装填出来る超小型の射撃武器。","italic":false,"color":"gold"},
-                  {"text":" 威力 2.5","italic":false,"color":"green"},
+                  {"text":" 威力 2.0","italic":false,"color":"green"},
                   {"text":" 矢の速度 -35%","italic":false,"color":"dark_aqua"}
                 ]
             },

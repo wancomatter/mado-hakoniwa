@@ -6,6 +6,7 @@ loot replace block 0 0 0 container.4 loot wancomatter:items/meele_weapons/hinoki
 loot replace block 0 0 0 container.5 loot wancomatter:items/meele_weapons/kokuren
 loot replace block 0 0 0 container.6 loot wancomatter:items/meele_weapons/magical_rod
 loot replace block 0 0 0 container.7 loot wancomatter:items/meele_weapons/chisel
+loot replace block 0 0 0 container.8 loot wancomatter:items/ngs/201.water_blade
 
 loot replace block 0 0 0 container.9 loot wancomatter:items/meele_weapons/black_sword
 loot replace block 0 0 0 container.10 loot wancomatter:items/meele_weapons/battleaxe

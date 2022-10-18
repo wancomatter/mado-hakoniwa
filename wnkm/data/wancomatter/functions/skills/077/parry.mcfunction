@@ -1,6 +1,6 @@
 scoreboard players set @s damageTaken 0
 scoreboard players set @s instantDMGshield 100
-scoreboard players set @s instantDMGS_time 10
+scoreboard players set @s instantDMGS_time 30
 tag @s remove p.blood_chain
 
 execute unless entity @e[tag=077pos,limit=1] run summon area_effect_cloud ~ ~ ~ {Tags:["077pos"],Duration:1}

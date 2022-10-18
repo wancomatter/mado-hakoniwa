@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [{"text": "植樹","color":"dark_green","bold":true,"italic":false},{"text": ":","color":"gray"},{"text": "守護ノ種","color":"yellow"}]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-守護天樹- MP:100 / Cooldown:100","italic":false,"color":"aqua"},
+                  {"text":"かつての守護天樹を膨大な生命力をもって再現する。","italic":false,"color":"white"},
+                  {"text":"守護天樹の付近には治癒と守護のバフが降り注ぐ。","italic":false,"color":"white"},
+                  {"text":"発動者の最大HPが多いほど、回復量が増加する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:26,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_assist:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

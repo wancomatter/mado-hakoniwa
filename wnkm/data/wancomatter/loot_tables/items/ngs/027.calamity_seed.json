@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [{"text": "植樹","color":"dark_green","bold":true,"italic":false},{"text": ":","color":"gray"},{"text": "災禍ノ種","color":"dark_red"}]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-災禍虚樹- MP:100 / Cooldown:100","italic":false,"color":"aqua"},
+                  {"text":"かつての災禍虚樹を膨大な魔力をもって再現する。","italic":false,"color":"white"},
+                  {"text":"災禍虚樹はその果実を飛ばし、付近の敵を一掃する。","italic":false,"color":"white"},
+                  {"text":"発動者の最大MPが多いほど、継続時間が延長する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:27,Soulbound:1b,Unbreakable:1b,HideFlags:4,magic_attack:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -63,7 +63,8 @@ execute if entity @a[tag=hurtBy,advancements={wancomatter:skills/spear=true},lim
 #ネプチューン命中処理
 execute if entity @a[tag=hurtBy,advancements={wancomatter:general/neptune=true},limit=1] run effect give @s minecraft:slowness 2 1
 execute if entity @a[tag=hurtBy,advancements={wancomatter:general/neptune=true},limit=1] run scoreboard players set @s hurtWeaponNumber 101
-
+#水刃
+execute if entity @a[tag=!hurt,tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false},scores={holdItem=201},limit=1] if entity @s[tag=!pysicalDamage,tag=!magicDamage] as @a[tag=!hurt,tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false},scores={holdItem=201}] at @s run function wancomatter:skills/201/melee
 #リコールショット処理(使用:エフェクトID:9(nausea),Amplifier:補充矢識別番号)
 execute if data entity @s {ActiveEffects:[{Id:9}]} run function wancomatter:skills/arrow-recall
 
@@ -87,10 +88,10 @@ execute if entity @s[scores={hurtByNumber=-2147483648..},tag=magicDamage] as @a[
 execute if score #bless counter matches 1.. run scoreboard players add #statDamageBoost dummy 15
 execute if score #bless counter matches 2.. run scoreboard players add #statDamageBoost dummy 15
 scoreboard players reset #bless counter
-execute if entity @s[scores={hurtByNumber=-2147483648..},tag=!magicDamage,tag=!trueDamage] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless1=10}] run scoreboard players add #bless counter 1
-execute if entity @s[scores={hurtByNumber=-2147483648..},tag=!magicDamage,tag=!trueDamage] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless2=10}] run scoreboard players add #bless counter 1
-execute if entity @s[scores={hurtByNumber=-2147483648..},tag=!magicDamage,tag=!trueDamage] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless3=10}] run scoreboard players add #bless counter 1
-execute if entity @s[scores={hurtByNumber=-2147483648..},tag=!magicDamage,tag=!trueDamage] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless4=10}] run scoreboard players add #bless counter 1
+execute if entity @s[scores={hurtByNumber=-2147483648..}] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless1=10}] run scoreboard players add #bless counter 1
+execute if entity @s[scores={hurtByNumber=-2147483648..}] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless2=10}] run scoreboard players add #bless counter 1
+execute if entity @s[scores={hurtByNumber=-2147483648..}] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless3=10}] run scoreboard players add #bless counter 1
+execute if entity @s[scores={hurtByNumber=-2147483648..}] as @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false}] if entity @s[scores={bless4=10}] run scoreboard players add #bless counter 1
 execute if score #bless counter matches 1.. run scoreboard players add #statDamageBoost dummy 15
 execute if score #bless counter matches 2.. run scoreboard players add #statDamageBoost dummy 15
 scoreboard players reset #bless counter
@@ -346,7 +347,7 @@ execute if entity @s[tag=drain] run scoreboard players reset #-- dummy
 execute if entity @s[tag=drain] run tag @s remove drain
 
 #彫刻刀でシュルカーを確定キル
-execute if entity @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true},scores={holdItem=111},limit=1] if entity @s[type=shulker] run scoreboard players set @s damageTaken 99999
+execute if entity @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true},scores={holdItem=111},limit=1] if entity @s[type=shulker] run function wancomatter:skills/111/melee_shulker
 #ダメージ表示
 execute if entity @s[scores={damageTaken=1..}] at @s run function wancomatter:general/damagetaken/show_damage
 #サンドバッグの処理

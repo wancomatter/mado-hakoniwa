@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "飛来の盾","color":"gray","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"防御力を攻撃性能に転換する盾。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-噴射シールド- MP:10 / Cooldown:10","italic":false,"color":"aqua"},
+                  {"text":"右クリックで発動し、盾を飛ばして攻撃する。","italic":false,"color":"white"},
+                  {"text":"物理耐性と魔法耐性が高い程にダメージが増加。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"ダメージ遮断率:0%","italic":false,"color":"green"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{shieldBlockAmount:0d,FlyingShield:1b,handAttributes:1b,BlockEntityTag:{Base:0,Patterns:[{Pattern:gra,Color:13},{Pattern:gru,Color:13},{Pattern:sc,Color:13}]},Soulbound:1b,Unbreakable:1b,HideFlags:36}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
