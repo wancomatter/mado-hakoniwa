@@ -67,7 +67,6 @@ execute if entity @a[tag=hurtBy,advancements={wancomatter:general/neptune=true},
 execute if entity @a[tag=!hurt,tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false},scores={holdItem=201},limit=1] if entity @s[tag=!pysicalDamage,tag=!magicDamage] as @a[tag=!hurt,tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false},scores={holdItem=201}] at @s run function wancomatter:skills/201/melee
 #リコールショット処理(使用:エフェクトID:9(nausea),Amplifier:補充矢識別番号)
 execute if data entity @s {ActiveEffects:[{Id:9}]} run function wancomatter:skills/arrow-recall
-
 #天壌無窮戦で近接ダメージ4倍
 execute if entity @s[tag=dragon1_hitbox] if entity @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true,wancomatter:general/arrow-dealt=false},limit=1] run scoreboard players operation @s damageTaken *= #4 counter
 #基礎ダメージを保持
@@ -325,26 +324,7 @@ scoreboard players reset #bless counter
 execute if score #yamakuzushi counter matches 1.. run scoreboard players reset #yamakuzushi
 
 #吸収の処理(使用:エフェクトID32,Amplifier:吸収する量,プラス:MP,マイナス:HP)
-execute if data entity @s {ActiveEffects:[{Id:32}]} run tag @s add drain
-execute if entity @s[tag=drain] run scoreboard players set #-- dummy 0
-execute if entity @s[tag=drain] store result score #-- dummy run data get entity @s ActiveEffects[{Id:32}].Amplifier
-execute if entity @s[tag=drain] if score #-- dummy matches 0.. run tag @s add Manadrain
-execute if entity @s[tag=Manadrain] run scoreboard players operation @s Mana -= #-- dummy
-execute if entity @s[tag=Manadrain] unless score @s Mana matches 0.. run scoreboard players set @s Mana 0
-execute if entity @s[tag=Manadrain] as @a[tag=hurtBy] run scoreboard players operation @s Mana += #-- dummy
-execute if entity @s[tag=Manadrain] run tag @s remove Manadrain
-#HP吸収の割合:effect give @s minecraft:hero_of_the_village 1 256-(吸収％) true or false(true:魔法処理で加護が働く)
-execute if entity @s[tag=drain] unless score #-- dummy matches 0.. run tag @s add Healthdrain
-execute if entity @s[tag=Healthdrain] run scoreboard players operation #-- dummy *= #-1 counter
-execute if entity @s[tag=Healthdrain] run scoreboard players operation #-- dummy *= @s damageTaken
-execute if entity @s[tag=Healthdrain] run scoreboard players operation #-- dummy /= #100 counter
-execute if entity @s[tag=Healthdrain] if data entity @s {ActiveEffects:[{Id:32,ShowIcon:0b}]} as @a[tag=hurtBy] run scoreboard players operation #-- dummy *= @s healPower
-execute if entity @s[tag=Healthdrain] if data entity @s {ActiveEffects:[{Id:32,ShowIcon:0b}]} as @a[tag=hurtBy] run scoreboard players operation #-- dummy /= #100 counter
-execute if entity @s[tag=Healthdrain] as @a[tag=hurtBy] run scoreboard players operation @s HPheal += #-- dummy
-execute if entity @s[tag=Healthdrain] run tag @s remove Healthdrain
-execute if entity @s[tag=drain] run effect clear @s minecraft:hero_of_the_village
-execute if entity @s[tag=drain] run scoreboard players reset #-- dummy
-execute if entity @s[tag=drain] run tag @s remove drain
+execute if data entity @s {ActiveEffects:[{Id:32}]} run function wancomatter:general/damagetaken/drain/main
 
 #彫刻刀でシュルカーを確定キル
 execute if entity @a[tag=hurtBy,advancements={wancomatter:general/any-dealt=true},scores={holdItem=111},limit=1] if entity @s[type=shulker] run function wancomatter:skills/111/melee_shulker

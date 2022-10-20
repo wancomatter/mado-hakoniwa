@@ -24,9 +24,9 @@ loot replace block 0 0 0 container.18 loot wancomatter:items/bless/4
 loot replace block 0 0 0 container.19 loot wancomatter:items/bless/21
 loot replace block 0 0 0 container.20 loot wancomatter:items/bless/22
 loot replace block 0 0 0 container.21 loot wancomatter:items/bless/19
-loot replace block 0 0 0 container.22 loot wancomatter:items/bless/25
-loot replace block 0 0 0 container.23 loot wancomatter:items/bless/26
-loot replace block 0 0 0 container.24 loot wancomatter:items/bless/27
+loot replace block 0 0 0 container.22 loot wancomatter:items/bless/26
+loot replace block 0 0 0 container.23 loot wancomatter:items/bless/27
+#loot replace block 0 0 0 container.24 loot wancomatter:items/bless/25
 
 data modify block 0 0 0 Items[{tag:{blessItem:1b}}].tag.display.Lore append value '{"text":"加護は合計3個まで効果が反映される。","italic":false,"color":"dark_purple"}'
 

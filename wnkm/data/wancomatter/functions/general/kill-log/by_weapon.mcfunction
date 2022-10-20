@@ -114,6 +114,7 @@ execute if score @s hurtWeaponNumber matches 114 run loot replace block 0 0 0 co
 execute if score @s hurtWeaponNumber matches 115 run loot replace block 0 0 0 container.0 loot wancomatter:items/meele_weapons/boomerang
 execute if score @s hurtWeaponNumber matches 116 run loot replace block 0 0 0 container.0 loot wancomatter:items/offitems/dark_repulser
 execute if score @s hurtWeaponNumber matches 117 run loot replace block 0 0 0 container.0 loot wancomatter:items/meele_weapons/blue_moon
+execute if score @s hurtWeaponNumber matches 119 run loot replace block 0 0 0 container.0 loot wancomatter:items/offitems/flying_shield
 
 execute if score @s hurtWeaponNumber matches 121 run loot replace block 0 0 0 container.0 loot wancomatter:items/bows/bamboo
 execute if score @s hurtWeaponNumber matches 122 run loot replace block 0 0 0 container.0 loot wancomatter:items/bows/composite

@@ -79,6 +79,8 @@ execute if entity @e[tag=poison-web,limit=1] as @e[tag=poison-web] at @s run fun
 #execute if entity @e[tag=bone-strike,limit=1] as @e[tag=bone-strike] at @s run function wancomatter:skills/022/tick
 #シャイン-23
 execute if entity @e[tag=fire_whip,limit=1] as @e[tag=fire_whip] at @s run function wancomatter:skills/023/1.tick
+#針刺-24
+execute if entity @e[tag=024stake,limit=1] as @e[tag=024stake] at @s run function wancomatter:skills/024/tick
 #硝煙-25
 execute if entity @e[tag=shoen_gun,limit=1] as @e[tag=shoen_gun] at @s run function wancomatter:skills/025/tick
 #妖精召喚

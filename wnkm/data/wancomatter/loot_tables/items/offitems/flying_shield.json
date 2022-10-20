@@ -26,7 +26,7 @@
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{shieldBlockAmount:0d,FlyingShield:1b,handAttributes:1b,BlockEntityTag:{Base:0,Patterns:[{Pattern:gra,Color:13},{Pattern:gru,Color:13},{Pattern:sc,Color:13}]},Soulbound:1b,Unbreakable:1b,HideFlags:36}"
+                "tag": "{shieldBlockAmount:0d,FlyingShield:1b,handAttributes:1b,BlockEntityTag:{Base:12,Patterns:[{Color:4,Pattern:mc}]},Soulbound:1b,Unbreakable:1b,HideFlags:36}"
             }
           ]
         }

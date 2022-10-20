@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:shield"
+          ],
+          "nbt": "{BlackShield:1b}"
+        }
+      }
+    }
+  }
+}

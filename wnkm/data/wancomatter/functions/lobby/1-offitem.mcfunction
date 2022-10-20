@@ -13,3 +13,4 @@ loot replace block 0 0 0 container.11 loot wancomatter:items/offitems/fly_spear
 loot replace block 0 0 0 container.18 loot wancomatter:items/offitems/white_shield
 loot replace block 0 0 0 container.19 loot wancomatter:items/offitems/black_shield
 loot replace block 0 0 0 container.20 loot wancomatter:items/offitems/knight_shield
+loot replace block 0 0 0 container.21 loot wancomatter:items/offitems/flying_shield

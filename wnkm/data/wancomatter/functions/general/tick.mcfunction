@@ -198,6 +198,9 @@ execute if entity @a[gamemode=!spectator,advancements={wancomatter:using_item/cr
 execute if entity @a[scores={crossbow_sneak=1..},limit=1] as @a[scores={crossbow_sneak=1..}] at @s run function wancomatter:skills/crossbow/special_charge/root
 #爆弾-30
 execute if entity @e[tag=summon_bomb,limit=1] as @e[tag=summon_bomb] at @s run function wancomatter:skills/030/tick
+#特殊盾
+execute if entity @a[gamemode=!spectator,advancements={wancomatter:using_item/flying_shield=true},limit=1] as @a[gamemode=!spectator,advancements={wancomatter:using_item/flying_shield=true}] run function wancomatter:skills/119/using
+execute if entity @a[gamemode=!spectator,advancements={wancomatter:using_item/black_shield=true},limit=1] as @a[gamemode=!spectator,advancements={wancomatter:using_item/black_shield=true}] run function wancomatter:skills/120/using
 
 #スキルの予測表示
 execute if entity @a[gamemode=!spectator,scores={holdItem=111,Mana=2..},limit=1] as @a[gamemode=!spectator,scores={holdItem=111,Mana=2..}] at @s run function wancomatter:skills/111/highlight
@@ -296,6 +299,7 @@ execute if entity @e[scores={instantDMGS_time=1..},limit=1] as @e[scores={instan
 #スコアリセット等
 execute if entity @a[limit=1,advancements={wancomatter:using_item/crossbow_special_charge=true}] run advancement revoke @a[advancements={wancomatter:using_item/crossbow_special_charge=true}] only wancomatter:using_item/crossbow_special_charge
 execute if entity @a[limit=1,advancements={wancomatter:using_item/ballista_scope=true}] run advancement revoke @a[advancements={wancomatter:using_item/ballista_scope=true}] only wancomatter:using_item/ballista_scope
+execute if entity @a[limit=1,advancements={wancomatter:using_item/flying_shield=true}] run advancement revoke @a[advancements={wancomatter:using_item/flying_shield=true}] only wancomatter:using_item/flying_shield
 execute if entity @a[limit=1,advancements={wancomatter:using_item/scythe=true}] run advancement revoke @a[advancements={wancomatter:using_item/scythe=true}] only wancomatter:using_item/scythe
 execute if entity @a[limit=1,advancements={wancomatter:skills/107spear_skill=true}] run advancement revoke @a[advancements={wancomatter:skills/107spear_skill=true}] only wancomatter:skills/107spear_skill
 execute if entity @a[limit=1,advancements={wancomatter:skills/wind_arrow=true}] run advancement revoke @a[advancements={wancomatter:skills/wind_arrow=true}] only wancomatter:skills/wind_arrow

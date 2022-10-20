@@ -11,4 +11,5 @@ loot replace block 0 0 0 container.8 loot wancomatter:items/magic_attack/star_fe
 loot replace block 0 0 0 container.9 loot wancomatter:items/magic_attack/power_steal
 loot replace block 0 0 0 container.10 loot wancomatter:items/magic_attack/zipped_water
 loot replace block 0 0 0 container.11 loot wancomatter:items/magic_attack/betelgeuse
-loot replace block 0 0 0 container.12 loot wancomatter:items/magic_attack/fire_zanmai
+loot replace block 0 0 0 container.12 loot wancomatter:items/magic_attack/stake
+loot replace block 0 0 0 container.13 loot wancomatter:items/magic_attack/fire_zanmai

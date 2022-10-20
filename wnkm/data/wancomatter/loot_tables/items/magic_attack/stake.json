@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"MP:2 / Cooldown:0.5","italic":false,"color":"aqua"},
+                  {"text":"MP:6 / Cooldown:2.5","italic":false,"color":"aqua"},
                   {"text":"魔力で形成した杭を放つ。","italic":false,"color":"white"},
                   {"text":"","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
