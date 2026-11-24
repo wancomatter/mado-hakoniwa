@@ -64,7 +64,7 @@ execute unless entity @s[tag=!ice_robe_chest,tag=!ice_robe_legs] run tag @s add 
 
 tag @s add hpd
 #ステータスのリセット
-execute if score @s Mana matches ..-1000 run scoreboard players operation @s maxMana = @s Mana
+#execute if score @s Mana matches ..-1000 run scoreboard players operation @s Mana = @s maxMana
 execute unless score @s maxHP matches 0.. run tag @s add noHP
 scoreboard players set @s maxHP 40
 scoreboard players set @s maxMana 100
