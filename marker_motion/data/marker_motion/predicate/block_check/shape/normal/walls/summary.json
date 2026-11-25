@@ -1,0 +1,724 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.25
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.3125
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.3125
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.25
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.75,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.3125
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.6875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.25
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.25
+              },
+              "z": {
+                "min": 0.6875,
+                "max": 1.0
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.3125
+              },
+              "z": {
+                "min": 0.75,
+                "max": 1.0
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.75,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.6875,
+                "max": 1.0
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls"
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.6875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.75,
+                "max": 1.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.25,
+                "max": 0.3125
+              },
+              "z": {
+                "min": 0.25,
+                "max": 0.3125
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.6875,
+                "max": 0.75
+              },
+              "z": {
+                "min": 0.25,
+                "max": 0.3125
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.25,
+                "max": 0.3125
+              },
+              "z": {
+                "min": 0.6875,
+                "max": 0.75
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.6875,
+                "max": 0.75
+              },
+              "z": {
+                "min": 0.6875,
+                "max": 0.75
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "east": "none"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.75,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "east": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.75,
+                "max": 1.0
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "east": "none",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.6875,
+                "max": 0.75
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "east": "low",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.6875,
+                "max": 0.75
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "west": "none"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.25
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "west": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.25
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "west": "none",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.25,
+                "max": 0.3125
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "west": "low",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.25,
+                "max": 0.3125
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "south": "none"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "z": {
+                "min": 0.75,
+                "max": 1.0
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "south": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.75,
+                "max": 1.0
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "south": "none",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "z": {
+                "min": 0.6875,
+                "max": 0.75
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "south": "low",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.6875,
+                "max": 0.75
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "north": "none"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.25
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "north": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.25
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "north": "none",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "z": {
+                "min": 0.25,
+                "max": 0.3125
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:walls",
+                "state": {
+                  "north": "low",
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.875,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.25,
+                "max": 0.3125
+              }
+            }
+          }
+        }
+      ]
+    },
+    "marker_motion:block_check/shape/normal/walls/none_tall"
+  ]
+}

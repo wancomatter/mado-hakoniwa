@@ -1,0 +1,133 @@
+{
+  "type": "all_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:candles"
+          }
+        }
+      }
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:candles",
+                "state": {
+                  "candles": "1"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.4375,
+                "max": 0.5625
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.3749999999
+              },
+              "z": {
+                "min": 0.4375,
+                "max": 0.5625
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:candles",
+                "state": {
+                  "candles": "2"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.3749999999
+              },
+              "z": {
+                "min": 0.375,
+                "max": 0.5625
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:candles",
+                "state": {
+                  "candles": "3"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.625
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.3749999999
+              },
+              "z": {
+                "min": 0.375,
+                "max": 0.6875
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#marker_motion:candles",
+                "state": {
+                  "candles": "4"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.3749999999
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.625
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

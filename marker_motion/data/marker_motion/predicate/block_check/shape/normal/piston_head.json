@@ -1,0 +1,293 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston_head"
+            ],
+            "state": {
+              "facing": "up"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.75,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston_head"
+            ],
+            "state": {
+              "facing": "down"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.0,
+            "max": 0.249999999
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston_head"
+            ],
+            "state": {
+              "facing": "south"
+            }
+          }
+        },
+        "distance": {
+          "z": {
+            "min": 0.75,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston_head"
+            ],
+            "state": {
+              "facing": "north"
+            }
+          }
+        },
+        "distance": {
+          "z": {
+            "min": 0.0,
+            "max": 0.25
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston_head"
+            ],
+            "state": {
+              "facing": "east"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.75,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston_head"
+            ],
+            "state": {
+              "facing": "west"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0,
+            "max": 0.25
+          }
+        }
+      }
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "piston_head"
+                  ],
+                  "state": {
+                    "facing": "up"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "piston_head"
+                  ],
+                  "state": {
+                    "facing": "down"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.375,
+                "max": 0.625
+              },
+              "z": {
+                "min": 0.375,
+                "max": 0.625
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "piston_head"
+                  ],
+                  "state": {
+                    "facing": "south"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "piston_head"
+                  ],
+                  "state": {
+                    "facing": "north"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.375,
+                "max": 0.625
+              },
+              "y": {
+                "min": 0.375,
+                "max": 0.6249999999
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "piston_head"
+                  ],
+                  "state": {
+                    "facing": "east"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "piston_head"
+                  ],
+                  "state": {
+                    "facing": "west"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "y": {
+                "min": 0.375,
+                "max": 0.6249999999
+              },
+              "z": {
+                "min": 0.375,
+                "max": 0.625
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "inverted",
+          "term": {
+            "type": "location_check",
+            "offsetY": 1,
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "pitcher_crop"
+                ],
+                "state": {
+                  "half": "lower",
+                  "age": "0"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "location_check",
+          "offsetY": 1,
+          "predicate": {
+            "block": {
+              "blocks": [
+                "pitcher_crop"
+              ],
+              "state": {
+                "half": "lower"
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.1875,
+                "max": 0.8125
+              },
+              "y": {
+                "min": 0.9375,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.1875,
+                "max": 0.8125
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "location_check",
+          "offsetY": 1,
+          "predicate": {
+            "block": {
+              "blocks": [
+                "pitcher_crop"
+              ],
+              "state": {
+                "half": "lower",
+                "age": "0"
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.3125,
+                "max": 0.6875
+              },
+              "y": {
+                "min": 0.9375,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.3125,
+                "max": 0.6875
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

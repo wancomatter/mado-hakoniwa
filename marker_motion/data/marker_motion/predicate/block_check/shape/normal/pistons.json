@@ -1,0 +1,166 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "extended": "false"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "facing": "up",
+              "extended": "true"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.0,
+            "max": 0.7499999999
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "facing": "down",
+              "extended": "true"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.25,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "facing": "south",
+              "extended": "true"
+            }
+          }
+        },
+        "distance": {
+          "z": {
+            "min": 0.0,
+            "max": 0.75
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "facing": "north",
+              "extended": "true"
+            }
+          }
+        },
+        "distance": {
+          "z": {
+            "min": 0.25,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "facing": "east",
+              "extended": "true"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0,
+            "max": 0.75
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "piston",
+              "sticky_piston"
+            ],
+            "state": {
+              "facing": "west",
+              "extended": "true"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.25,
+            "max": 1.0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -6,3 +6,31 @@
 <br>
 #一部テクスチャをお借りさせて頂きました<br>
 ・Bakenekokan http://neko.moo.jp/BS/
+
+
+## Java Edition 26.3 用ライブラリ
+
+Minecraft Java Edition 26.3（Java 25）で、次の4フォルダーをワールドの `datapacks` に置いて起動する。StatusSystem は OhMyDat に依存する。MarkerMotion と player_motion は、player_motion 側に置いた補助ディメンション `neac:` と固定UUIDのMarkerを共有する。初回の導入では、補助ディメンションを読み込むためワールドまたはサーバーを再起動する。
+
+| フォルダー | 取り込み元のコミット |
+| --- | --- |
+| `oh_my_dat` | [Ai-Akaishi/OhMyDat · `283c84d`](https://github.com/Ai-Akaishi/OhMyDat/commit/283c84d2d1e38b1b291149694040bcf66a3770a6) |
+| `status_system` | [wancomatter/StatusSystem · `3e04359`](https://github.com/wancomatter/StatusSystem/commit/3e04359bddbedc42cd44f7bd9b9ddfc0be51135d) |
+| `player_motion` | [nea-c/player_motion · `91bf900`](https://github.com/nea-c/player_motion/commit/91bf90093717726de38c817be93e9953d63d6b40) |
+| `marker_motion` | [nea-c/MarkerMotion · `7459bf9`](https://github.com/nea-c/MarkerMotion/commit/7459bf9a26c07e79c7ee40d72b08db3dbf2aa381) |
+
+各フォルダーに取り込み元の `LICENSE` を収録。MarkerMotion は重力やバウンドが必要な少数の飛翔体向けとし、ショットガンなど多数の弾を同時に飛ばす処理の採用対象から外す。
+
+### 確認済み
+
+公式26.3 JARのデータパック読み込み処理で4パックを同時に読み込んだ。全function 99本、代表引数を展開したマクロ10本、MarkerMotionのpredicate 100件、StatusSystemのルートテーブル1件を確認した。導入後のコードに対して、player_motionの上流静的テスト29件が通過した。
+
+### 次回の実機確認
+
+まず新規の隔離ワールドに組み込み `vanilla` と上記4パックを入れ、ライブラリの動作を確認する。`wnkm` と旧版の外部 `vanilla` はマップ本体の移植時に扱う。
+
+1. 初回起動、`/reload`、再起動後に4パックが有効で、`neac:` の固定Markerと `status_system:` の固定防具立てが各1体あることを確認する。
+2. OhMyDatで2体のストレージが分離することと、StatusSystemの基礎値・加算・乗算・期限切れが期待値と合うことを確認する。大きな値の乗算も試す。
+3. 実クライアントからplayer_motionを呼び、向きと移動量、処理後のゲームモードを確認する。MarkerMotionは少数のMarkerで重力・壁衝突・バウンドと、両ライブラリを同時に使った際の動作を確認する。
+
+マクロを使う既存処理の実行負荷と、飛翔体を同時に扱った際の負荷は実機で確認する。

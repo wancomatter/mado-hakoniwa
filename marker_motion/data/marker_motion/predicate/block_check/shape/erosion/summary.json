@@ -1,0 +1,7 @@
+{
+  "type": "any_of",
+  "terms": [
+    "marker_motion:block_check/shape/erosion/piston_head/summary",
+    "marker_motion:block_check/shape/erosion/pitcher_crop/summary"
+  ]
+}

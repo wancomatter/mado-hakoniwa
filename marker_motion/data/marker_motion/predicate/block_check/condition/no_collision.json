@@ -1,0 +1,17 @@
+{
+  "type": "all_of",
+  "terms": [
+    {
+      "type": "inverted",
+      "term": "marker_motion:block_check/shape/erosion/check"
+    },
+    {
+      "type": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": "#marker_motion:.no_collision"
+        }
+      }
+    }
+  ]
+}

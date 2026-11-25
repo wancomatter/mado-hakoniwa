@@ -1,0 +1,31 @@
+{
+  "type": "all_of",
+  "terms": [
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"MarkerMotion.stopwith.hit\"]}"
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"MarkerMotion.speed.0\"]}"
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"MarkerMotion.on_block\"]}"
+          }
+        }
+      ]
+    }
+  ]
+}

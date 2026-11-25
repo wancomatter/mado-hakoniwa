@@ -1,0 +1,122 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:glass_panes"
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.4375,
+            "max": 0.5625
+          },
+          "z": {
+            "min": 0.4375,
+            "max": 0.5625
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:glass_panes",
+            "state": {
+              "south": "true"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.4375,
+            "max": 0.5625
+          },
+          "z": {
+            "min": 0.5625,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:glass_panes",
+            "state": {
+              "north": "true"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.4375,
+            "max": 0.5625
+          },
+          "z": {
+            "min": 0.0,
+            "max": 0.4375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:glass_panes",
+            "state": {
+              "east": "true"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.5625,
+            "max": 1.0
+          },
+          "z": {
+            "min": 0.4375,
+            "max": 0.5625
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:glass_panes",
+            "state": {
+              "west": "true"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0,
+            "max": 0.4375
+          },
+          "z": {
+            "min": 0.4375,
+            "max": 0.5625
+          }
+        }
+      }
+    }
+  ]
+}

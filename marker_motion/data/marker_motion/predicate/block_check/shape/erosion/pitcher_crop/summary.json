@@ -1,0 +1,6 @@
+{
+  "type": "all_of",
+  "terms": [
+    "marker_motion:block_check/shape/erosion/pitcher_crop/offset/up"
+  ]
+}

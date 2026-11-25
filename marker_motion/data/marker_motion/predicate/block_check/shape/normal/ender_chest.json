@@ -1,0 +1,27 @@
+{
+  "type": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "location": {
+      "block": {
+        "blocks": [
+          "ender_chest"
+        ]
+      }
+    },
+    "distance": {
+      "x": {
+        "min": 0.0625,
+        "max": 0.9375
+      },
+      "y": {
+        "min": 0.0,
+        "max": 0.87499999999
+      },
+      "z": {
+        "min": 0.0625,
+        "max": 0.9375
+      }
+    }
+  }
+}

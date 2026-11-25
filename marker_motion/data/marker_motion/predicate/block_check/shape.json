@@ -1,0 +1,101 @@
+{
+  "type": "all_of",
+  "terms": [
+    {
+      "type": "inverted",
+      "term": {
+        "type": "location_check",
+        "predicate": {
+          "block": {
+            "blocks": "#marker_motion:.no_collision"
+          }
+        }
+      }
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "inverted",
+          "term": {
+            "type": "location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#marker_motion:.not_fullblock"
+              }
+            }
+          }
+        },
+        "marker_motion:block_check/shape/erosion/summary",
+        "marker_motion:block_check/shape/normal/amethysts/summary",
+        "marker_motion:block_check/shape/normal/bell/summary",
+        "marker_motion:block_check/shape/normal/walls/summary",
+        "marker_motion:block_check/shape/normal/anvil",
+        "marker_motion:block_check/shape/normal/azaleas",
+        "marker_motion:block_check/shape/normal/bamboo",
+        "marker_motion:block_check/shape/normal/bars",
+        "marker_motion:block_check/shape/normal/beds",
+        "marker_motion:block_check/shape/normal/big_dripleaf",
+        "marker_motion:block_check/shape/normal/brewing_stand",
+        "marker_motion:block_check/shape/normal/cactus",
+        "marker_motion:block_check/shape/normal/cakes",
+        "marker_motion:block_check/shape/normal/campfires",
+        "marker_motion:block_check/shape/normal/candle",
+        "marker_motion:block_check/shape/normal/carpets",
+        "marker_motion:block_check/shape/normal/cauldron",
+        "marker_motion:block_check/shape/normal/chains",
+        "marker_motion:block_check/shape/normal/chests",
+        "marker_motion:block_check/shape/normal/chorus_plant",
+        "marker_motion:block_check/shape/normal/comparator",
+        "marker_motion:block_check/shape/normal/composter",
+        "marker_motion:block_check/shape/normal/conduit",
+        "marker_motion:block_check/shape/normal/copper_golem_statues",
+        "marker_motion:block_check/shape/normal/daylight_detector",
+        "marker_motion:block_check/shape/normal/decorated_pot",
+        "marker_motion:block_check/shape/normal/dirt_path",
+        "marker_motion:block_check/shape/normal/doors",
+        "marker_motion:block_check/shape/normal/dragon_egg",
+        "marker_motion:block_check/shape/normal/dried_ghast",
+        "marker_motion:block_check/shape/normal/enchanting_table",
+        "marker_motion:block_check/shape/normal/end_portal_frame",
+        "marker_motion:block_check/shape/normal/end_rod",
+        "marker_motion:block_check/shape/normal/ender_chest",
+        "marker_motion:block_check/shape/normal/farmland",
+        "marker_motion:block_check/shape/normal/fence_gates",
+        "marker_motion:block_check/shape/normal/fences",
+        "marker_motion:block_check/shape/normal/flower_pots",
+        "marker_motion:block_check/shape/normal/glass_panes",
+        "marker_motion:block_check/shape/normal/grindstone",
+        "marker_motion:block_check/shape/normal/heavy_core",
+        "marker_motion:block_check/shape/normal/honey_block",
+        "marker_motion:block_check/shape/normal/hopper",
+        "marker_motion:block_check/shape/normal/ladder",
+        "marker_motion:block_check/shape/normal/lanterns",
+        "marker_motion:block_check/shape/normal/lectern",
+        "marker_motion:block_check/shape/normal/lightning_rods",
+        "marker_motion:block_check/shape/normal/lily_pad",
+        "marker_motion:block_check/shape/normal/mob_heads",
+        "marker_motion:block_check/shape/normal/mud",
+        "marker_motion:block_check/shape/normal/pale_moss_carpet",
+        "marker_motion:block_check/shape/normal/piston_head",
+        "marker_motion:block_check/shape/normal/pistons",
+        "marker_motion:block_check/shape/normal/pitcher_crop",
+        "marker_motion:block_check/shape/normal/pointed_dripstone",
+        "marker_motion:block_check/shape/normal/repeater",
+        "marker_motion:block_check/shape/normal/sculk_sensor",
+        "marker_motion:block_check/shape/normal/sculk_shrieker",
+        "marker_motion:block_check/shape/normal/sea_pickle",
+        "marker_motion:block_check/shape/normal/slabs",
+        "marker_motion:block_check/shape/normal/sniffer_egg",
+        "marker_motion:block_check/shape/normal/snow",
+        "marker_motion:block_check/shape/normal/soul_sand",
+        "marker_motion:block_check/shape/normal/stairs",
+        "marker_motion:block_check/shape/normal/stonecutter",
+        "marker_motion:block_check/shape/normal/trapdoors",
+        "marker_motion:block_check/shape/normal/turtle_egg",
+        "marker_motion:block_check/shape/normal/wall_hanging_sign",
+        "marker_motion:block_check/shape/normal/wooden_shelves"
+      ]
+    }
+  ]
+}

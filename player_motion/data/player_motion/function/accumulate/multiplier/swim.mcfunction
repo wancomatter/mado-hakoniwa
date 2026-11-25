@@ -1,0 +1,2 @@
+# Scale only forward target-local motion while the target is swimming.
+execute unless predicate {type:"float_value_check",value:{type:"storage",storage:"player_motion:",path:"_.target.z"},test:{max:0.0f}} run data modify storage player_motion: _.target.z set compute default float {type:"mul",inputs:[{type:"storage",storage:"player_motion:",path:"_.target.z"},{type:"storage",storage:"player_motion:",path:"_.in.multiplier.swim"}]}

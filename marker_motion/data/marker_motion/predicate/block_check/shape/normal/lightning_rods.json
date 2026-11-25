@@ -1,0 +1,164 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#marker_motion:lightning_rods",
+                  "state": {
+                    "facing": "up"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#marker_motion:lightning_rods",
+                  "state": {
+                    "facing": "down"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "distance": {
+                  "x": {
+                    "min": 0.375,
+                    "max": 0.625
+                  },
+                  "z": {
+                    "min": 0.375,
+                    "max": 0.625
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#marker_motion:lightning_rods",
+                  "state": {
+                    "facing": "south"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#marker_motion:lightning_rods",
+                  "state": {
+                    "facing": "north"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "distance": {
+                  "x": {
+                    "min": 0.375,
+                    "max": 0.625
+                  },
+                  "y": {
+                    "min": 0.375,
+                    "max": 0.6249999999
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#marker_motion:lightning_rods",
+                  "state": {
+                    "facing": "east"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#marker_motion:lightning_rods",
+                  "state": {
+                    "facing": "west"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "distance": {
+                  "y": {
+                    "min": 0.375,
+                    "max": 0.6249999999
+                  },
+                  "z": {
+                    "min": 0.375,
+                    "max": 0.625
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

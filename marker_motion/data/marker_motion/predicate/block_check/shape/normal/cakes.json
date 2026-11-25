@@ -1,0 +1,274 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "0"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "1"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.1875,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "2"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.3125,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "3"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.4375,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "4"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.5625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "5"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.6875,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "cake"
+            ],
+            "state": {
+              "bites": "6"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.8125,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.4999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "any_of",
+      "terms": [
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": [
+                  "candle_cake"
+                ]
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0625,
+                "max": 0.9375
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.4999999
+              },
+              "z": {
+                "min": 0.0625,
+                "max": 0.9375
+              }
+            }
+          }
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": [
+                  "candle_cake"
+                ]
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.4375,
+                "max": 0.5625
+              },
+              "y": {
+                "min": 0.5,
+                "max": 0.8749999999
+              },
+              "z": {
+                "min": 0.4375,
+                "max": 0.5625
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

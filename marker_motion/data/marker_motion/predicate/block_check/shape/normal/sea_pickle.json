@@ -1,0 +1,125 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "sea_pickle"
+            ],
+            "state": {
+              "pickles": "1"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.375,
+            "max": 0.625
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.3749999999
+          },
+          "z": {
+            "min": 0.375,
+            "max": 0.625
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "sea_pickle"
+            ],
+            "state": {
+              "pickles": "2"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.1875,
+            "max": 0.8125
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.3749999999
+          },
+          "z": {
+            "min": 0.1875,
+            "max": 0.8125
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "sea_pickle"
+            ],
+            "state": {
+              "pickles": "3"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.125,
+            "max": 0.875
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.3749999999
+          },
+          "z": {
+            "min": 0.125,
+            "max": 0.875
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "sea_pickle"
+            ],
+            "state": {
+              "pickles": "4"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.125,
+            "max": 0.875
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.43749999999
+          },
+          "z": {
+            "min": 0.125,
+            "max": 0.875
+          }
+        }
+      }
+    }
+  ]
+}

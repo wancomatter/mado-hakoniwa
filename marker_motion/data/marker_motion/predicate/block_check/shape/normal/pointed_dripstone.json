@@ -1,0 +1,171 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "pointed_dripstone"
+            ],
+            "state": {
+              "thickness": "base"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.125,
+            "max": 0.875
+          },
+          "z": {
+            "min": 0.125,
+            "max": 0.875
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "pointed_dripstone"
+            ],
+            "state": {
+              "thickness": "middle"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.1875,
+            "max": 0.8125
+          },
+          "z": {
+            "min": 0.1875,
+            "max": 0.8125
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "pointed_dripstone"
+            ],
+            "state": {
+              "thickness": "frustum"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.25,
+            "max": 0.75
+          },
+          "z": {
+            "min": 0.25,
+            "max": 0.75
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "pointed_dripstone"
+            ],
+            "state": {
+              "thickness": "tip",
+              "vertical_direction": "up"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.3125,
+            "max": 0.6875
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.68749999999
+          },
+          "z": {
+            "min": 0.3125,
+            "max": 0.6875
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "pointed_dripstone"
+            ],
+            "state": {
+              "thickness": "tip",
+              "vertical_direction": "down"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.3125,
+            "max": 0.6875
+          },
+          "y": {
+            "min": 0.3125,
+            "max": 1.0
+          },
+          "z": {
+            "min": 0.3125,
+            "max": 0.6875
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "pointed_dripstone"
+            ],
+            "state": {
+              "thickness": "tip_merge"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.3125,
+            "max": 0.6875
+          },
+          "z": {
+            "min": 0.3125,
+            "max": 0.6875
+          }
+        }
+      }
+    }
+  ]
+}

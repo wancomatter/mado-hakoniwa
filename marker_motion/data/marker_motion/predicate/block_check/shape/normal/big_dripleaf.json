@@ -1,0 +1,75 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "big_dripleaf"
+            ],
+            "state": {
+              "tilt": "partial"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.6875,
+            "max": 0.812499999999
+          }
+        }
+      }
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "big_dripleaf"
+                  ],
+                  "state": {
+                    "tilt": "none"
+                  }
+                }
+              }
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "big_dripleaf"
+                  ],
+                  "state": {
+                    "tilt": "unstable"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "y": {
+                "min": 0.6875,
+                "max": 0.93749999999
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

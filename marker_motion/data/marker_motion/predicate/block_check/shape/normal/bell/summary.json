@@ -1,0 +1,7 @@
+{
+  "type": "any_of",
+  "terms": [
+    "marker_motion:block_check/shape/normal/bell/not_floor",
+    "marker_motion:block_check/shape/normal/bell/floor"
+  ]
+}

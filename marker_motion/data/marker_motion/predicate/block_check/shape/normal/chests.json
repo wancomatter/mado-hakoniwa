@@ -1,0 +1,265 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "type": "single"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "north",
+              "type": "right"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "north",
+              "type": "left"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 1.0
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "south",
+              "type": "right"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 1.0
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "south",
+              "type": "left"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "east",
+              "type": "right"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0,
+            "max": 0.9375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "east",
+              "type": "left"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "west",
+              "type": "right"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0625,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chests",
+            "state": {
+              "facing": "west",
+              "type": "left"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.0625,
+            "max": 0.9375
+          },
+          "y": {
+            "min": 0.0,
+            "max": 0.87499999999
+          },
+          "z": {
+            "min": 0.0,
+            "max": 0.9375
+          }
+        }
+      }
+    }
+  ]
+}

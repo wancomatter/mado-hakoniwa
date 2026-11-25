@@ -1,0 +1,77 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chains",
+            "state": {
+              "axis": "y"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.40625,
+            "max": 0.59375
+          },
+          "z": {
+            "min": 0.40625,
+            "max": 0.59375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chains",
+            "state": {
+              "axis": "x"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.40625,
+            "max": 0.593749999999
+          },
+          "z": {
+            "min": 0.40625,
+            "max": 0.59375
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:chains",
+            "state": {
+              "axis": "z"
+            }
+          }
+        },
+        "distance": {
+          "x": {
+            "min": 0.40625,
+            "max": 0.59375
+          },
+          "y": {
+            "min": 0.40625,
+            "max": 0.593749999999
+          }
+        }
+      }
+    }
+  ]
+}

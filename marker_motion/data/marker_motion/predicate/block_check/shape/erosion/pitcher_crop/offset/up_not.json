@@ -1,0 +1,17 @@
+{
+  "type": "inverted",
+  "term": {
+    "type": "location_check",
+    "offsetY": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "pitcher_crop"
+        ],
+        "state": {
+          "half": "lower"
+        }
+      }
+    }
+  }
+}

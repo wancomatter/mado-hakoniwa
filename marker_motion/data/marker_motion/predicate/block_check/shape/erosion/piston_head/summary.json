@@ -1,0 +1,11 @@
+{
+  "type": "any_of",
+  "terms": [
+    "marker_motion:block_check/shape/erosion/piston_head/offset/up",
+    "marker_motion:block_check/shape/erosion/piston_head/offset/down",
+    "marker_motion:block_check/shape/erosion/piston_head/offset/south",
+    "marker_motion:block_check/shape/erosion/piston_head/offset/north",
+    "marker_motion:block_check/shape/erosion/piston_head/offset/east",
+    "marker_motion:block_check/shape/erosion/piston_head/offset/west"
+  ]
+}

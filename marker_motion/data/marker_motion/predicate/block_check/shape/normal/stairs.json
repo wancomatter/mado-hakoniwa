@@ -1,0 +1,525 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:stairs",
+            "state": {
+              "half": "bottom"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.0,
+            "max": 0.499999999
+          }
+        }
+      }
+    },
+    {
+      "type": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": "#marker_motion:stairs",
+            "state": {
+              "half": "top"
+            }
+          }
+        },
+        "distance": {
+          "y": {
+            "min": 0.5,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "south",
+                        "shape": "inner_right"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "north"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_right"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "east",
+                        "shape": "inner_left"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "west"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_left"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.5
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.5
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "south",
+                        "shape": "inner_left"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "north"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_left"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "east"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_right"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "west",
+                        "shape": "inner_right"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.5,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.5
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "south"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_left"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "north",
+                        "shape": "inner_left"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "east",
+                        "shape": "inner_right"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "west"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_right"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.5
+              },
+              "z": {
+                "min": 0.5,
+                "max": 1.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "all_of",
+      "terms": [
+        {
+          "type": "any_of",
+          "terms": [
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "south"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_right"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "north",
+                        "shape": "inner_right"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "east"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "inverted",
+                  "term": {
+                    "type": "location_check",
+                    "predicate": {
+                      "block": {
+                        "blocks": "#marker_motion:stairs",
+                        "state": {
+                          "shape": "outer_left"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#marker_motion:stairs",
+                      "state": {
+                        "facing": "west",
+                        "shape": "inner_left"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "distance": {
+              "x": {
+                "min": 0.5,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.5,
+                "max": 1.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

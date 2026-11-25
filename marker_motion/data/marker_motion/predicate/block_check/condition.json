@@ -1,0 +1,7 @@
+{
+  "type": "any_of",
+  "terms": [
+    "marker_motion:block_check/condition/collision",
+    "marker_motion:block_check/condition/no_collision"
+  ]
+}
