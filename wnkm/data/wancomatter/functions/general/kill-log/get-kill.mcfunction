@@ -10,7 +10,6 @@ execute if entity @s[tag=flag,scores={hurtWeaponNumber=-11..-1}] if score #gamem
 execute if entity @s[tag=flag,scores={hurtWeaponNumber=-32..-20}] if score #gamemode counter matches 12 if entity @e[tag=detonator,limit=1] run function wancomatter:boss/detonator/kill-log
 execute if entity @s[tag=flag,scores={hurtWeaponNumber=-52..-40}] if score #gamemode counter matches 12 if entity @e[tag=dusk,limit=1] run function wancomatter:boss/dusk/kill-log
 execute if entity @s[tag=flag,scores={hurtWeaponNumber=-79..-60}] if score #gamemode counter matches 12 if entity @e[tag=necro,limit=1] run function wancomatter:boss/necro/kill-log
-execute if entity @s[tag=flag,scores={hurtWeaponNumber=-99..-80}] if score #gamemode counter matches 12 if entity @e[tag=dragon1_stand_body,limit=1] run function wancomatter:boss/dragon/kill-log
 execute if entity @s[tag=flag] run tellraw @a ["",{"text":"[KILL] ","color":"red"},{"selector":"@s"},{"text":" died"}]
 execute if entity @s[tag=flag] run tag @s remove flag
 execute if entity @s[tag=scythe_attacked] if entity @e[tag=got-kill,limit=1] as @e[tag=got-kill] at @s run function wancomatter:skills/114/get-kill

@@ -35,11 +35,9 @@ execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-3,limit=1] run function w
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-4,limit=1] run function wancomatter:lobby/monitor/gamemode/tdm
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-5,limit=1] run function wancomatter:lobby/monitor/gamemode/wave
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-2-1,limit=1] run function wancomatter:lobby/monitor/gamemode/bossbattle/detonator
-execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-2-2,limit=1] run function wancomatter:lobby/monitor/gamemode/bossbattle/kirito
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-2-3,limit=1] run function wancomatter:lobby/monitor/gamemode/bossbattle/dusk
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-2-4,limit=1] run function wancomatter:lobby/monitor/gamemode/bossbattle/necro
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-2-5,limit=1] run function wancomatter:lobby/monitor/gamemode/bossbattle/bear
-execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-2-6,limit=1] run function wancomatter:lobby/monitor/gamemode/bossbattle/dragon
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI2-5-1,limit=1] run function wancomatter:lobby/monitor/gamemode/wave/crimson
 
 execute if entity @e[tag=monitorUIfocus,tag=monitorUI3-0option,limit=1] run function wancomatter:lobby/monitor/stage/random_option

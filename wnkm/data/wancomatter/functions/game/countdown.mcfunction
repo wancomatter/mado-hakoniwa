@@ -56,7 +56,6 @@ execute if score #gametime counter matches -1 if score #gamemode counter matches
 execute if score #gametime counter matches -1 if score #gamemode counter matches 1..9 if score #teamModify counter matches 11..19 if score #stagechanged subcounter matches 5 run fill 31 31 31 -31 35 -31 minecraft:air replace minecraft:white_stained_glass
 execute if score #gametime counter matches -1 if score #gamemode counter matches 1..9 at @e[tag=spawnStand] run fill ~-3 ~ ~-3 ~3 ~6 ~3 minecraft:air replace #wancomatter:glass
 execute if score #gametime counter matches -1 if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 1 run function wancomatter:boss/detonator/advent
-execute if score #gametime counter matches -1 if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 2 run function wancomatter:boss/kirito/advent
 execute if score #gametime counter matches -1 if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 3 run function wancomatter:boss/dusk/advent
 execute if score #gametime counter matches -1 if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 4 run function wancomatter:boss/necro/advent
 execute if score #gametime counter matches -1 if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 5 run function wancomatter:boss/bear/advent

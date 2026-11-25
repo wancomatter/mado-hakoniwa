@@ -86,10 +86,8 @@ execute if entity @s[scores={dummy=125}] if entity @s[scores={CooldownX=..0}] if
 execute if entity @s[scores={dummy=125}] if entity @s[scores={CooldownX=..0}] unless entity @s[nbt={SelectedItem:{tag:{Ammo:0}}}] run function wancomatter:skills/025/first
 
 execute if entity @s[scores={dummy=26}] unless entity @s[scores={Mana=100..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=26}] if entity @s[scores={Mana=100..,CooldownX=..0}] run function wancomatter:skills/026/0.use
 
 execute if entity @s[scores={dummy=27}] unless entity @s[scores={Mana=100..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=27}] if entity @s[scores={Mana=100..,CooldownX=..0}] run function wancomatter:skills/027/0.use
 
 execute if entity @s[scores={dummy=28}] unless entity @s[scores={Mana=15..,CooldownX=..0}] run function wancomatter:skills/fail
 execute if entity @s[scores={dummy=28}] if entity @s[scores={Mana=15..,CooldownX=..0}] run function wancomatter:skills/028/first
@@ -325,19 +323,13 @@ execute if entity @s[scores={dummy=117..118}] unless entity @s[scores={Mana=5..,
 execute if entity @s[scores={dummy=117..118}] if entity @s[scores={Mana=5..,CooldownX=..0}] run function wancomatter:skills/117/discharge
 
 execute if entity @s[scores={dummy=201}] unless entity @s[scores={Mana=8..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=201}] if entity @s[scores={Mana=8..,CooldownX=..0}] run function wancomatter:skills/201/0.use
 
 execute if entity @s[scores={dummy=202}] unless entity @s[scores={Mana=15..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=202}] if entity @s[scores={Mana=15..,CooldownX=..0}] run function wancomatter:skills/202/0.use
 
 execute if entity @s[scores={dummy=203}] unless entity @s[scores={Mana=21..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=203}] if entity @s[scores={Mana=21..,CooldownX=..0}] run function wancomatter:skills/203/0.use
 
 execute if entity @s[scores={dummy=204}] unless entity @s[scores={Mana=10..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=204}] if entity @s[scores={Mana=10..,CooldownX=..0}] run function wancomatter:skills/204/0.use
 
 execute if entity @s[scores={dummy=205}] unless entity @s[scores={Mana=52..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=205}] if entity @s[scores={Mana=52..,CooldownX=..0}] run function wancomatter:skills/205/0.use
 
 execute if entity @s[scores={dummy=206}] unless entity @s[scores={Mana=20..,CooldownX=..0}] run function wancomatter:skills/fail
-execute if entity @s[scores={dummy=206}] if entity @s[scores={Mana=20..,CooldownX=..0}] run function wancomatter:skills/206/0.use
