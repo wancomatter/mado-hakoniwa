@@ -29,3 +29,5 @@ fill -1 25 -81 -32 55 -112 minecraft:air
 
 #1on1用の看板除去
 fill 16 64 16 -16 64 -16 minecraft:air replace minecraft:birch_sign
+
+execute as @e[type=interaction,tag=wnkm.sign.duel] run function wnkm:entity/0.discard

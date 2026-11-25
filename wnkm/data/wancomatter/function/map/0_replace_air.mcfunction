@@ -82,4 +82,4 @@ execute if score #dummy dummy matches 1.. run time add 1
 execute if score #dummy dummy matches 1.. run scoreboard players remove #dummy dummy 1
 scoreboard players reset #dummy
 
-execute as @e[type=!player,tag=wnkm.owned,tag=!stable,tag=!monitorUI,tag=!monitorUIslime] run function wnkm:entity/0.discard
+execute as @e[type=!player,tag=wnkm.owned,tag=!wnkm.sign.lobby,tag=!stable,tag=!monitorUI,tag=!monitorUIslime] run function wnkm:entity/0.discard

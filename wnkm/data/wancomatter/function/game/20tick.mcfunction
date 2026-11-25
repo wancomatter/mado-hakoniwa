@@ -19,6 +19,7 @@ execute if score #gamemode counter matches 4 if score #stagechanged subcounter m
 execute if score #gamemode counter matches 4 if score #stagechanged subcounter matches 5 run bossbar set wnkm:gametime name [{"text":"【TDM】","color":"aqua"},{"text":" 研究所 ","color":"white"},{"score":{"name":"#gametime","objective":"subcounter2"},"color":"aqua"}]
 execute if score #gamemode counter matches 4 if score #stagechanged subcounter matches 6 run bossbar set wnkm:gametime name [{"text":"【TDM】","color":"aqua"},{"text":" 川 ","color":"aqua"},{"score":{"name":"#gametime","objective":"subcounter2"},"color":"aqua"}]
 execute if score #gamemode counter matches 4 if score #stagechanged subcounter matches 7 run bossbar set wnkm:gametime name [{"text":"【TDM】","color":"aqua"},{"text":" 祭壇 ","color":"gray"},{"score":{"name":"#gametime","objective":"subcounter2"},"color":"aqua"}]
+execute if score #gamemode counter matches 11 run bossbar set wnkm:gametime name [{text:"【PvE:Wave】 真紅の傷跡 ",color:"aqua"},{score:{name:"#gametime",objective:"subcounter2"}}]
 execute store result bossbar wnkm:gametime value run scoreboard players get #gametime subcounter2
 bossbar set wnkm:gametime players @a
 scoreboard players set #gametime counter 0

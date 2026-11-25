@@ -1,3 +1,6 @@
+# 勝敗の表示中は復活カウントダウンで試合結果を上書きしない。
+execute if score #game counter matches 1.. if score #gametime counter matches 55.. run return 0
+
 gamemode spectator @s[gamemode=!spectator]
 execute if entity @s[scores={deathTimer=-29..}] run scoreboard players remove @s deathTimer 1
 execute if entity @s[scores={deathTimer=-22..-6}] run scoreboard players reset @s maxHP

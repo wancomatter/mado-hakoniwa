@@ -17,3 +17,4 @@ execute if score #gamemode counter matches 12 if score #stagechanged subcounter2
 execute if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 2..3 run function wancomatter:map/ex2_battlefield
 execute if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 4 run function wancomatter:map/ex3_necrofield
 execute if score #gamemode counter matches 12 if score #stagechanged subcounter2 matches 5 run function wancomatter:map/ex4_kamakura
+execute if score #gamemode counter matches 11 run function wancomatter:map/wave/1_crimson

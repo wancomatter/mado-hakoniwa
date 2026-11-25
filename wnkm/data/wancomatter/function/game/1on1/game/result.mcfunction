@@ -48,9 +48,13 @@ team join DarkGreen @a[tag=this,scores={pvpteamsaver=14}]
 team join DarkBlue @a[tag=this,scores={pvpteamsaver=15}]
 team join DarkGray @a[tag=this,scores={pvpteamsaver=16}]
 team join noPush @a[tag=this,scores={pvpteamsaver=17}]
-team join spectate @a[tag=this,scores={pvpteamsaver=-1}]
+team join z_spectate @a[tag=this,scores={pvpteamsaver=-1}]
 
-tp @a[tag=this] 0 64 0
+# 決闘後は出場枠ごとに位置をずらし、同じ場所へ戻った相手で視界が塞がらないようにする。
+tag @s add wnkm.duel_return
+execute as @a[tag=this] if score @s playerNumber = @e[tag=wnkm.duel_return,limit=1] Cooldown1 run tp @s 0.5 64 1.5
+execute as @a[tag=this] if score @s playerNumber = @e[tag=wnkm.duel_return,limit=1] Cooldown2 run tp @s 0.5 64 -0.5
+tag @s remove wnkm.duel_return
 tag @a[tag=this] remove 1on1_battle
 tag @a[tag=this] remove 1on1_loser
 tag @a[tag=this] remove this

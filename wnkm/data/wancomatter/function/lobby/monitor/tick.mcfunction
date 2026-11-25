@@ -1,3 +1,5 @@
+execute unless entity @s[tag=op,scores={wnkm.schema=1}] run return fail
+execute unless score @s playerNumber = #monitor playerNumber run return fail
 effect give @s minecraft:levitation 1 255 true
 tp @e[tag=monitorUIslime] ^ ^ ^1
 execute positioned 0 66.625 0 unless entity @s[distance=..0.1] run tp @s 0 66.625 0

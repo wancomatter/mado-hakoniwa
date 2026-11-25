@@ -1,0 +1,10 @@
+# 旧版から引き継いだ看板と試合終了後の看板に、右クリック用の実体を置く。
+execute if block 0 65 -17 birch_wall_sign positioned 0.5 65 -16.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block 0 65 17 birch_wall_sign positioned 0.5 65 17.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block -17 65 0 birch_wall_sign positioned -16.5 65 0.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block 17 65 0 birch_wall_sign positioned 17.5 65 0.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block 0 65 -18 birch_wall_sign positioned 0.5 65 -17.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block 0 65 18 birch_wall_sign positioned 0.5 65 18.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block -18 65 0 birch_wall_sign positioned -17.5 65 0.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+execute if block 18 65 0 birch_wall_sign positioned 18.5 65 0.5 unless entity @e[type=interaction,tag=wnkm.sign.lobby,distance=..0.25,limit=1] run summon interaction ~ ~ ~ {width:0.9f,height:0.85f,response:1b,Tags:["wnkm.owned","wnkm.sign","wnkm.sign.lobby"]}
+scoreboard players set #signs counter 1

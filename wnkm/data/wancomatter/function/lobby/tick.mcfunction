@@ -40,7 +40,7 @@ execute if entity @a[scores={pageChange=-1..},limit=1] as @a[scores={pageChange=
 
 loot replace entity @a container.16 loot wancomatter:seal
 loot replace entity @a container.23 loot wancomatter:seal3
-item replace entity @a[tag=!op] container.34 with minecraft:written_book[custom_data={invGUI:-18b},custom_name={color:"light_purple",italic:0b,text:"OP: モニター権限を取得"},written_book_content={author:"",pages:[{raw:{click_event:{action:"run_command",command:"/function wancomatter:lobby/get_op"},color:"light_purple",hover_event:{action:"show_text",value:[{text:"ゲーム設定モニターの権限を取得します。\n※op権限を持つプレイヤー限定"}]},text:"\n\n   【ここをクリック！】"}}],title:{raw:""}}]
+execute as @a[tag=!op,scores={wnkm.schema=1}] unless items entity @s container.34 written_book[custom_data~{invGUI:-18b,wnkm_book:3b}] run item replace entity @s container.34 with minecraft:written_book[custom_data={invGUI:-18b,wnkm_book:3b},custom_name={color:"light_purple",italic:0b,text:"OP: モニター権限を取得"},written_book_content={author:"",pages:[{raw:{click_event:{action:"copy_to_clipboard",value:"/function wancomatter:lobby/get_op"},color:"light_purple",hover_event:{action:"show_text",value:[{text:"ゲーム設定モニターの権限を取得します。\n※op権限を持つプレイヤー限定"}]},text:"\n\n   【コマンドをコピー】\n\nチャット欄に貼り付けて実行してください。"}}],title:{raw:""}}]
 
 execute if entity @a[advancements={wancomatter:general/inventory_changed=true},limit=1] as @a[advancements={wancomatter:general/inventory_changed=true}] run function wancomatter:lobby/cost
 
