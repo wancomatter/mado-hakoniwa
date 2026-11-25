@@ -1,6 +1,13 @@
 {
-   "pack": {
-      "pack_format": 8,
-      "description": ""
-   }
+  "pack": {
+    "description": "魔導の箱庭",
+    "min_format": [
+      121,
+      0
+    ],
+    "max_format": [
+      121,
+      0
+    ]
+  }
 }

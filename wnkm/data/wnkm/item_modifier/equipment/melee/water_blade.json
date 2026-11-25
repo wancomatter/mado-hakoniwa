@@ -1,0 +1,15 @@
+{
+  "type": "sequence",
+  "functions": [
+    {
+      "type": "set_custom_data",
+      "tag": "{wnkm:{equipment:\"wnkm:equipment/melee/water_blade\"}}"
+    },
+    {
+      "type": "set_components",
+      "components": {
+        "minecraft:item_model": "wnkm:equipment/melee/water_blade"
+      }
+    }
+  ]
+}
