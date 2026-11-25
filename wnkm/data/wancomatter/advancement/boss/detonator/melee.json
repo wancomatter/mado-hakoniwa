@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"detonator\"]}",
+            "entity_type": "minecraft:stray"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:boss/detonator/ehp/melee"
+  }
+}

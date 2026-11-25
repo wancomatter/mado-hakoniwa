@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "白熊の腰蓑",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "白熊の毛皮を用いた腰蓑。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "移動速度低下の効果レベルを1段階下げる効果を持つ。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "最大HP +9",
+                  "italic": false,
+                  "color": "green"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/bear_legs\"},Soulbound:1b,bear_legs:1b,maxHP:9}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 15659226,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomID:1,randomItem:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomID:2,randomItem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

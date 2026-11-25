@@ -1,0 +1,9 @@
+{
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:strength": {}
+    }
+  },
+  "type": "entity_properties"
+}

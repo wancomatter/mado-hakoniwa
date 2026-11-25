@@ -1,0 +1,3 @@
+summon minecraft:area_effect_cloud ~ ~ ~ {Age:4,Duration:5,Effects:[{Amplifier:3b,Duration:600,Id:5},{Amplifier:2b,Duration:600,Id:26},{Amplifier:1b,Duration:600,Id:1}],Radius:0.4f,WaitTime:1,potion_contents:{custom_effects:[{amplifier:3b,duration:600,id:"minecraft:strength"},{amplifier:2b,duration:600,id:"minecraft:luck"},{amplifier:1b,duration:600,id:"minecraft:speed"}]},potion_duration_scale:0.25f,Tags:["wnkm.owned","wnkm.round"]}
+execute if entity @s[type=player] run tellraw @s [{"selector":"@a[tag=user,limit=1]","color":"light_purple"},{"text":"から","color":"gray"},{"text":"ベテルギウス","color":"#FF9335","bold":true},{"text":"による支援を受けた","color":"gray"}]
+tag @s remove hit

@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "吹雪",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:12 / Cooldown:15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "魔法陣から吹雪を引き起こし、敵を凍らせる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:47,wnkm:{equipment:\"wnkm:equipment/magic_attack/blizzard\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/blizzard"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

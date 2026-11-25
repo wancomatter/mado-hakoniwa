@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "スケルポン",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:10 / Cooldown:20",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "チェストを開けて前方にスケルトンを投げる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:59,wnkm:{equipment:\"wnkm:equipment/magic_summon/skelepon\"},Soulbound:1b,magic_summon:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_summon/skelepon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

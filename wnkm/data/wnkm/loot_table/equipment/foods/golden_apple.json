@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "黄金の果実",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "HP+20 / MP+30 / 食事制限:120s",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "黄金の輝きを放つ生命力溢れる果実。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "1分間、ダメージ軽減Ⅱを得る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/foods/golden_apple\"},Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "純白の服",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "箱庭の祝福を受けし服。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "加護の上限個数を4個にする。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "最大HP +3",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": "物理耐性 +10%",
+                  "italic": false,
+                  "color": "blue"
+                },
+                {
+                  "text": "魔法耐性 +10%",
+                  "italic": false,
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/bless_arm\"},Soulbound:1b,armorResist:10,blessarm:1b,magicResist:10,maxHP:3}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 16777215,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

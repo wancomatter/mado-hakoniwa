@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fermented_spider_eye",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "加護:サバイブ免疫",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "毒、枯渇、弱体化、発光の効果時間を半減する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "2個装備すると効果を無効化する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "また、満腹度が常時ゲージ9.0で固定される。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "加護はホットバーに入れる事で自動発動。",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "同じ加護は2個まで効果が重複する。",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/bless/19/unstackable",
+                  "slot": "chest",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "attribute": "minecraft:follow_range"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:19,wnkm:{equipment:\"wnkm:equipment/bless/19\"},Soulbound:1b,blessItem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "雪玉投げ",
+                "color": "white",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:79,Soulbound:1b,magic_summon:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:appearance/carrot_on_a_stick/79"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

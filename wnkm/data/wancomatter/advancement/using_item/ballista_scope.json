@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{LegacySkill:132}"
+          }
+        }
+      }
+    }
+  }
+}

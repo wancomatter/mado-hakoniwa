@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "隠密",
+                "color": "dark_gray",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:30 / Cooldown:20 / 解除時CT:20",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "最大8分間持続する隠密状態になる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "隠密状態では常時透明化し、スニーク時に移動速度上昇。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "視線を向けられる、攻撃を受ける、武器を使うと隠密が解除。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:12,wnkm:{equipment:\"wnkm:equipment/magic_assist/spy\"},Soulbound:1b,magic_assist:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/spy"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

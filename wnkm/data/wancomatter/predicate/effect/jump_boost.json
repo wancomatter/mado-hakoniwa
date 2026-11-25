@@ -1,0 +1,9 @@
+{
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:jump_boost": {}
+    }
+  },
+  "type": "entity_properties"
+}

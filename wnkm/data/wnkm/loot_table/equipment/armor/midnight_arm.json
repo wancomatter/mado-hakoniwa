@@ -1,0 +1,87 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "漆黒のバトルコート",
+                "color": "dark_gray",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "一撃の重みを重視する為の防具。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP回復速度 -45%",
+                  "italic": false,
+                  "color": "dark_aqua"
+                },
+                {
+                  "text": "物理耐性 +9%",
+                  "italic": false,
+                  "color": "blue"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/armor/midnight_arm/generic.attack_damage",
+                  "slot": "chest",
+                  "amount": 0.15,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_damage"
+                },
+                {
+                  "id": "wnkm:equipment/armor/midnight_arm/generic.movement_speed",
+                  "slot": "chest",
+                  "amount": 0.05,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:movement_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/midnight_arm\"},MPRegen:-45,Soulbound:1b,armorResist:9}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:dyed_color": 0,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

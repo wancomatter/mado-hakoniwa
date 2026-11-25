@@ -1,0 +1,3 @@
+kill @e[tag=monitorUI]
+execute positioned 0 67.725 0 rotated -90 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:redstone_torch"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUIcancel","wnkm.owned"],CustomName:{color:"aqua",text:"キャンセル"}}
+execute positioned 0 67.725 0 rotated -60 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:1b,Glowing:1b,Invulnerable:1b,Item:{count:1,id:"minecraft:crimson_nylium"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI2-5-1","monitorUIfocusing","wnkm.owned"],CustomName:{color:"aqua",text:"真紅の傷跡"}}

@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ページ2-2: 魔導兵器",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Enderchest: ページ2-2を開く",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                [
+                  {
+                    "text": "Tips: ",
+                    "italic": false,
+                    "color": "aqua"
+                  },
+                  {
+                    "text": "スニークするとリコイルが軽減されます。",
+                    "italic": false,
+                    "color": "gold"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:5,invGUI:19b,invGUIitem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wnkm:appearance/carrot_on_a_stick/5"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

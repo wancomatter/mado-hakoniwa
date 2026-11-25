@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "強靭な腰蓑",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "機動力を重視して戦える革の防具。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "移動速度低下の効果時間を半減する効果を持つ。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "物理耐性 +10%",
+                  "italic": false,
+                  "color": "blue"
+                },
+                {
+                  "text": "魔法耐性 +10%",
+                  "italic": false,
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/armor/leather_legs/generic.attack_damage",
+                  "slot": "legs",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/leather_legs\"},Soulbound:1b,armorResist:10,magicResist:10}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

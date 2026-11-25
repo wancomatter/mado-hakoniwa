@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "爆炎",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:10 / Cooldown:12",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "炎霊の加護を受け、前方に爆炎を発射する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "爆炎はブロックに命中すると爆発する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "距離が離れるほどに爆炎の威力は増加する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:45,wnkm:{equipment:\"wnkm:equipment/magic_attack/fire_circle\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/fire_circle"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

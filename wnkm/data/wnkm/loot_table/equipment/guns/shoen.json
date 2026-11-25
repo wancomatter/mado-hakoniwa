@@ -1,0 +1,87 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "散弾率可変式魔導銃",
+                  "color": "#cccccc",
+                  "italic": false
+                },
+                {
+                  "text": "「硝煙」",
+                  "color": "#999999",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "散弾率を可変する術式が組み込まれた散弾銃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "スロットの端に寄る程拡散し、中央に寄る程収束する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-reload- MP:14 / 装填時間:5.0",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "translate": "弾を使い切るか%sキーを押して発動。",
+                  "with": [
+                    {
+                      "keybind": "key.drop"
+                    }
+                  ],
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "魔力の弾丸を4発分装填する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:25,wnkm:{equipment:\"wnkm:equipment/guns/shoen\"},Ammo:4,AmmoMax:4,Soulbound:1b,nowAmmoMax:4}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 1,
+                "minecraft:item_model": "wnkm:equipment/guns/shoen"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

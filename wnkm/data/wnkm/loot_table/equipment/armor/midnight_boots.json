@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "宵闇のブーツ",
+                "color": "dark_gray",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "闇夜を駆け回る剣士の愛靴。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "魔法攻撃力 -30%",
+                  "italic": false,
+                  "color": "dark_aqua"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/armor/midnight_boots/generic.attack_damage",
+                  "slot": "feet",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_damage"
+                },
+                {
+                  "id": "wnkm:equipment/armor/midnight_boots/generic.attack_damage",
+                  "slot": "feet",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:movement_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/midnight_boots\"},Soulbound:1b,armorResist:6,magicBoost:-30}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:dyed_color": 0,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

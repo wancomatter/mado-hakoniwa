@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "地踏の脚鎧",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "装備している間、跳躍力が減少するが、",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "落下ダメージを無効化する。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "スニーク中は効果を無効化する。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/earth_legs\"},Soulbound:1b,earth_legs:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 8606770,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

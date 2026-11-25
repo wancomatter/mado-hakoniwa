@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:shield"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{BlackShield:1b}"
+          }
+        }
+      }
+    }
+  }
+}

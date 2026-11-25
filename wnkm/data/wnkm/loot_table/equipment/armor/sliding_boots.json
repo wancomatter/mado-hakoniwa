@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "スライディングブーツ",
+                "color": "#835432",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-スムーズに移動できます。- MP:2 / Cooldown:1.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "地上でスニークする事で発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "スライディングする。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/sliding_boots\"},Soulbound:1b,sliding_boots:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 8606770,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

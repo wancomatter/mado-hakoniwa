@@ -1,0 +1,6 @@
+scoreboard players add @s counter 1
+particle minecraft:end_rod ~ ~ ~ 0 0 0 0.3 10 normal @a
+particle minecraft:end_rod ~ ~ ~ 0 0 0 0.1 2 force @a
+particle dust{color:[0.65,0.95,1],scale:1.5} ~ ~ ~ 0.03 0.03 0.03 0 2 force @a
+tp @s ^ ^ ^0.6
+execute unless score @s counter matches 10.. at @s run function wancomatter:skills/046/elem_loop

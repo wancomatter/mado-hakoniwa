@@ -1,0 +1,91 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "電光",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:3 / Cooldown:5.0 / 追加入力可能:1回(5.0秒)",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "小規模の電光を放ち、敵を攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "放った電光は威力を失い5秒間留まる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-紫電一閃- MP:9 / Cooldown:3.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "放った電光の位置に瞬間移動し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "周囲の敵を防御貫通の雷撃で斬る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:61,wnkm:{equipment:\"wnkm:equipment/magic_attack/denkou\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/denkou"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

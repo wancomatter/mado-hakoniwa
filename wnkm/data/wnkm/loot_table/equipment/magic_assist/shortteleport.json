@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "小転移",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:15 / Cooldown:16",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "最大1.5秒間スペクテイター化し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "周囲11ブロックまで移動出来る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "スペクテイター中は全ての攻撃を無効化。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:38,wnkm:{equipment:\"wnkm:equipment/magic_assist/shortteleport\"},Soulbound:1b,magic_assist:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/shortteleport"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

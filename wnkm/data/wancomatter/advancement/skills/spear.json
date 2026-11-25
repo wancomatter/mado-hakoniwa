@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"spearPiercing\"]}",
+              "entity_type": "minecraft:trident"
+            },
+            "tags": [
+              {
+                "id": "#minecraft:is_projectile",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

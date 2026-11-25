@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_mutton",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ジンギスカン",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "HP+14 / 食事制限:20s",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "羊肉をジンギスカン鍋で焼いたもの。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "実はジンギスカンの歴史は意外と浅い。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/foods/cooked_mutton\"},Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

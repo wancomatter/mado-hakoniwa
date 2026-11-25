@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "耐魔の革鎧",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔法に大きな耐性を持つ革鎧。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "自身の魔力も阻害してしまう。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "最大MP -30",
+                  "italic": false,
+                  "color": "dark_aqua"
+                },
+                {
+                  "text": "MP自然回復量 -0.06",
+                  "italic": false,
+                  "color": "dark_aqua"
+                },
+                {
+                  "text": "物理耐性 +6%",
+                  "italic": false,
+                  "color": "blue"
+                },
+                {
+                  "text": "魔法耐性 +30%",
+                  "italic": false,
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/anti_magic_arm\"},Soulbound:1b,armorResist:6,magicResist:30,maxMP:-30}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 5374097,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

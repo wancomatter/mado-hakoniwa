@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:sweet_berries"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{Soulbound:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:foods/using_item/sweet_berries"
+  }
+}

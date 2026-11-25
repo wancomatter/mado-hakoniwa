@@ -1,0 +1,4 @@
+{
+  "type": "minecraft:set_custom_data",
+  "tag": "{double_cast_first:1b}"
+}

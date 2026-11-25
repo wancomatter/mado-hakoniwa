@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "STM-110",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "ストロングムーブの体現者。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "右クリック長押しで発射可能。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "手に持ちスニークすると移動速度が低下する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-reload- MP:15 / 装填時間:5.0",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "translate": "弾を使い切るか%sキーを押して発動。",
+                  "with": [
+                    {
+                      "keybind": "key.drop"
+                    }
+                  ],
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "魔力の弾丸を12発分装填する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:72,wnkm:{equipment:\"wnkm:equipment/guns/stm110\"},Ammo:12,AmmoMax:12,Soulbound:1b,nowAmmoMax:12}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 1,
+                "minecraft:item_model": "wnkm:equipment/guns/stm110"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

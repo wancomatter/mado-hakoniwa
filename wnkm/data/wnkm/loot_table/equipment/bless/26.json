@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_hoe",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "加護:要塞崩し",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "物理攻撃または魔法攻撃時、敵に「山崩しの印」を1枚付与する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "「山崩しの印」は敵のダメージ軽減率を4%減少させる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "この効果は0.5秒に1回のみ発動可能。持続時間8秒。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "「山崩しの印」は最大10枚まで重ねがけ可能で、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "効果時間はそれぞれ独立している。 ",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "加護はホットバーに入れる事で自動発動。",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "同じ加護は2個まで効果が重複する。",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:26,wnkm:{equipment:\"wnkm:equipment/bless/26\"},Soulbound:1b,blessItem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/bless/26"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

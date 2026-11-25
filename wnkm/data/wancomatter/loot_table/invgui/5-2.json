@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ページ5-2: 補助魔法Ⅱ",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Enderchest: ページ5-2を開く",
+                  "italic": false,
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:92,invGUI:22b,invGUIitem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wnkm:appearance/carrot_on_a_stick/92"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

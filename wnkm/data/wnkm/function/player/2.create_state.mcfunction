@@ -1,5 +1,7 @@
 # 旧初期化と同じ採番・クールダウン初期値でロビーへ戻す。
+execute if score #game counter matches 1.. run gamemode spectator @s
 execute unless score @s playerNumber matches 1.. run scoreboard players add #first-operator counter 1
+execute if score #game counter matches 1.. run gamemode spectator @s
 execute unless score @s playerNumber matches 1.. run scoreboard players operation @s playerNumber = #first-operator counter
 scoreboard players set @s Cooldown1 -1
 scoreboard players set @s Cooldown2 -1
@@ -12,12 +14,17 @@ scoreboard players set @s Cooldown8 -1
 scoreboard players set @s Cooldown9 -1
 scoreboard players set @s CooldownX -1
 scoreboard players set @s maxHP 40
-scoreboard players set @s HP 40
+scoreboard players set @s HP 400
 scoreboard players set @s maxMana 100
 scoreboard players set @s Mana 100
 scoreboard players set @s cost 0
 scoreboard players set @s page 1
+scoreboard players set @s pageChange 1
+scoreboard players set @s ManaRegenCount 100
+scoreboard players set @s ManaCount 0
+scoreboard players set @s ManaRegenAmount 0
 gamemode adventure @s
 execute in overworld run tp @s 0.5 64 0.5
+execute if score #game counter matches 1.. run gamemode spectator @s
 execute unless score @s playerNumber matches 1.. run return fail
 return 1

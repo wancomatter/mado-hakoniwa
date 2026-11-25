@@ -1,0 +1,74 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "疾風の服",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "風のように疾走出来る効果を持つ。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "物理耐性 +9%",
+                  "italic": false,
+                  "color": "blue"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/armor/wind_arm/generic.movement_speed",
+                  "slot": "chest",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:movement_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/wind_arm\"},Soulbound:1b,armorResist:9}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:dyed_color": 8439583,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

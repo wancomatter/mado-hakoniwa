@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "檜の杖",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:5 / Cooldown:0",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "伝説の勇者の魔力を帯びた最高峰の木杖。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "前方に魔力弾を発射する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:87,wnkm:{equipment:\"wnkm:equipment/magic_attack/hinoki_wand\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/hinoki_wand"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": "minecraft:crossbow",
+        "predicates": {
+          "minecraft:charged_projectiles": {
+            "items": {
+              "count": {
+                "min": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "entity_properties"
+}

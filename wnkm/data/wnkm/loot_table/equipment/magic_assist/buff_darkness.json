@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "纏いし漆黒",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:17 / Cooldown:34",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "自身の周囲を漆黒の魔力の霧で覆い尽くす。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "周囲の味方の被ダメージを軽減し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "周囲の敵の移動速度を低下する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:76,wnkm:{equipment:\"wnkm:equipment/magic_assist/buff_darkness\"},Soulbound:1b,magic_assist:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/buff_darkness"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "白の盾",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "物理攻撃の防御に長けた盾。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "ダメージ遮断率:80%",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": "物理耐性 +5%",
+                  "italic": false,
+                  "color": "blue"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/offitems/white_shield\"},Soulbound:1b,armorResist:5,handAttributes:1b,shieldBlockAmount:-80.0d}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable",
+                    "minecraft:banner_patterns"
+                  ]
+                },
+                "minecraft:banner_patterns": [
+                  {
+                    "pattern": "minecraft:gradient_up",
+                    "color": "light_gray"
+                  },
+                  {
+                    "pattern": "minecraft:border",
+                    "color": "gray"
+                  }
+                ],
+                "minecraft:base_color": "white",
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ページ1-1: 近接装備",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Enderchest: ページ1-1を開く",
+                  "italic": false,
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{invGUI:9b,invGUIitem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

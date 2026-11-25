@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "シュルカータレット",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:15 / Cooldown:15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "その場にシュルカーを召喚する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "シュルカーは付近の敵を自動的に攻撃する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "最大3体まで召喚可能。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:28,wnkm:{equipment:\"wnkm:equipment/magic_summon/shulker\"},Soulbound:1b,magic_summon:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_summon/shulker"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:1,randomStageRand:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:2,randomStageRand:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:3,randomStageRand:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:4,randomStageRand:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:5,randomStageRand:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:6,randomStageRand:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomStageID:7,randomStageRand:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

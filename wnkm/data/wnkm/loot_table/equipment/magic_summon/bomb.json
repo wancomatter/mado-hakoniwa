@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "爆弾",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:6 / Cooldown:8",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "設置式の爆弾を召喚する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "再度右クリックで起爆する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-透明地雷- MP:6",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "近くに爆弾がある時、2.5秒スニークで発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "近くの自身の爆弾を透明地雷に変化させる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "透明地雷は起爆出来ず、敵に反応して爆発する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "このスキルはCooldown中も発動可能。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:30,wnkm:{equipment:\"wnkm:equipment/magic_summon/bomb\"},Soulbound:1b,magic_summon:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_summon/bomb"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

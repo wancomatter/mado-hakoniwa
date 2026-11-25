@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:drowned_spawn_egg",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "矢筒-氷霧の矢",
+                "color": "aqua",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:20 / Cooldown:20",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "氷霧の矢を3本取り出す。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "効果:着弾点を氷霧で冷やして持続攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 64
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/arrowegg/freeze\"},ArrowEgg:1b,Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "DeathTime": 19,
+                  "Health": 0.0,
+                  "attributes": [
+                    {
+                      "id": "minecraft:max_health",
+                      "base": 0
+                    }
+                  ],
+                  "id": "minecraft:drowned"
+                },
+                "minecraft:can_place_on": [
+                  {
+                    "blocks": "#wancomatter:all_blocks"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:can_place_on"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

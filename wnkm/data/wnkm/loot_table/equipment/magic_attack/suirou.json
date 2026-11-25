@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "水牢",
+                "color": "blue",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:15 / Cooldown:15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "詠唱後、前方に水玉を発射する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "命中した敵は少しの間だけ水牢に行動阻害を受ける。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:70,wnkm:{equipment:\"wnkm:equipment/magic_attack/suirou\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/suirou"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

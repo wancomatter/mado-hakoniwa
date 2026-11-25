@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "対空魔砲",
+                "color": "gray",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-墜落の魔砲- MP:4 / Cooldown:2",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "小チャージ後、前方に対空砲を放つ。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "地上へも攻撃可能だが、空中の敵に対して",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "高威力の防具貫通で攻撃し、一瞬動きを止める。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:64,wnkm:{equipment:\"wnkm:equipment/guns/anti_aircraft\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/guns/anti_aircraft"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

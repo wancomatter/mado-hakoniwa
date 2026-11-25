@@ -1,0 +1,109 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "黄泉鎌",
+                "color": "dark_purple",
+                "italic": false,
+                "bold": true
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "この世ならざる者のもたらす根源への恐怖の具現化。",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "右クリック長押しで特殊攻撃を発動する。",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-薙ぎ払い- MP:3 / Cooldown:2.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "前方を薙ぎ払って攻撃する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "薙ぎ払いで敵プレイヤーをキルした時、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "全装備のクールダウンを全回復する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/scythe/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -3.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/scythe/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 7,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:114,wnkm:{equipment:\"wnkm:equipment/melee/scythe\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/scythe"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

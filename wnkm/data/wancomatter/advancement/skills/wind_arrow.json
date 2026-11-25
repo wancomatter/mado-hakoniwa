@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"wind_arrow\"]}",
+              "entity_type": "minecraft:arrow"
+            },
+            "tags": [
+              {
+                "id": "#minecraft:is_projectile",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

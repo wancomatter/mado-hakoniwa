@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "無骨槍",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "取り回しが良くリーチの長い鉄槍。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-刺突- MP:3 / Cooldown:2.1",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "前方に刺突して攻撃する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/spear/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -2.8,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/spear/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:107,wnkm:{equipment:\"wnkm:equipment/melee/spear\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/spear"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

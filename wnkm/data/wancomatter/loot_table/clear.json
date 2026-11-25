@@ -1,0 +1,12 @@
+{
+  "pools": [
+    {
+      "rolls": 36,
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        }
+      ]
+    }
+  ]
+}

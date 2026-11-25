@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "dealt": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:crossbow"
+          ],
+          "predicates": {},
+          "components": {
+            "minecraft:enchantments": {
+              "minecraft:quick_charge": 6
+            }
+          }
+        }
+      }
+    }
+  }
+}

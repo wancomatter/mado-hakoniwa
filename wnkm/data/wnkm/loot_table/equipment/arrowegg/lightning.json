@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish_spawn_egg",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "矢筒-天雷の矢",
+                "color": "yellow",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:13 / Cooldown:20",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "天雷の矢を1本取り出す。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "効果:天高く打ち上げ、雷で追撃する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 64
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/arrowegg/lightning\"},ArrowEgg:1b,Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "DeathTime": 19,
+                  "Health": 0.0,
+                  "attributes": [
+                    {
+                      "id": "minecraft:max_health",
+                      "base": 0
+                    }
+                  ],
+                  "id": "minecraft:pufferfish"
+                },
+                "minecraft:can_place_on": [
+                  {
+                    "blocks": "#wancomatter:all_blocks"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:can_place_on"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

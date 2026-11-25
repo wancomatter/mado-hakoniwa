@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "真空波",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:4 / Cooldown:1",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "真空で形作られた刃を飛ばして攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "右クリック1回目でチャージし、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "2回目でチャージ時間に応じた威力で発射。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:20,wnkm:{equipment:\"wnkm:equipment/magic_attack/aircutter\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/aircutter"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

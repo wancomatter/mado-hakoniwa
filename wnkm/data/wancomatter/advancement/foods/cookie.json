@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "diet": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cookie"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{Soulbound:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:foods/cookie"
+  }
+}

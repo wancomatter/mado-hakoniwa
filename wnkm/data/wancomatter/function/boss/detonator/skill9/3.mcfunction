@@ -1,0 +1,3 @@
+execute if entity @a[gamemode=!spectator,tag=!b1s9targeted,distance=..64,limit=1] run function wancomatter:boss/detonator/skill9/discharge
+execute if entity @a[gamemode=!spectator,tag=!b1s9targeted,distance=..64,limit=1] run function wancomatter:boss/detonator/skill9/discharge
+execute if entity @a[gamemode=!spectator,tag=!b1s9targeted,distance=..64,limit=1] run function wancomatter:boss/detonator/skill9/discharge

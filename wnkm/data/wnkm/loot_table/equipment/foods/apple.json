@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "真紅の果実",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP+50 / 食事制限:30s",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "真っ赤に染められし魔力溢れる果実。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/foods/apple\"},Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

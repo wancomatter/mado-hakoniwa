@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "水廻の腰蓑",
+                "color": "blue",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力回路の調律を補助する防具。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "物理耐性 +6%",
+                  "italic": false,
+                  "color": "blue"
+                },
+                {
+                  "text": "魔法耐性 +6%",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "クールダウン短縮:8%",
+                  "italic": false,
+                  "color": "green"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/aqua_legs\"},CTCut:80,Soulbound:1b,armorResist:6,magicResist:6}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 3847130,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

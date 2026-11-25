@@ -1,0 +1,93 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "水刃",
+                "color": "#1E87F3",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔法の水で形成した刃。",
+                  "italic": false,
+                  "color": "#58a2ef"
+                },
+                {
+                  "text": "近接攻撃で魔法ダメージを与える。",
+                  "italic": false,
+                  "color": "#58a2ef"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/water_blade/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -1.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/water_blade/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:201,wnkm:{equipment:\"wnkm:equipment/melee/water_blade\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/water_blade"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

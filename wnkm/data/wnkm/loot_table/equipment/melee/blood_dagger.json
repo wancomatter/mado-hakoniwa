@@ -1,0 +1,104 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "血濡られたダガー",
+                "color": "dark_red",
+                "underlined": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力を帯びた血に濡れた短剣。",
+                  "italic": false,
+                  "color": "red"
+                },
+                {
+                  "text": "敵を背後から近接攻撃するとダメージが2.0倍になる。",
+                  "italic": false,
+                  "color": "red"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-投擲- MP:6 / Cooldown:15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "前方にダガーを投擲する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "投げたダガーを回収する事でCooldownを75%短縮。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/blood_dagger/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -2.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/blood_dagger/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 3.5,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:106,wnkm:{equipment:\"wnkm:equipment/melee/blood_dagger\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/blood_dagger"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

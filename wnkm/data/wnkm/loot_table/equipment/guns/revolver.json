@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "魔弾銃",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力を圧縮して発射する拳銃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "命中した敵に一定の物理ダメージを与える。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-reload- MP:10 / 装填時間:3.0",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "translate": "弾を使い切るか%sキーを押して発動。",
+                  "with": [
+                    {
+                      "keybind": "key.drop"
+                    }
+                  ],
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "魔力の弾丸を8発分装填する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:5,wnkm:{equipment:\"wnkm:equipment/guns/revolver\"},Ammo:8,AmmoMax:8,Soulbound:1b,nowAmmoMax:8}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 1,
+                "minecraft:item_model": "wnkm:equipment/guns/revolver"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

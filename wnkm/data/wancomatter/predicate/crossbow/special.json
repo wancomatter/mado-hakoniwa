@@ -1,0 +1,15 @@
+{
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": "minecraft:crossbow",
+        "predicates": {
+          "minecraft:custom_data": "{specialChargeCrossbow:1b}"
+        }
+      }
+    },
+    "nbt": "{Inventory:[{components:{\"minecraft:custom_data\":{EggArrow:1b}}}]}"
+  },
+  "type": "entity_properties"
+}

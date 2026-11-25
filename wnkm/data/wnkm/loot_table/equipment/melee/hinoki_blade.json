@@ -1,0 +1,111 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ヒノキブレード",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "伝説の勇者の魔力を帯びた最高峰の木剣。",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "最大チャージで近接攻撃をした時、",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "防御貫通の1.5ダメージが上乗せされる。",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-Parry- MP:4 / Cooldown:7",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "0.3秒だけ攻撃を受け流す構えをとる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "成功時、ダメージとノックバックを無効化し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "この武器のCooldownの時間を半分回復する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/hinoki_blade/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -2.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/hinoki_blade/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:109,wnkm:{equipment:\"wnkm:equipment/melee/hinoki_blade\"},Soulbound:1b,hinoki_blade:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/hinoki_blade"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

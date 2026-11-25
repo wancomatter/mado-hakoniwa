@@ -1,0 +1,1 @@
+tag @a[tag=user] remove star_feather_p

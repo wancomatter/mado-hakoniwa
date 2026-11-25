@@ -1,0 +1,102 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "投げ斧",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "メインハンドに%sを持っている時、",
+                  "italic": false,
+                  "color": "white",
+                  "with": [
+                    {
+                      "text": "戦斧",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "text": "オフハンドに持ち右クリックで発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-スロウアックス- MP:8 / Cooldown:7",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "斧を投擲する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "発動後、1.5秒間は近接攻撃速度が低下する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/offitems/throw_axe/generic.attack_speed",
+                  "slot": "offhand",
+                  "amount": 0.075,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:108,wnkm:{equipment:\"wnkm:equipment/offitems/throw_axe\"},Soulbound:1b,throwAxe:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/offitems/throw_axe"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

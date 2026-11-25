@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "転移門",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:10 / Cooldown:60",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "ゲートを開くエンダーパールを投擲し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "投擲者の地点と着弾地点を繋ぐポータルを展開する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "ポータルは全チームのプレイヤーが利用でき、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "触れると対応するポータルにテレポートする。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "ポータルは素手または加護を持って殴ると破壊される。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:56,wnkm:{equipment:\"wnkm:equipment/magic_assist/portal\"},Soulbound:1b,magic_assist:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/portal"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

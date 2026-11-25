@@ -1,0 +1,18 @@
+kill @e[tag=monitorUI]
+execute positioned 0 67.725 0 rotated 000 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:redstone_torch"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUIcancel","wnkm.owned"],CustomName:{color:"aqua",text:"キャンセル"}}
+execute positioned 0 67.725 0 rotated 030 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:1b,Glowing:1b,Invulnerable:1b,Item:{count:1,id:"minecraft:crafting_table"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0done","monitorUIfocusing","wnkm.owned"],CustomName:{color:"aqua",text:"確定する"}}
+execute positioned 0 67.725 0 rotated 060 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:grass_block"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-1","wnkm.owned"],CustomName:{color:"aqua",text:"草原の村"}}
+execute positioned 0 67.725 0 rotated 090 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:nether_bricks"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-2","wnkm.owned"],CustomName:{color:"aqua",text:"ネザー"}}
+execute positioned 0 67.725 0 rotated 120 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:bamboo"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-3","wnkm.owned"],CustomName:{color:"aqua",text:"竹林"}}
+execute positioned 0 67.725 0 rotated 150 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:sand"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-4","wnkm.owned"],CustomName:{color:"aqua",text:"ピラミッド"}}
+execute positioned 0 67.725 0 rotated 180 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:iron_block"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-5","wnkm.owned"],CustomName:{color:"aqua",text:"研究所"}}
+execute positioned 0 67.725 0 rotated 210 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:oak_boat"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-6","wnkm.owned"],CustomName:{color:"aqua",text:"川"}}
+execute positioned 0 67.725 0 rotated 240 0 run summon minecraft:item ^ ^ ^2 {Age:-32768s,CustomNameVisible:0b,Invulnerable:1b,Item:{count:1,id:"minecraft:bone"},NoGravity:1b,PickupDelay:-1s,Tags:["monitorUI","monitorUI3-0switch","monitorUI3-0-7","wnkm.owned"],CustomName:{color:"aqua",text:"祭壇"}}
+
+execute if score #randomSwitch Cooldown1 matches 1 as @e[tag=monitorUI3-0-1] at @s run function wancomatter:lobby/monitor/stage/random_switch
+execute if score #randomSwitch Cooldown2 matches 1 as @e[tag=monitorUI3-0-2] at @s run function wancomatter:lobby/monitor/stage/random_switch
+execute if score #randomSwitch Cooldown3 matches 1 as @e[tag=monitorUI3-0-3] at @s run function wancomatter:lobby/monitor/stage/random_switch
+execute if score #randomSwitch Cooldown4 matches 1 as @e[tag=monitorUI3-0-4] at @s run function wancomatter:lobby/monitor/stage/random_switch
+execute if score #randomSwitch Cooldown5 matches 1 as @e[tag=monitorUI3-0-5] at @s run function wancomatter:lobby/monitor/stage/random_switch
+execute if score #randomSwitch Cooldown6 matches 1 as @e[tag=monitorUI3-0-6] at @s run function wancomatter:lobby/monitor/stage/random_switch
+execute if score #randomSwitch Cooldown7 matches 1 as @e[tag=monitorUI3-0-7] at @s run function wancomatter:lobby/monitor/stage/random_switch

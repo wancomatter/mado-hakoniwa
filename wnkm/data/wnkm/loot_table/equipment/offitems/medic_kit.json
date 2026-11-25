@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "救急キット",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "オフハンドに持つ事で回復力を上昇させる。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "HP回復効果 +20%",
+                  "italic": false,
+                  "color": "red"
+                },
+                {
+                  "text": "HP自然回復速度 +20%",
+                  "italic": false,
+                  "color": "red"
+                },
+                {
+                  "text": "MP回復速度 +15%",
+                  "italic": false,
+                  "color": "aqua"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:2,wnkm:{equipment:\"wnkm:equipment/offitems/medic_kit\"},MPRegen:15,Soulbound:1b,handAttributes:1b,medic_kit:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/offitems/medic_kit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "黒憐",
+                "color": "dark_purple",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "闇の眷属に代々伝わる秘刀。",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "スニーク中に右クリックでスキルを発動する。",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-居合- MP:5 / Cooldown:8",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "居合の構えを取り、正面に切り込んで攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "スニークを長押しする程に射程が伸びる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/kokuren/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 3.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:104,wnkm:{equipment:\"wnkm:equipment/melee/kokuren\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/kokuren"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

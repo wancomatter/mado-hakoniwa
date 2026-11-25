@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:anvil",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "加護:コンボパワー",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "攻撃を当てる毎に次のダメージが8%増加する。最大3重。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "コンボパワーを2個所持している場合は最大6重まで増加。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "攻撃を2.0秒以内に当て続ける限り効果は持続する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "加護はホットバーに入れる事で自動発動。",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "同じ加護は2個まで効果が重複する。",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/bless/23/unstackable",
+                  "slot": "chest",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "attribute": "minecraft:follow_range"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:23,wnkm:{equipment:\"wnkm:equipment/bless/23\"},Soulbound:1b,blessItem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

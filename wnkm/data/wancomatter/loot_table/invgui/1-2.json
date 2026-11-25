@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ページ1-2: オフハンド装備",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Enderchest: ページ1-2を開く",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                [
+                  {
+                    "text": "Tips: ",
+                    "italic": false,
+                    "color": "aqua"
+                  },
+                  {
+                    "text": "他の装備にスキルを追加する装備もあります。",
+                    "italic": false,
+                    "color": "gold"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{invGUI:18b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

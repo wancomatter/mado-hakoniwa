@@ -1,0 +1,87 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "漆黒のズボン",
+                "color": "dark_gray",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "一撃の重みを重視する為の防具。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP回復速度 -30%",
+                  "italic": false,
+                  "color": "dark_aqua"
+                },
+                {
+                  "text": "物理耐性 +6%",
+                  "italic": false,
+                  "color": "blue"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/armor/midnight_leg/generic.attack_damage",
+                  "slot": "legs",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_damage"
+                },
+                {
+                  "id": "wnkm:equipment/armor/midnight_leg/generic.movement_speed",
+                  "slot": "legs",
+                  "amount": 0.05,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:movement_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/midnight_leg\"},MPRegen:-30,Soulbound:1b,armorResist:6}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:dyed_color": 0,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

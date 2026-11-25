@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "クイックシューター",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "高速で矢を装填出来る超小型の射撃武器。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": " 威力 2.0",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": " 矢の速度 -35%",
+                  "italic": false,
+                  "color": "dark_aqua"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:131,wnkm:{equipment:\"wnkm:equipment/bows/quick_shooter\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {
+                  "quick_charge": 4,
+                  "piercing": 1
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/bows/quick_shooter"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

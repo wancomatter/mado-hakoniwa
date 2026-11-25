@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "血鎖",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-BloodChain- MP:8 / Cooldown:9",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "血の鎖を纏い、防御の構えを取る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "発動から0.7秒以内に攻撃を受けた時、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "1.5秒間攻撃を無効化し攻撃した敵に瞬間移動する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:77,wnkm:{equipment:\"wnkm:equipment/magic_assist/bloodchain\"},Soulbound:1b,magic_assist:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/bloodchain"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

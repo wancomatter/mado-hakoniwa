@@ -1,0 +1,47 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spectral_arrow",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "光の矢",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "光の石によって発光能力を得た矢。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "発光 (0:11)",
+                  "italic": false,
+                  "color": "red"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 9
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{EggArrow:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:copy_custom_data",
+  "ops": [
+    {
+      "source": "UUID",
+      "target": "Owner",
+      "op": "replace"
+    }
+  ],
+  "source": "this"
+}

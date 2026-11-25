@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "騎士の盾",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "攻撃性能のある盾。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-シールドバッシュ- MP:8 / Cooldown:4.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "オフハンドに持ちスニークで発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "正面の敵を盾で叩きつけ、敵を吹き飛ばし、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "少しだけ移動速度低下と弱体化を付与する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "ダメージ遮断率:50%",
+                  "italic": false,
+                  "color": "green"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:95,wnkm:{equipment:\"wnkm:equipment/offitems/knight_shield\"},KnightShield:1b,Soulbound:1b,shieldBlockAmount:-50.0d}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable",
+                    "minecraft:banner_patterns"
+                  ]
+                },
+                "minecraft:banner_patterns": [
+                  {
+                    "pattern": "minecraft:gradient",
+                    "color": "light_gray"
+                  },
+                  {
+                    "pattern": "minecraft:gradient_up",
+                    "color": "light_gray"
+                  },
+                  {
+                    "pattern": "minecraft:straight_cross",
+                    "color": "blue"
+                  }
+                ],
+                "minecraft:base_color": "white",
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

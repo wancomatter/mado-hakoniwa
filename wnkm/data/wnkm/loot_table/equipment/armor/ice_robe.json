@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "氷銀のローブ(上)",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力の出力を補助するローブ。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "炎に弱い弱点を持つ。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "炎上時:被ダメ +60%",
+                  "italic": false,
+                  "color": "red"
+                },
+                {
+                  "text": "最大MP +75",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "MP自然回復量 +0.15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "魔法攻撃力 +15%",
+                  "italic": false,
+                  "color": "light_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/armor/ice_robe\"},Soulbound:1b,ice_robe:1b,magicBoost:15,maxMP:75}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:attribute_modifiers": [],
+                "minecraft:dyed_color": 11592447,
+                "minecraft:unbreakable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

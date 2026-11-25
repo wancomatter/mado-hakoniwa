@@ -1,0 +1,143 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "マジカルロッド -風",
+                "italic": false,
+                "color": "green"
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力を込めて特殊な効果で殴れる杖。",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "攻撃する度にMPを1消費する。",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-マジカルチェンジ- MP:1 / Cooldown:0",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "杖の属性を書き換える。",
+                  "italic": false,
+                  "color": "white"
+                },
+                [
+                  {
+                    "text": "風",
+                    "italic": false,
+                    "color": "green"
+                  },
+                  {
+                    "text": "->",
+                    "color": "white"
+                  },
+                  {
+                    "text": "土",
+                    "italic": false,
+                    "color": "gold"
+                  },
+                  {
+                    "text": "->",
+                    "color": "white"
+                  },
+                  {
+                    "text": "火",
+                    "italic": false,
+                    "color": "red"
+                  },
+                  {
+                    "text": "->",
+                    "color": "white"
+                  },
+                  {
+                    "text": "氷",
+                    "italic": false,
+                    "color": "aqua"
+                  },
+                  {
+                    "text": "->",
+                    "color": "white"
+                  },
+                  {
+                    "text": "風",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/magical_rod_wind/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": 3.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/magical_rod_wind/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 0.5,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:98,wnkm:{equipment:\"wnkm:equipment/melee/magical_rod_wind\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {
+                  "sharpness": 1,
+                  "knockback": 1
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/magical_rod_wind"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

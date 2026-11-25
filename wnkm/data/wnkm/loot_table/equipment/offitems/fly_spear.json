@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "飛来槍",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "メインハンドに無骨槍を持っている時、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "オフハンドに持つ事で以下のスキルを得る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-吹き飛べ！ - MP:11 / Cooldown:5.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "スニーク1秒から右クリックで発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "前方に飛ぶ刺突を放つ。命中した敵は吹き飛ぶ。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/offitems/fly_spear/generic.attack_speed",
+                  "slot": "offhand",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:107,wnkm:{equipment:\"wnkm:equipment/offitems/fly_spear\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {},
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/offitems/fly_spear"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

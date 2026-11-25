@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "瞑想",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:10 / Cooldown:30",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "その場で瞑想し、盲目になるが、動かない限り",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "2秒毎にHPを4, MPを3, Cooldownを1回復する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "瞑想中に攻撃を受けるとダメージが2倍になり、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "瞑想が強制解除され一定時間の移動阻害が発生する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:65,wnkm:{equipment:\"wnkm:equipment/magic_assist/meditation\"},Soulbound:1b,magic_assist:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/meditation"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

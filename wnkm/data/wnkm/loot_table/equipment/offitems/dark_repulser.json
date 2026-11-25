@@ -1,0 +1,103 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "拒絶者",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-連撃剣- MP:1 / Cooldown:0.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "メインハンドに解析者を持っている時、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "オフハンドに持ち右クリックで発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "無敵時間を貫通する斬撃を放つ。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/offitems/dark_repulser/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -3.4,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/offitems/dark_repulser/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 7.0,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                },
+                {
+                  "id": "wnkm:equipment/offitems/dark_repulser/generic.attack_speed",
+                  "slot": "offhand",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:116,wnkm:{equipment:\"wnkm:equipment/offitems/dark_repulser\"},Soulbound:1b,darkRepulser:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/offitems/dark_repulser"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "二連装魔銃",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力の塊を二分割して発射する特殊な銃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-reload- MP:5 / 装填時間:1.2",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "translate": "弾を使い切るか%sキーを押して発動。",
+                  "with": [
+                    {
+                      "keybind": "key.drop"
+                    }
+                  ],
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "魔力の弾丸を2発分装填する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:86,wnkm:{equipment:\"wnkm:equipment/guns/two_gun\"},Ammo:2,AmmoMax:2,Soulbound:1b,nowAmmoMax:2}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 1,
+                "minecraft:item_model": "wnkm:equipment/guns/two_gun"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

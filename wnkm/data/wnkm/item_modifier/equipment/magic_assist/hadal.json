@@ -3,7 +3,7 @@
   "functions": [
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{wnkm:{equipment:\"wnkm:equipment/magic_assist/hadal\",soulbound:1b,star_magic:1b}}"
+      "tag": "{LegacySkill:22,wnkm:{equipment:\"wnkm:equipment/magic_assist/hadal\"},Soulbound:1b,magic_assist:1b,star_magic:1b}"
     },
     {
       "type": "minecraft:set_components",

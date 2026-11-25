@@ -1,0 +1,3 @@
+scoreboard players add @s counter 1
+summon area_effect_cloud ^ ^ ^0.8 {Age:0,Duration:60,Radius:0.0f,Tags:["first","vega_AEC","wnkm.owned","wnkm.round"],potion_duration_scale:0.25f}
+execute if score @s counter matches ..5 rotated ~ ~16 run function wancomatter:skills/092/first_loop

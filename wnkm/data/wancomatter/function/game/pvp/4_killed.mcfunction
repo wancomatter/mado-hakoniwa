@@ -1,0 +1,17 @@
+execute if entity @s[team=Red] run scoreboard players remove Red info 1
+execute if entity @s[team=Aqua] run scoreboard players remove Aqua info 1
+execute if entity @s[team=Yellow] run scoreboard players remove Yellow info 1
+execute if entity @s[team=Green] run scoreboard players remove Green info 1
+execute if entity @s[team=Purple] run scoreboard players remove Purple info 1
+execute if entity @s[team=White] run scoreboard players remove White info 1
+execute if entity @s[team=Black] run scoreboard players remove Black info 1
+execute if entity @s[team=Blue] run scoreboard players remove Blue info 1
+execute if entity @s[team=Pink] run scoreboard players remove Pink info 1
+execute if entity @s[team=Gold] run scoreboard players remove Gold info 1
+execute if entity @s[team=Gray] run scoreboard players remove Gray info 1
+execute if entity @s[team=DarkRed] run scoreboard players remove DarkRed info 1
+execute if entity @s[team=DarkAqua] run scoreboard players remove DarkAqua info 1
+execute if entity @s[team=DarkGreen] run scoreboard players remove DarkGreen info 1
+execute if entity @s[team=DarkBlue] run scoreboard players remove DarkBlue info 1
+execute if entity @s[team=DarkGray] run scoreboard players remove DarkGray info 1
+execute if entity @s[team=battleroyal] run scoreboard players remove @s info 1

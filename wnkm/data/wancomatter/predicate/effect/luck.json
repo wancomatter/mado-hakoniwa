@@ -1,0 +1,9 @@
+{
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:luck": {}
+    }
+  },
+  "type": "entity_properties"
+}

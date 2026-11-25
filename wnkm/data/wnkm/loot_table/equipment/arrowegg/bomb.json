@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:creeper_spawn_egg",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "矢筒-榴弾の矢",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:8 / Cooldown:12",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "榴弾の矢を1本取り出す。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "効果:着弾地点を爆破する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 64
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/arrowegg/bomb\"},ArrowEgg:1b,Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "DeathTime": 19,
+                  "Health": 0.0,
+                  "attributes": [
+                    {
+                      "id": "minecraft:max_health",
+                      "base": 0
+                    }
+                  ],
+                  "id": "minecraft:creeper"
+                },
+                "minecraft:can_place_on": [
+                  {
+                    "blocks": "#wancomatter:all_blocks"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:can_place_on"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

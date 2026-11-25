@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "毒を以て毒を制す",
+                "color": "blue",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "HP+8 / 食事制限:10s",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "丹精込めた魔力により生食できるようになったフグ。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "移動速度低下・毒・枯渇・盲目・発光・浮遊を解除する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/foods/pufferfish\"},Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

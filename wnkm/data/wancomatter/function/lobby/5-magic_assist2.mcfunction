@@ -1,0 +1,9 @@
+loot replace block 1024 0 1024 container.0 loot wancomatter:items/magic_assist/avaritis
+loot replace block 1024 0 1024 container.1 loot wancomatter:items/magic_assist/vega
+loot replace block 1024 0 1024 container.2 loot wancomatter:items/magic_assist/spica
+loot replace block 1024 0 1024 container.3 loot wancomatter:items/magic_assist/power_star
+loot replace block 1024 0 1024 container.4 loot wancomatter:items/magic_assist/guard_star
+loot replace block 1024 0 1024 container.5 loot wancomatter:items/magic_assist/antares
+loot replace block 1024 0 1024 container.6 loot wancomatter:items/magic_assist/procyon
+loot replace block 1024 0 1024 container.7 loot wancomatter:items/magic_assist/hadal
+loot replace block 1024 0 1024 container.8 loot wancomatter:items/magic_assist/sirius

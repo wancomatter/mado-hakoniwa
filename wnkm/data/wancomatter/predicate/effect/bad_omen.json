@@ -1,0 +1,9 @@
+{
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:bad_omen": {}
+    }
+  },
+  "type": "entity_properties"
+}

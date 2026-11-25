@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "制魔の矢",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "魔力を乱す呪術を受けた矢。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "MP吸収 5",
+                  "italic": false,
+                  "color": "red"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 8
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{EggArrow:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {
+                      "duration": 2,
+                      "amplifier": 5,
+                      "id": "minecraft:hero_of_the_village"
+                    }
+                  ],
+                  "custom_color": 11141290
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "OP: モニターを開く",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{invGUI:34b,invGUIitem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

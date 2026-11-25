@@ -6,4 +6,10 @@ scoreboard players set #game counter 0
 scoreboard players set #lobby counter 1
 scoreboard players reset #gametime counter
 bossbar set wnkm:gametime visible false
+bossbar remove bear_p
+bossbar remove bear_c
+bossbar remove detonator
+bossbar remove dusk
+bossbar remove necro
+bossbar remove arctic
 return 1

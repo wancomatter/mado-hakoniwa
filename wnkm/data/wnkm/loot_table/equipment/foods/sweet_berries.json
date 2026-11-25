@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "べりーべりー",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "HP+1 / MP+20 / 食事制限:20s",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "甘い物には棘がある系の果実。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "全装備のクールダウンを7秒短縮する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/foods/sweet_berries\"},Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

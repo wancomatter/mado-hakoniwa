@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity": "this",
+          "predicate": {
+            "entity_type": "player"
+          },
+          "type": "minecraft:entity_properties"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:phe"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_hoe",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "加護:銃撃の名手",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "1個装備でリコイルの反動を軽減する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "2個装備で銃の装弾数+25%。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "加護はホットバーに入れる事で自動発動。",
+                  "italic": false,
+                  "color": "light_purple"
+                },
+                {
+                  "text": "同じ加護は2個まで効果が重複する。",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:27,wnkm:{equipment:\"wnkm:equipment/bless/27\"},Soulbound:1b,blessItem:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:attribute_modifiers": [],
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/bless/27"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

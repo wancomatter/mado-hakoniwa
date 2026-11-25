@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "バリスタ",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "クロスボウを巨大化させた攻城兵器。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "複数の敵を貫通してダメージを与える。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-破城の一撃- MP:10 / Cooldown:0",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "矢を2本消費して装填し、ズーム状態に入る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "発射直後に命中すると威力が低下する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": " 威力 2.6",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": " 矢の速度 +100%",
+                  "italic": false,
+                  "color": "dark_aqua"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:132,wnkm:{equipment:\"wnkm:equipment/bows/ballista\"},Soulbound:1b,ballistaBow:1b,specialChargeCrossbow:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:enchantments",
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:enchantments": {
+                  "quick_charge": 6,
+                  "piercing": 10
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/bows/ballista"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

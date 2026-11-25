@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:legacy/rand.1-3",
+                  "slot": "mainhand",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 4
+                  },
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomItem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

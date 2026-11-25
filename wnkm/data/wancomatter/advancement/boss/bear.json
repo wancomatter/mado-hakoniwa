@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"bear_p\"]}",
+            "entity_type": "minecraft:polar_bear"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:boss/bear/papa/skill1/ehp"
+  }
+}

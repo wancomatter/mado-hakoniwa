@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ウルフマイスター",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:15 / Cooldown:5 / 死亡時Cooldown:15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "自身に懐いた狼を召喚する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "座らせると周囲の味方を継続的に回復する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:1 / Cooldown:5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "translate": "ドロップ(%s)キーを押して発動。",
+                  "with": [
+                    {
+                      "keybind": "key.drop"
+                    }
+                  ],
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "召喚した狼をキルする。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:83,wnkm:{equipment:\"wnkm:equipment/magic_summon/wancomatter\"},Soulbound:1b,magic_summon:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_summon/wancomatter"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

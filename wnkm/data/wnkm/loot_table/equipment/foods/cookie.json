@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cookie",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "暴食の友",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP+4 / 食事制限:0s",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "無限に食べられるクッキー。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{wnkm:{equipment:\"wnkm:equipment/foods/cookie\"},Soulbound:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

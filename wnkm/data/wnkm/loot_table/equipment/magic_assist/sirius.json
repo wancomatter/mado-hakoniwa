@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "シリウス",
+                "color": "#B7FFEF",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:30 / Cooldown:30",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "光り輝く犬を前方に飛ばし、金剛大河を作り出す。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "金剛大河は敵を傷付け、味方の移動速度を上昇させる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:11,wnkm:{equipment:\"wnkm:equipment/magic_assist/sirius\"},Soulbound:1b,magic_assist:1b,star_magic:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_assist/sirius"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "蒼炎魔石",
+                "color": "#3366ff",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "MP:18 / Cooldown:36",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "投擲地点に周囲の敵をゆっくり追尾する蒼炎を撒く。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "蒼炎は敵を炎上させる効果を持ち、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "炎上している敵に大きなダメージを与える。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:82,wnkm:{equipment:\"wnkm:equipment/magic_attack/gem_blue_fire\"},Soulbound:1b,magic_attack:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/magic_attack/gem_blue_fire"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

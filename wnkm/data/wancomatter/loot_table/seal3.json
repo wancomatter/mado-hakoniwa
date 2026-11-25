@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:black_stained_glass_pane",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": ""
+              }
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{seal:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

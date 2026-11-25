@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "ショートボウ",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "連射性能に優れた短弓。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "引き絞らずに発射すると矢の速度が上昇。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": " 威力 1.8",
+                  "italic": false,
+                  "color": "green"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:124,wnkm:{equipment:\"wnkm:equipment/bows/short_bow\"},Soulbound:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/bows/short_bow"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

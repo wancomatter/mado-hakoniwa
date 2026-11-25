@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:legacy/random",
+                  "slot": "mainhand",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": {
+                      "type": "minecraft:from_int",
+                      "input": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "#wnkm_random"
+                        },
+                        "score": "Cooldown1"
+                      }
+                    },
+                    "max": {
+                      "type": "minecraft:from_int",
+                      "input": {
+                        "type": "minecraft:score",
+                        "target": {
+                          "type": "minecraft:fixed",
+                          "name": "#wnkm_random"
+                        },
+                        "score": "Cooldown2"
+                      }
+                    }
+                  },
+                  "operation": "add_value",
+                  "attribute": "minecraft:luck"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{randomItem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

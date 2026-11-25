@@ -1,0 +1,15 @@
+execute if score @s hurtWeaponNumber matches -40 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"終焉の炎霊 ダスク","color":"red","bold":true},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -41 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"ヴァーミリオンランス","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -42 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"ファイアゲート","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -43 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"イグニスストライク","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -44 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"マグマクロス","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -45 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"ブレイズクラッシュ","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -46 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"ヴォルケーノ","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -47 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"トワイライトブレイク","color":"gold"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -48 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"サークルファイア","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -49 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"フレイムレイズ","color":"red"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -50 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"暗黒獣","color":"dark_purple"},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -51 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"終焉の特急業火","color":"red","bold":true},{"text":" -> ","color":"white"},{"selector":"@s"}]
+execute if score @s hurtWeaponNumber matches -52 run tellraw @a ["",{"text":"[KILL] ","color":"dark_red"},{"text":"黄昏の焔","color":"red","bold":true},{"text":" -> ","color":"white"},{"selector":"@s"}]
+
+execute if score @s hurtWeaponNumber matches -52..-40 run tag @s remove flag

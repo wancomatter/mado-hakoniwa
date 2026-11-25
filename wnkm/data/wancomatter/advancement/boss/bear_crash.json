@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "is_not_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"bear_crash\"]}",
+            "entity_type": "minecraft:creeper"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wancomatter:boss/bear/child/skill7/dmg"
+  }
+}

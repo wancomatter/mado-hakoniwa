@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 3.5
+          },
+          "type": {
+            "direct_entity": {
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:carrot_on_a_stick",
+                  "predicates": {
+                    "minecraft:custom_data": "{hinoki_blade:1b}"
+                  }
+                }
+              },
+              "entity_type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  }
+}

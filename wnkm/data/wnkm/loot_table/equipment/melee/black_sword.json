@@ -1,0 +1,103 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "解析者",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-連撃剣- MP:40 / Cooldown:65",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "オフハンドに拒絶者を持っている時、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "メインハンドに持ち2.5秒間スニークで発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "二刀流の16連撃を行う。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wnkm:equipment/melee/black_sword/generic.attack_speed",
+                  "slot": "mainhand",
+                  "amount": -2.2,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_speed"
+                },
+                {
+                  "id": "wnkm:equipment/melee/black_sword/generic.attack_damage",
+                  "slot": "mainhand",
+                  "amount": 2.5,
+                  "operation": "add_value",
+                  "attribute": "minecraft:attack_damage"
+                },
+                {
+                  "id": "wnkm:equipment/melee/black_sword/generic.attack_speed",
+                  "slot": "offhand",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "attribute": "minecraft:attack_speed"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "type": "minecraft:set_custom_data",
+              "tag": "{LegacySkill:113,wnkm:{equipment:\"wnkm:equipment/melee/black_sword\"},Soulbound:1b,elucidator:1b}"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "wnkm:equipment/melee/black_sword"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
